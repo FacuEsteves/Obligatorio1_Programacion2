@@ -91,5 +91,30 @@ namespace Obligatorio_1_prog2
             LabelError.Text = "";
 
         }
+
+        protected void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            bool existe = false;
+
+            int cedula = Convert.ToInt32(TxtCedula.Text);
+
+            //BUSCAR BARCO LENTO REGISTRADO
+            for (int i = 0; i < Global.transitoMaritimo.encargados.Count; i++)
+            {
+                if (Global.transitoMaritimo.encargados[i].cedula == cedula)
+                {
+                    TxtNombre.Text = Global.transitoMaritimo.encargados[i].nombre;
+                    TxtCorreo.Text = Global.transitoMaritimo.encargados[i].correo;
+                    TxtCantPersonas.Text = Convert.ToString(Global.transitoMaritimo.encargados[i].cantidadPersonal);
+                    existe = true;
+                    break;
+                }
+
+                if (existe == false)
+                {
+                    LabelError.Text = "No se encontro registro de ese barco";
+                }
+            }
+        }
     }
 }

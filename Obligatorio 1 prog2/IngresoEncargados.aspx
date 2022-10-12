@@ -24,7 +24,7 @@
         &nbsp;</p>
     <p>
         <asp:Button ID="BtnIngresar" runat="server" OnClick="BtnIngresar_Click" Text="Ingresar" />
-        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" />
+        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" />
     </p>
     <p>
         &nbsp;</p>
