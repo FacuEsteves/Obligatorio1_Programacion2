@@ -109,11 +109,11 @@ namespace Obligatorio_1_prog2
                     existe = true;
                     break;
                 }
+            }
 
-                if (existe == false)
-                {
-                    LabelError.Text = "No se encontro registro de ese barco";
-                }
+            if (existe == false)
+            {
+                LabelError.Text = "No se encontro registro de este encargado";
             }
         }
     }

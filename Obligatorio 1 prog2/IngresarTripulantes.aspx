@@ -30,7 +30,7 @@
         &nbsp;</p>
     <p>
         <asp:Button ID="btnIngresar" runat="server" OnClick="btnIngresar_Click" Text="Ingresar" />
-        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" />
+        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
     </p>
     <p>
         &nbsp;</p>

@@ -9,7 +9,6 @@ namespace Obligatorio_1_prog2
     {
         public DateTime fechaIngreso { get; set; }
         public String NombreBarco { get; set; }
-        //public List<Barco> barcos = new List<Barco>();
-        public List<Cargo> cargos = new List<Cargo>();
+        public String Cargo { get; set; }
     }
 }
