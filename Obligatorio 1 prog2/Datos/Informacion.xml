@@ -9,7 +9,26 @@
       <velocidadMax>80</velocidadMax>
     </BarcoRapido>
   </barcoRapidos>
-  <cargos />
+  <cargos>
+    <Cargo>
+      <nombreCargo>Capitán</nombreCargo>
+    </Cargo>
+    <Cargo>
+      <nombreCargo>Oficial de cubierta</nombreCargo>
+    </Cargo>
+    <Cargo>
+      <nombreCargo>Piloto</nombreCargo>
+    </Cargo>
+    <Cargo>
+      <nombreCargo>Comisario de a bordo</nombreCargo>
+    </Cargo>
+    <Cargo>
+      <nombreCargo>Jefe de maquinas</nombreCargo>
+    </Cargo>
+    <Cargo>
+      <nombreCargo>Servicios</nombreCargo>
+    </Cargo>
+  </cargos>
   <mantenimientos />
   <tiposMantenimiento />
   <usuarios />
@@ -18,7 +37,6 @@
       <cedula>52845890</cedula>
       <nombre>Facundo esteves</nombre>
       <correo>facundoesteves@ejemplo.com</correo>
-      <cargos />
       <fechaIngreso>2022-10-12T00:00:00-03:00</fechaIngreso>
     </Tripulante>
   </tripulantes>
