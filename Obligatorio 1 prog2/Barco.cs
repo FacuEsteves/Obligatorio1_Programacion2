@@ -11,4 +11,4 @@ namespace Obligatorio_1_prog2
         public int cantidadPasajeros { get; set; }
         public int cantidadTripulantes { get; set; }
     }
-}
+}//Hola
