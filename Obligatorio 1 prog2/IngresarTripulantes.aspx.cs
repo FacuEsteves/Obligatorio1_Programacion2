@@ -11,7 +11,7 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Cargar los cargos al selectCargos
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
