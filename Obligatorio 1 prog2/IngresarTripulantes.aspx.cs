@@ -11,7 +11,16 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Cargar los cargos al selectCargos
+            GridTripulantes.DataSource = Global.transitoMaritimo.tripulantes;
+            GridTripulantes.DataBind();
+
+            if (!Page.IsPostBack)
+            {
+                DDCargo.DataSource = Global.transitoMaritimo.cargos;
+                DDCargo.DataTextField = "nombreCargo";
+                DDCargo.DataValueField = "nombreCargo";
+                DDCargo.DataBind();
+            }
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
@@ -45,13 +54,14 @@ namespace Obligatorio_1_prog2
             {
                 if (Global.transitoMaritimo.tripulantes[i] != null)
                 {
-                    if (TxtCedula.Text == Global.transitoMaritimo.tripulantes[i].nombre)
+                    if (Global.transitoMaritimo.tripulantes[i].cedula == Convert.ToInt32(TxtCedula.Text))
                     {
                         LabelError.Text = "Ya se encuentra ingresado este tripulante";
-                        tr = Global.transitoMaritimo.tripulantes[i];
-                        tr.cedula = Convert.ToInt32(TxtCedula.Text);
-                        tr.nombre = TxtNombre.Text;
-                        tr.correo = TxtCorreo.Text;
+                        //tr = Global.transitoMaritimo.tripulantes[i];
+                        //tr.cedula = Convert.ToInt32(TxtCedula.Text);
+                        //tr.nombre = TxtNombre.Text;
+                        //tr.correo = TxtCorreo.Text;
+                        //tr.Cargo = DDCargo.SelectedValue;
                         existe = true;
                         break;
                     }
@@ -66,6 +76,7 @@ namespace Obligatorio_1_prog2
                 tr.nombre = TxtNombre.Text;
                 tr.correo = TxtCorreo.Text;
                 tr.fechaIngreso = DateTime.Today;
+                tr.Cargo = DDCargo.SelectedValue;
                 Global.transitoMaritimo.tripulantes.Add(tr);
             }
             //FIN GUARDADO
@@ -98,7 +109,8 @@ namespace Obligatorio_1_prog2
                 {
                     TxtNombre.Text = Global.transitoMaritimo.tripulantes[i].nombre;
                     TxtCorreo.Text = Global.transitoMaritimo.tripulantes[i].correo;
-                    //SELECCIONAR CARGO  Txt.Text = Convert.ToString(Global.transitoMaritimo.encargados[i].cantidadPersonal);
+                    DDCargo.SelectedValue = Global.transitoMaritimo.tripulantes[i].Cargo;
+                    
                     existe = true;
                     break;
                 }

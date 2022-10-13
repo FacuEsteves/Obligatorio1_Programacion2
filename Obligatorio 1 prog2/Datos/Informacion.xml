@@ -34,10 +34,18 @@
   <usuarios />
   <tripulantes>
     <Tripulante>
+      <cedula>57248903</cedula>
+      <nombre>Mario Gimenez</nombre>
+      <correo>mario.gimenez@ejemplo.com</correo>
+      <fechaIngreso>2022-10-13T00:00:00-03:00</fechaIngreso>
+      <Cargo>Jefe de maquinas</Cargo>
+    </Tripulante>
+    <Tripulante>
       <cedula>52845890</cedula>
       <nombre>Facundo esteves</nombre>
       <correo>facundoesteves@ejemplo.com</correo>
-      <fechaIngreso>2022-10-12T00:00:00-03:00</fechaIngreso>
+      <fechaIngreso>2022-10-13T00:00:00-03:00</fechaIngreso>
+      <Cargo>Capitán</Cargo>
     </Tripulante>
   </tripulantes>
   <encargados />
