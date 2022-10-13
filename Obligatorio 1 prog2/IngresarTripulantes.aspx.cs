@@ -57,11 +57,11 @@ namespace Obligatorio_1_prog2
                     if (Global.transitoMaritimo.tripulantes[i].cedula == Convert.ToInt32(TxtCedula.Text))
                     {
                         LabelError.Text = "Ya se encuentra ingresado este tripulante";
-                        //tr = Global.transitoMaritimo.tripulantes[i];
-                        //tr.cedula = Convert.ToInt32(TxtCedula.Text);
-                        //tr.nombre = TxtNombre.Text;
-                        //tr.correo = TxtCorreo.Text;
-                        //tr.Cargo = DDCargo.SelectedValue;
+                        tr = Global.transitoMaritimo.tripulantes[i];
+                        tr.cedula = Convert.ToInt32(TxtCedula.Text);
+                        tr.nombre = TxtNombre.Text;
+                        tr.correo = TxtCorreo.Text;
+                        tr.Cargo = DDCargo.SelectedValue;
                         existe = true;
                         break;
                     }
