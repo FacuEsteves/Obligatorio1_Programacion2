@@ -34,5 +34,20 @@ namespace Obligatorio_1_prog2
                 file.Close();
             }
         }
+
+        public List<Tripulante> TripulantesSinAsignar()
+        {
+            List<Tripulante> tri = new List<Tripulante>();
+
+            for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+            {
+                if (Global.transitoMaritimo.tripulantes[i].NombreBarco == "")
+                {
+                    tri.Add(Global.transitoMaritimo.tripulantes[i]);
+                }
+            }
+
+            return tri;
+        }
     }
 }
