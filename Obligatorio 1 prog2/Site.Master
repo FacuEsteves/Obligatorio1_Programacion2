@@ -63,7 +63,7 @@
                         <li><a runat="server" href="~/RegistroBarco">Registro de Barcos</a></li>
                         <li><a runat="server" href="~/IngresarTripulantes">Ingreso de Tripulantes</a></li>
                         <li><a runat="server" href="~/IngresoEncargados">Ingreso de Encargados</a></li>
-                        <li><a runat="server" href="~/IngresarCargos">Ingreso de Tripulantes</a></li>
+                        <li><a runat="server" href="~/IngresarCargos">Ingreso de Cargos</a></li>
                     </ul>
                 </div>
             </div>
