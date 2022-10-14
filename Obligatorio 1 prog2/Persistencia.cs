@@ -49,5 +49,20 @@ namespace Obligatorio_1_prog2
 
             return tri;
         }
+
+        public List<Tripulante> TripulantesAsignados( String barcoSeleccionado)
+        {
+            List<Tripulante> trip = new List<Tripulante>();
+
+            for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+            {
+                if (Global.transitoMaritimo.tripulantes[i].NombreBarco == barcoSeleccionado)
+                {
+                    trip.Add(Global.transitoMaritimo.tripulantes[i]);
+                }
+            }
+
+            return trip;
+        }
     }
 }
