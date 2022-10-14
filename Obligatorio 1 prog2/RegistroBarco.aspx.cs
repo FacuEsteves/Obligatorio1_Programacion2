@@ -11,7 +11,13 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //cargar grid lentos
+            GridBarcoLento.DataSource = Global.transitoMaritimo.barcoLentos;
+            GridBarcoLento.DataBind();
 
+            //cargar grid rapidos
+            GridBarcoRapido.DataSource = Global.transitoMaritimo.barcoRapidos;
+            GridBarcoRapido.DataBind();
         }
 
         protected void BtnGuardar_Click(object sender, EventArgs e)
@@ -193,5 +199,29 @@ namespace Obligatorio_1_prog2
             }
         }
 
+        protected void TipoBarco_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(TipoBarco.SelectedValue == "(Seleccionar)")
+            {
+                LabelCantVehi.Visible = false;
+                LabelVelMax.Visible = false;
+                TxtVelMaxima.Visible = false;
+                TxtCantVehiculos.Visible = false;
+            }
+            else if (TipoBarco.SelectedValue == "BarcoLento")
+            {
+                LabelCantVehi.Visible = true;
+                LabelVelMax.Visible = false;
+                TxtVelMaxima.Visible = false;
+                TxtCantVehiculos.Visible = true;
+            }
+            else
+            {
+                LabelCantVehi.Visible = false;
+                LabelVelMax.Visible = true;
+                TxtVelMaxima.Visible = true;
+                TxtCantVehiculos.Visible = false;
+            }
+        }
     }
 }

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TransitoMaritimo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <barcoLentos />
+  <barcoLentos>
+    <BarcoLento>
+      <nombre>barco2</nombre>
+      <cantidadPasajeros>18</cantidadPasajeros>
+      <cantidadTripulantes>10</cantidadTripulantes>
+      <cantidadVehiculos>8</cantidadVehiculos>
+    </BarcoLento>
+  </barcoLentos>
   <barcoRapidos>
     <BarcoRapido>
       <nombre>barco1</nombre>

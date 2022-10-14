@@ -14,19 +14,19 @@
     </p>
     <p>
         Tipo de barco :&nbsp;
-        <asp:DropDownList ID="TipoBarco" runat="server">
+        <asp:DropDownList ID="TipoBarco" runat="server" OnSelectedIndexChanged="TipoBarco_SelectedIndexChanged" AutoPostBack="True">
             <asp:ListItem Selected="True">(Seleccionar)</asp:ListItem>
             <asp:ListItem Value="BarcoLento">Barco Lento</asp:ListItem>
             <asp:ListItem Value="BarcoRapido">Barco Rapido</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>
-        Velocidad maxima :&nbsp;
-        <asp:TextBox ID="TxtVelMaxima" runat="server"></asp:TextBox>
+        <asp:Label runat="server" Text="Velocidad Maxima : " ID="LabelVelMax" Visible="False"></asp:Label> 
+        <asp:TextBox ID="TxtVelMaxima" runat="server" Visible="False"></asp:TextBox>
     </p>
     <p>
-        Cantidad de vehiculos :
-        <asp:TextBox ID="TxtCantVehiculos" runat="server"></asp:TextBox>
+        <asp:Label runat="server" Text="Cantidad de vehiculos : " ID="LabelCantVehi" Visible="False"></asp:Label>
+        <asp:TextBox ID="TxtCantVehiculos" runat="server" Visible="False"></asp:TextBox>
     </p>
     <p>
         &nbsp;</p>

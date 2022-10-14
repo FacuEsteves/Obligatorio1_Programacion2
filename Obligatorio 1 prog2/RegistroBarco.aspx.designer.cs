@@ -51,6 +51,15 @@ namespace Obligatorio_1_prog2
         protected global::System.Web.UI.WebControls.DropDownList TipoBarco;
 
         /// <summary>
+        /// Control LabelVelMax.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelVelMax;
+
+        /// <summary>
         /// Control TxtVelMaxima.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace Obligatorio_1_prog2
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtVelMaxima;
+
+        /// <summary>
+        /// Control LabelCantVehi.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelCantVehi;
 
         /// <summary>
         /// Control TxtCantVehiculos.
