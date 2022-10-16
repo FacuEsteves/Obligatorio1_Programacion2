@@ -36,7 +36,23 @@
       <nombreCargo>Servicios</nombreCargo>
     </Cargo>
   </cargos>
-  <mantenimientos />
+  <mantenimientos>
+    <Mantenimiento>
+      <fechaMantenimiento>2022-10-16T00:00:00-03:00</fechaMantenimiento>
+      <descripcion>Mantenimiento 1</descripcion>
+      <TiposMantenimiento>
+        <codigo>1</codigo>
+        <precioBase>1000</precioBase>
+        <descripcion>Tipo mantenimiento 1</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>18349320</cedula>
+        <nombre>Ernesto Santos</nombre>
+        <correo>ernesto.santos@ejemplo.com</correo>
+        <cantidadPersonal>5</cantidadPersonal>
+      </encargados>
+    </Mantenimiento>
+  </mantenimientos>
   <tiposMantenimiento>
     <Tipo_de_Mantenimiento>
       <codigo>1</codigo>
@@ -66,5 +82,12 @@
       <Cargo>Capitán</Cargo>
     </Tripulante>
   </tripulantes>
-  <encargados />
+  <encargados>
+    <Encargado>
+      <cedula>18349320</cedula>
+      <nombre>Ernesto Santos</nombre>
+      <correo>ernesto.santos@ejemplo.com</correo>
+      <cantidadPersonal>5</cantidadPersonal>
+    </Encargado>
+  </encargados>
 </TransitoMaritimo>

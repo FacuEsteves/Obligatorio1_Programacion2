@@ -78,11 +78,11 @@ namespace Obligatorio_1_prog2
             }
             //FIN GUARDADO
 
+            Persistencia.guardarDatos();
+
             //cargar grid 
             GridEncargados.DataSource = Global.transitoMaritimo.encargados;
             GridEncargados.DataBind();
-
-            
 
             //LIMPIAR CAMPOS
             TxtCedula.Text = "";
@@ -96,10 +96,15 @@ namespace Obligatorio_1_prog2
         protected void BtnBuscar_Click(object sender, EventArgs e)
         {
             bool existe = false;
+            int cedula = 00000000;
 
-            int cedula = Convert.ToInt32(TxtCedula.Text);
+            if (TxtCedula.Text != "")
+            {
+                cedula = Convert.ToInt32(TxtCedula.Text);
+            }
+            
 
-            //BUSCAR BARCO LENTO REGISTRADO
+            //BUSCAR ENCARGADO REGISTRADO
             for (int i = 0; i < Global.transitoMaritimo.encargados.Count; i++)
             {
                 if (Global.transitoMaritimo.encargados[i].cedula == cedula)

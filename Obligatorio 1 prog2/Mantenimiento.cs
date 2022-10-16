@@ -9,8 +9,8 @@ namespace Obligatorio_1_prog2
     {
         public DateTime fechaMantenimiento { get; set; }
         public string descripcion { get; set; }
-        public List<Barco> barcos = new List<Barco>();
-        public List<Tipo_de_Mantenimiento> tiposMantenimiento = new List<Tipo_de_Mantenimiento>();
-        public List<Encargado> encargados = new List<Encargado>();
+        public Barco barcos { get; set; }
+        public Tipo_de_Mantenimiento TiposMantenimiento { get; set; }
+        public Encargado encargados { get; set; }
     }
 }
