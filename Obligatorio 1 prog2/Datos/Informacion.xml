@@ -37,7 +37,18 @@
     </Cargo>
   </cargos>
   <mantenimientos />
-  <tiposMantenimiento />
+  <tiposMantenimiento>
+    <Tipo_de_Mantenimiento>
+      <codigo>1</codigo>
+      <precioBase>1000</precioBase>
+      <descripcion>Tipo mantenimiento 1</descripcion>
+    </Tipo_de_Mantenimiento>
+    <Tipo_de_Mantenimiento>
+      <codigo>2</codigo>
+      <precioBase>2000</precioBase>
+      <descripcion>Tipo mantenimiento 2</descripcion>
+    </Tipo_de_Mantenimiento>
+  </tiposMantenimiento>
   <usuarios />
   <tripulantes>
     <Tripulante>

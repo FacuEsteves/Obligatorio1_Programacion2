@@ -129,6 +129,7 @@
     <Content Include="IngresarTripulantes.aspx" />
     <Content Include="IngresoEncargados.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="IngresoTipoMantenimiento.aspx" />
     <Content Include="RegistroBarco.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="IngresarTripulantes.aspx.designer.cs">
       <DependentUpon>IngresarTripulantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoTipoMantenimiento.aspx.cs">
+      <DependentUpon>IngresoTipoMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresoTipoMantenimiento.aspx.designer.cs">
+      <DependentUpon>IngresoTipoMantenimiento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mantenimiento.cs" />
     <Compile Include="Persistencia.cs" />

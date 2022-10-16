@@ -11,7 +11,8 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GridEncargados.DataSource = Global.transitoMaritimo.encargados;
+            GridEncargados.DataBind();
         }
 
         protected void BtnIngresar_Click(object sender, EventArgs e)

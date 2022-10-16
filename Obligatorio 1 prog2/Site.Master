@@ -64,6 +64,7 @@
                         <li><a runat="server" href="~/IngresarTripulantes">Ingreso de Tripulantes</a></li>
                         <li><a runat="server" href="~/IngresoEncargados">Ingreso de Encargados</a></li>
                         <li><a runat="server" href="~/IngresarCargos">Ingreso de Cargos</a></li>
+                        <li><a runat="server" href="~/IngresoTipoMantenimiento">Ingreso de Tipo M.</a></li>
                     </ul>
                 </div>
             </div>
