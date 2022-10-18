@@ -11,7 +11,7 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridAsignar.DataSource = Global.transitoMaritimo.tripulantes;
+            GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
             GridAsignar.DataBind();
         }
 

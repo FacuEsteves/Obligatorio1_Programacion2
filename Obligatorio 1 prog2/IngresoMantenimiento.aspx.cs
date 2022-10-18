@@ -34,6 +34,8 @@ namespace Obligatorio_1_prog2
 
             GridMantenimientos.DataSource = Global.transitoMaritimo.mantenimientos;
             GridMantenimientos.DataBind();
+
+           
         }
 
         protected void BtnGuardar_Click(object sender, EventArgs e)

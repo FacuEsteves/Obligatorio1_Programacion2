@@ -260,6 +260,7 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Tipo de Mantenimiento.cs" />
+    <Compile Include="TodosBarcos.cs" />
     <Compile Include="TransitoMaritimo.cs" />
     <Compile Include="Tripulante.cs" />
     <Compile Include="Usuario.cs" />

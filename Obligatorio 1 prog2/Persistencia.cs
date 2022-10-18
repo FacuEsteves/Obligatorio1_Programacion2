@@ -35,13 +35,13 @@ namespace Obligatorio_1_prog2
             }
         }
 
-        public List<Tripulante> TripulantesSinAsignar()
+        public static List<Tripulante> TripulantesSinAsignar()
         {
             List<Tripulante> tri = new List<Tripulante>();
 
             for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
             {
-                if (Global.transitoMaritimo.tripulantes[i].NombreBarco == "")
+                if (Global.transitoMaritimo.tripulantes[i].NombreBarco == null)
                 {
                     tri.Add(Global.transitoMaritimo.tripulantes[i]);
                 }
@@ -50,7 +50,7 @@ namespace Obligatorio_1_prog2
             return tri;
         }
 
-        public List<Tripulante> TripulantesAsignados( String barcoSeleccionado)
+        public static List<Tripulante> TripulantesAsignados( String barcoSeleccionado)
         {
             List<Tripulante> trip = new List<Tripulante>();
 
