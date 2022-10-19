@@ -56,8 +56,8 @@
   <tiposMantenimiento>
     <Tipo_de_Mantenimiento>
       <codigo>1</codigo>
-      <precioBase>1000</precioBase>
-      <descripcion>Tipo mantenimiento 1</descripcion>
+      <precioBase>12</precioBase>
+      <descripcion>aa</descripcion>
     </Tipo_de_Mantenimiento>
     <Tipo_de_Mantenimiento>
       <codigo>2</codigo>
