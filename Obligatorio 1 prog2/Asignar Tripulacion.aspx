@@ -22,7 +22,7 @@
                 <asp:BoundField DataField="Cargo" HeaderText="Cargo" />
             </Columns>
         </asp:GridView>
-    <p>
+    &nbsp;<p>
         &nbsp;</p>
     <p>
         &nbsp;</p>
