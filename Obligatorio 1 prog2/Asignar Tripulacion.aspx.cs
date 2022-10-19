@@ -11,6 +11,11 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DD_Barcos.DataSource = Persistencia.ListaBarcos();
+            DD_Barcos.DataTextField = "nombre";
+            DD_Barcos.DataValueField = "nombre";
+            DD_Barcos.DataBind();
+
             GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
             GridAsignar.DataBind();
         }
@@ -24,7 +29,7 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = "Elija un barco";
                 return;
             }
-            String barcoAsignado = "";
+            String barcoAsignado = DD_Barcos.SelectedValue; ;
             int index = GridAsignar.SelectedIndex;
 
             List<Tripulante> triAsignar = new List<Tripulante>();
@@ -33,15 +38,27 @@ namespace Obligatorio_1_prog2
 
             int cedula = triAsignar[index].cedula;
 
-            barcoAsignado = DD_Barcos.SelectedValue;
 
             for(int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
             {
                 if(cedula == Global.transitoMaritimo.tripulantes[i].cedula)
                 {
                     Global.transitoMaritimo.tripulantes[i].NombreBarco = barcoAsignado;
+                    LabelError.ForeColor = System.Drawing.Color.Green;
+                    LabelError.Text = "Se asigno el tripulante " + cedula + " al barco " + barcoAsignado;
+                    break;
                 }
             }
+
+            GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
+            GridAsignar.DataBind();
+
+            //llamar al otro grid para actualizar
+        }
+
+        protected void GridAsignados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)

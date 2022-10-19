@@ -64,5 +64,21 @@ namespace Obligatorio_1_prog2
 
             return trip;
         }
+
+        public static List<Barco> ListaBarcos()
+        {
+            List<Barco> barcos = new List<Barco>();
+
+            for (int i = 0; i < Global.transitoMaritimo.barcoLentos.Count; i++)
+            {
+                barcos.Add(Global.transitoMaritimo.barcoLentos[i]);
+            }
+            for (int i = 0; i < Global.transitoMaritimo.barcoRapidos.Count; i++)
+            {
+                barcos.Add(Global.transitoMaritimo.barcoRapidos[i]);
+            }
+
+            return barcos;
+        }
     }
 }
