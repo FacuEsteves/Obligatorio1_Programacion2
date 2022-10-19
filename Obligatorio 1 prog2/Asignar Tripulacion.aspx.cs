@@ -61,10 +61,5 @@ namespace Obligatorio_1_prog2
 
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
-            GridAsignar.DataBind();
-        }
     }
 }
