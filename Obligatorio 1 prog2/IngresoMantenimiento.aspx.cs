@@ -13,11 +13,10 @@ namespace Obligatorio_1_prog2
         {
             if (!Page.IsPostBack)
             {
-                /*
-                DD_Barco.DataSource = Global.transitoMaritimo.barcoLentos + Global.transitoMaritimo.barcoRapidos;
+                DD_Barco.DataSource = Persistencia.ListaBarcos();
                 DD_Barco.DataTextField = "nombre";
                 DD_Barco.DataValueField = "nombre";
-                DD_Barco.DataBind(); */
+                DD_Barco.DataBind();
 
                 DD_TipoM.DataSource = Global.transitoMaritimo.tiposMantenimiento;
                 DD_TipoM.DataTextField = "descripcion";
@@ -49,12 +48,11 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = "Ingrese la descripción";
                 return;
             }
-            /*
             if (DD_Barco.SelectedIndex == -1)
             {
                 LabelError.Text = "Elija un barco";
                 return;
-            }*/
+            }
             if (DD_TipoM.SelectedIndex == -1)
             {
                 LabelError.Text = "Elija un tipo de mantenimiento";
@@ -77,9 +75,25 @@ namespace Obligatorio_1_prog2
                 m.fechaMantenimiento = CalendarDate.SelectedDate;
                 m.descripcion = TxtDescripcion.Text;
 
-                /*String barco = DD_Barco.SelectedValue;
-                for (int i = 0; i < Global.transitoMaritimo.ba)
-                m.barcos = DD_Barco.SelectedValue;*/
+                String barco = DD_Barco.SelectedValue;
+                for (int i = 0; i < Global.transitoMaritimo.barcoLentos.Count; i++)
+                {
+                    if(barco == Global.transitoMaritimo.barcoLentos[i].nombre)
+                    {
+                        m.barcos = Global.transitoMaritimo.barcoLentos[i];
+                        m.tipobarco = "Barco Lento";
+                        break;
+                    }
+                }
+                for (int i = 0; i < Global.transitoMaritimo.barcoRapidos.Count; i++)
+                {
+                    if (barco == Global.transitoMaritimo.barcoRapidos[i].nombre)
+                    {
+                        m.barcos = Global.transitoMaritimo.barcoRapidos[i];
+                        m.tipobarco = "Barco Rapido";
+                        break;
+                    }
+                }
 
                 Int64 codigo = Convert.ToInt32(DD_TipoM.SelectedValue);
                 for (int i = 0; i < Global.transitoMaritimo.tiposMantenimiento.Count; i++)
