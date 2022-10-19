@@ -15,18 +15,33 @@ namespace Obligatorio_1_prog2
             GridAsignar.DataBind();
         }
 
-        protected void GridAsignar_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-            if (e.CommandName == "Asignar")
-            {
-                LabelError.Text = Convert.ToString(e);
-            }
-        }
-
         protected void GridAsignar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int i = GridAsignar.SelectedIndex;
-            LabelError.Text = i.ToString();
+            LabelError.Text = "";
+
+            if(DD_Barcos.SelectedIndex == -1)
+            {
+                LabelError.Text = "Elija un barco";
+                return;
+            }
+            String barcoAsignado = "";
+            int index = GridAsignar.SelectedIndex;
+
+            List<Tripulante> triAsignar = new List<Tripulante>();
+
+            triAsignar = Persistencia.TripulantesSinAsignar();
+
+            int cedula = triAsignar[index].cedula;
+
+            barcoAsignado = DD_Barcos.SelectedValue;
+
+            for(int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+            {
+                if(cedula == Global.transitoMaritimo.tripulantes[i].cedula)
+                {
+                    Global.transitoMaritimo.tripulantes[i].NombreBarco = barcoAsignado;
+                }
+            }
         }
     }
 }
