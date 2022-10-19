@@ -22,5 +22,11 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = Convert.ToString(e);
             }
         }
+
+        protected void GridAsignar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int i = GridAsignar.SelectedIndex;
+            LabelError.Text = i.ToString();
+        }
     }
 }

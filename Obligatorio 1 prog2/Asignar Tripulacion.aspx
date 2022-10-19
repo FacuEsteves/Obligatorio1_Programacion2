@@ -15,16 +15,13 @@
     </p>
     <p>
         &nbsp;</p>
-    <p>
-        <asp:GridView ID="GridAsignar" runat="server" AutoGenerateColumns="False" OnRowCommand="GridAsignar_RowCommand">
+        <asp:GridView ID="GridAsignar" runat="server" AutoGenerateColumns="False" OnRowCommand="GridAsignar_RowCommand" AutoGenerateSelectButton="True" OnSelectedIndexChanged="GridAsignar_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="cedula" HeaderText="Cedula" />
                 <asp:BoundField DataField="nombre" HeaderText="Nombre" />
                 <asp:BoundField DataField="Cargo" HeaderText="Cargo" />
-                <asp:ButtonField ButtonType="Button" CommandName="Asignar" Text="Botón" />
             </Columns>
         </asp:GridView>
-    </p>
     <p>
         &nbsp;</p>
     <p>
