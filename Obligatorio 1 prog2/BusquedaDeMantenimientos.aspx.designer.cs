@@ -15,15 +15,6 @@ namespace Obligatorio_1_prog2
     {
 
         /// <summary>
-        /// Control DDBarco.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDBarco;
-
-        /// <summary>
         /// Control txtBarco.
         /// </summary>
         /// <remarks>
@@ -42,13 +33,13 @@ namespace Obligatorio_1_prog2
         protected global::System.Web.UI.WebControls.DropDownList DDMes;
 
         /// <summary>
-        /// Control DDAño.
+        /// Control txtAño.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDAño;
+        protected global::System.Web.UI.WebControls.TextBox txtAño;
 
         /// <summary>
         /// Control LabelError.

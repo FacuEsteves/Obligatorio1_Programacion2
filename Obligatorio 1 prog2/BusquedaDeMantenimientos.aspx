@@ -11,8 +11,6 @@
         &nbsp;</p>
     <p>
         Barco:&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DDBarco" runat="server">
-        </asp:DropDownList>
         <asp:TextBox ID="txtBarco" runat="server"></asp:TextBox>
     </p>
     <p>
@@ -20,26 +18,25 @@
     <p>
         Mes:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DDMes" runat="server">
-            <asp:ListItem>Enero</asp:ListItem>
-            <asp:ListItem>Febrero</asp:ListItem>
-            <asp:ListItem>Marzo</asp:ListItem>
-            <asp:ListItem>Abril</asp:ListItem>
-            <asp:ListItem>Mayo</asp:ListItem>
-            <asp:ListItem>Junio</asp:ListItem>
-            <asp:ListItem>Julio</asp:ListItem>
-            <asp:ListItem>Agosto</asp:ListItem>
-            <asp:ListItem>Septiembre</asp:ListItem>
-            <asp:ListItem>Octubre</asp:ListItem>
-            <asp:ListItem>Noviembre</asp:ListItem>
-            <asp:ListItem>Diciembre</asp:ListItem>
+            <asp:ListItem Value="01">Enero</asp:ListItem>
+            <asp:ListItem Value="02">Febrero</asp:ListItem>
+            <asp:ListItem Value="03">Marzo</asp:ListItem>
+            <asp:ListItem Value="04">Abril</asp:ListItem>
+            <asp:ListItem Value="05">Mayo</asp:ListItem>
+            <asp:ListItem Value="06">Junio</asp:ListItem>
+            <asp:ListItem Value="07">Julio</asp:ListItem>
+            <asp:ListItem Value="08">Agosto</asp:ListItem>
+            <asp:ListItem Value="09">Septiembre</asp:ListItem>
+            <asp:ListItem Value="10">Octubre</asp:ListItem>
+            <asp:ListItem Value="11">Noviembre</asp:ListItem>
+            <asp:ListItem Value="12">Diciembre</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>
         &nbsp;</p>
     <p>
         Año:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DDAño" runat="server">
-        </asp:DropDownList>
+        <asp:TextBox ID="txtAño" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;<asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Xml.Serialization;
 using System.IO;
+using System.Web.Services.Description;
 
 namespace Obligatorio_1_prog2
 {
@@ -80,19 +81,17 @@ namespace Obligatorio_1_prog2
 
             return barcos;
         }
-        public static List<Mantenimiento> MantenimientosRealizados(String barcoSeleccionado)
+        /*public static string SplitMes(string Fecha)
         {
-            List<Mantenimiento> mant = new List<Mantenimiento>();
-
-            for (int i = 0; i < Global.transitoMaritimo.mantenimientos.Count; i++)
-            {
-                if (Global.transitoMaritimo.mantenimientos[i].nombreBarco == barcoSeleccionado)
-                {
-                    mant.Add(Global.transitoMaritimo.mantenimientos[i]);
-                }
-            }
-
-            return mant;
+            string[] FechaDes = Fecha.Split('/');
+            string Mes = FechaDes[1];
+            return Mes;
         }
+        public static string SplitAño(string Fecha)
+        {
+            string[] FechaDes = Fecha.Split('/');
+            string Año = FechaDes[2];
+            return Año;
+        }*/
     }
 }
