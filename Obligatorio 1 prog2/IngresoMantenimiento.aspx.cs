@@ -76,7 +76,7 @@ namespace Obligatorio_1_prog2
                 m.descripcion = TxtDescripcion.Text;
 
                 String barco = DD_Barco.SelectedValue;
-                m.nombreBarco = barco;
+                m.nombreBarco= barco;
                 for (int i = 0; i < Global.transitoMaritimo.barcoLentos.Count; i++)
                 {
                     if(barco == Global.transitoMaritimo.barcoLentos[i].nombre)
