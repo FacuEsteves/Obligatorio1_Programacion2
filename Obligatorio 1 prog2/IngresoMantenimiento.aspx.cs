@@ -124,7 +124,7 @@ namespace Obligatorio_1_prog2
                         break;
                     }
                 }
-
+                m.Terminado = false;
                 Global.transitoMaritimo.mantenimientos.Add(m);
             }
             //FIN GUARDADO
@@ -143,6 +143,35 @@ namespace Obligatorio_1_prog2
             DD_TipoM.SelectedIndex = -1;
             DD_Encargado.SelectedIndex = -1;
             LabelError.Text = "";
+        }
+
+        protected void GridMantenimientos_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            //dar como terminado el
+            String descripcion = e.Values["descripcion"].ToString();
+
+            for(int i=0; i< Global.transitoMaritimo.mantenimientos.Count; i++)
+            {
+                if (true == Global.transitoMaritimo.mantenimientos[i].Terminado)
+                {
+                    LabelError.Text = "Este mantenimiento ya esta terminado";
+                    return;
+                }
+                else
+                {
+                    if (descripcion == Global.transitoMaritimo.mantenimientos[i].descripcion)
+                    {
+                        Global.transitoMaritimo.mantenimientos[i].Terminado = true;
+                        LabelError.Text = "Se registro el mantenimiento " + descripcion + " como terminado";
+                        break;
+                    }
+                }
+                
+            }
+            Persistencia.guardarDatos();
+
+            GridMantenimientos.DataSource = Global.transitoMaritimo.mantenimientos;
+            GridMantenimientos.DataBind();
         }
     }
 }

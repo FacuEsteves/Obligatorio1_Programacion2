@@ -67,12 +67,6 @@ namespace Obligatorio_1_prog2
 
         }
 
-        protected void GridAsignados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-
         protected void DD_Barcos_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridAsignados.DataSource = Persistencia.TripulantesAsignados(DD_Barcos.SelectedValue);

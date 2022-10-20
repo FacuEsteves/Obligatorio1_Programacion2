@@ -15,5 +15,6 @@ namespace Obligatorio_1_prog2
         public Tipo_de_Mantenimiento TiposMantenimiento { get; set; }
         public Encargado encargados { get; set; }
         public int precio { get; set; }
+        public Boolean Terminado { get; set; }
     }
 }
