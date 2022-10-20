@@ -16,6 +16,14 @@ namespace Obligatorio_1_prog2
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
+            //Errores
+
+            if (txtBarco.Text=="" || txtAño.Text == "")
+            {
+                LabelError.Text = "Datos faltantes para realizar la busqueda";
+                return;
+            }
+
             //Creacion Tabla
             DataTable tabla1 = new DataTable();
             tabla1.Columns.Add("Fecha", typeof(string));
@@ -36,7 +44,7 @@ namespace Obligatorio_1_prog2
                 {
                     //Asignacion de Valores a la Tabla
                     string fecha = Convert.ToString(Global.transitoMaritimo.mantenimientos[i].fechaMantenimiento);
-                    string tipo = Global.transitoMaritimo.mantenimientos[i].nombreBarco;
+                    string tipo = Global.transitoMaritimo.mantenimientos[i].descripcion;
                     string precio = Convert.ToString(Global.transitoMaritimo.mantenimientos[i].precio);
                     TOTAL = Global.transitoMaritimo.mantenimientos[i].precio + TOTAL;
 
@@ -49,6 +57,7 @@ namespace Obligatorio_1_prog2
             //Mostrar
             GridView1.DataSource = tabla1;
             GridView1.DataBind();
+            LabelError.Text = "";
         }
     }
 }
