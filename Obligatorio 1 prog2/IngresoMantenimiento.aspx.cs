@@ -102,7 +102,15 @@ namespace Obligatorio_1_prog2
                     if (codigo == Global.transitoMaritimo.tiposMantenimiento[i].codigo)
                     {
                         m.TiposMantenimiento = Global.transitoMaritimo.tiposMantenimiento[i];
-                        m.precio = Global.transitoMaritimo.tiposMantenimiento[i].precioBase;
+                        if (m.tipobarco=="Barco Lento") 
+                        {
+                            m.precio = Global.transitoMaritimo.tiposMantenimiento[i].precioBase;
+                        }
+                        if (m.tipobarco=="Barco Rapido")
+                        {
+                            double porcentaje = Global.transitoMaritimo.tiposMantenimiento[i].precioBase * 0.30;
+                            m.precio = Global.transitoMaritimo.tiposMantenimiento[i].precioBase+Convert.ToInt32(porcentaje)+200;
+                        }
                         break;
                     }
                 }
