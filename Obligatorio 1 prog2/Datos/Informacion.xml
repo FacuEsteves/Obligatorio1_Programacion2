@@ -52,6 +52,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>0</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -76,6 +77,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>2000</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -100,6 +102,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>216</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -124,6 +127,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>2000</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -148,6 +152,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>2800</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -172,6 +177,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>2000</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -196,6 +202,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>216</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
@@ -220,6 +227,7 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>12</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
@@ -234,7 +242,15 @@
       <descripcion>Tipo mantenimiento 2</descripcion>
     </Tipo_de_Mantenimiento>
   </tiposMantenimiento>
-  <usuarios />
+  <usuarios>
+    <Usuario>
+      <cedula>1</cedula>
+      <nombre />
+      <correo>1</correo>
+      <nombreUsuario>1</nombreUsuario>
+      <contraseña>12345</contraseña>
+    </Usuario>
+  </usuarios>
   <tripulantes>
     <Tripulante>
       <cedula>57248903</cedula>
