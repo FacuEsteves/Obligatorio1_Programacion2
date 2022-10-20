@@ -13,6 +13,7 @@
         Barco:&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DDBarco" runat="server">
         </asp:DropDownList>
+        <asp:TextBox ID="txtBarco" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;</p>
@@ -49,12 +50,7 @@
     <p>
         &nbsp;</p>
     <p>
-        <asp:GridView ID="GridHistorial" runat="server" AutoGenerateColumns="False">
-            <Columns>
-                <asp:BoundField DataField="nombreBarco" HeaderText="Nombre" />
-                <asp:BoundField DataField="fechaMantenimiento" HeaderText="Fecha" />
-                <asp:BoundField DataField="precio" HeaderText="Precio" />
-            </Columns>
+        <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
     </p>
     <p>

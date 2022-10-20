@@ -149,6 +149,30 @@
       </encargados>
       <precio>2800</precio>
     </Mantenimiento>
+    <Mantenimiento>
+      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
+      <descripcion>HOla</descripcion>
+      <barcos xsi:type="BarcoLento">
+        <nombre>barco2</nombre>
+        <cantidadPasajeros>18</cantidadPasajeros>
+        <cantidadTripulantes>10</cantidadTripulantes>
+        <cantidadVehiculos>8</cantidadVehiculos>
+      </barcos>
+      <nombreBarco>barco2</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
+      <TiposMantenimiento>
+        <codigo>2</codigo>
+        <precioBase>2000</precioBase>
+        <descripcion>Tipo mantenimiento 2</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>18349320</cedula>
+        <nombre>Ernesto Santos</nombre>
+        <correo>ernesto.santos@ejemplo.com</correo>
+        <cantidadPersonal>5</cantidadPersonal>
+      </encargados>
+      <precio>2000</precio>
+    </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
     <Tipo_de_Mantenimiento>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -19,13 +20,25 @@ namespace Obligatorio_1_prog2
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            String barco = DDBarco.SelectedValue;
+            DataTable tabla1 = new DataTable();
+            string barco = txtBarco.Text;
+            tabla1.Columns.Add("Fecha", typeof(string));
+            tabla1.Columns.Add("Tipo", typeof(string));
+            tabla1.Columns.Add("Precio", typeof(int));
             for (int i = 0; i < Global.transitoMaritimo.mantenimientos.Count; i++)
             {
-                if (barco == Global.transitoMaritimo.mantenimientos[i].nombreBarco)
+                if (barco==Global.transitoMaritimo.mantenimientos[i].nombreBarco)
                 {
+                    string fecha = Convert.ToString(Global.transitoMaritimo.mantenimientos[i].fechaMantenimiento);
+                    string tipo = Global.transitoMaritimo.mantenimientos[i].nombreBarco;
+                    string precio = Convert.ToString(Global.transitoMaritimo.mantenimientos[i].precio);
+
+                    tabla1.Rows.Add(fecha, tipo, precio);
+
                 }
             }
+            GridView1.DataSource = tabla1;
+            GridView1.DataBind();
         }
     }
 }
