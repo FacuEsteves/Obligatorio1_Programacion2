@@ -147,7 +147,8 @@ namespace Obligatorio_1_prog2
 
         protected void GridMantenimientos_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            //dar como terminado el
+            //dar como terminado el mantenimeinto
+
             String descripcion = e.Values["descripcion"].ToString();
 
             for(int i=0; i< Global.transitoMaritimo.mantenimientos.Count; i++)
