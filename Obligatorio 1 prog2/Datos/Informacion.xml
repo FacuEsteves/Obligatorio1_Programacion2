@@ -51,6 +51,31 @@
         <correo>ernesto.santos@ejemplo.com</correo>
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
+      <precio>0</precio>
+    </Mantenimiento>
+    <Mantenimiento>
+      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
+      <descripcion>HOla</descripcion>
+      <barcos xsi:type="BarcoRapido">
+        <nombre>barco1</nombre>
+        <cantidadPasajeros>12</cantidadPasajeros>
+        <cantidadTripulantes>10</cantidadTripulantes>
+        <velocidadMax>80</velocidadMax>
+      </barcos>
+      <nombreBarco>barco1</nombreBarco>
+      <tipobarco>Barco Rapido</tipobarco>
+      <TiposMantenimiento>
+        <codigo>2</codigo>
+        <precioBase>2000</precioBase>
+        <descripcion>Tipo mantenimiento 2</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>18349320</cedula>
+        <nombre>Ernesto Santos</nombre>
+        <correo>ernesto.santos@ejemplo.com</correo>
+        <cantidadPersonal>5</cantidadPersonal>
+      </encargados>
+      <precio>2000</precio>
     </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
