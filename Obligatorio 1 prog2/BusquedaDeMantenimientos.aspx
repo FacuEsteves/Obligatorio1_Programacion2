@@ -11,7 +11,8 @@
         &nbsp;</p>
     <p>
         Barco:&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtBarco" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="DD_Barco" runat="server">
+        </asp:DropDownList>
     </p>
     <p>
         &nbsp;</p>

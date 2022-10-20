@@ -12,13 +12,20 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                DD_Barco.DataSource = Persistencia.ListaBarcos();
+                DD_Barco.DataTextField = "nombre";
+                DD_Barco.DataValueField = "nombre";
+                DD_Barco.DataBind();
+            }
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             //Errores
 
-            if (txtBarco.Text=="" || txtAño.Text == "")
+            if (txtAño.Text == "")
             {
                 LabelError.Text = "Datos faltantes para realizar la busqueda";
                 return;
@@ -32,10 +39,11 @@ namespace Obligatorio_1_prog2
             tabla1.Columns.Add("Total", typeof(int));
 
             //Variables Usadas
-            string barco = txtBarco.Text;
+            string barco = DD_Barco.SelectedValue;
             string mes = DDMes.SelectedValue;
             int año = Convert.ToInt32(txtAño.Text);
             int TOTAL = 0;
+            int comp = 0;
 
             //Comienzo Busqueda
             for (int i = 0; i < Global.transitoMaritimo.mantenimientos.Count; i++)
@@ -49,15 +57,24 @@ namespace Obligatorio_1_prog2
                     TOTAL = Global.transitoMaritimo.mantenimientos[i].precio + TOTAL;
 
                     tabla1.Rows.Add(fecha, tipo, precio);
+                    comp = 1;
 
                 }
             }
             tabla1.Rows.Add(' ', ' ', ' ', TOTAL);
 
+            if (comp == 0)
+            {
+                LabelError.Text = "Mantenimiento No Encontrado";
+            }
+            else
+            {
+                LabelError.Text = "";
+            }
+
             //Mostrar
             GridView1.DataSource = tabla1;
             GridView1.DataBind();
-            LabelError.Text = "";
         }
     }
 }
