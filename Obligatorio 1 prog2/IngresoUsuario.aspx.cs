@@ -16,14 +16,23 @@ namespace Obligatorio_1_prog2
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
+            LabelError.Text = "";
+
+
             Usuario us = new Usuario();
             us.nombre = txtNombre.Text;
             us.cedula = Convert.ToInt32(txtCedula.Text);
             us.nombreUsuario = txtID.Text;
             us.contraseña = txtContraseña.Text;
             us.correo = txtCorreo.Text;
+            
             Global.transitoMaritimo.usuarios.Add(us);
             GridUsuario.DataBind();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            LabelError.Text = CBpermisos.SelectedValue;
         }
     }
 }
