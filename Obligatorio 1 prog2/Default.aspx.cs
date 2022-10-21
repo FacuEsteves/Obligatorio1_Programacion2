@@ -13,5 +13,10 @@ namespace Obligatorio_1_prog2
         {
 
         }
+
+        protected void btnIniciar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
