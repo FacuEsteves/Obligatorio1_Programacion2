@@ -16,7 +16,15 @@ namespace Obligatorio_1_prog2
 
         protected void btnIniciar_Click(object sender, EventArgs e)
         {
-            
+            string message = "Hello! Mudassar.";
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         }
     }
 }
