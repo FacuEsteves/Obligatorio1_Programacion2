@@ -81,6 +81,14 @@ namespace Obligatorio_1_prog2
 
             return barcos;
         }
+
+        public static int idmantenimiento()
+        {
+            int ultimoN = Global.transitoMaritimo.mantenimientos.Count;
+            int id = ultimoN + 1;
+
+            return id;
+        }
         /*public static string SplitMes(string Fecha)
         {
             string[] FechaDes = Fecha.Split('/');

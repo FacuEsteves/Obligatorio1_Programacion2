@@ -7,6 +7,7 @@ namespace Obligatorio_1_prog2
 {
     public class Mantenimiento
     {
+        public int id { get; set; }
         public DateTime fechaMantenimiento { get; set; }
         public string descripcion { get; set; }
         public Barco barcos { get; set; }

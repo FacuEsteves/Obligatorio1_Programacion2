@@ -38,100 +38,9 @@
   </cargos>
   <mantenimientos>
     <Mantenimiento>
-      <fechaMantenimiento>2022-10-16T00:00:00-03:00</fechaMantenimiento>
+      <id>1</id>
+      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
       <descripcion>Mantenimiento 1</descripcion>
-      <TiposMantenimiento>
-        <codigo>1</codigo>
-        <precioBase>1000</precioBase>
-        <descripcion>Tipo mantenimiento 1</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>0</precio>
-      <Terminado>false</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
-      <barcos xsi:type="BarcoRapido">
-        <nombre>barco1</nombre>
-        <cantidadPasajeros>12</cantidadPasajeros>
-        <cantidadTripulantes>10</cantidadTripulantes>
-        <velocidadMax>80</velocidadMax>
-      </barcos>
-      <nombreBarco>barco1</nombreBarco>
-      <tipobarco>Barco Rapido</tipobarco>
-      <TiposMantenimiento>
-        <codigo>2</codigo>
-        <precioBase>2000</precioBase>
-        <descripcion>Tipo mantenimiento 2</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>2000</precio>
-      <Terminado>false</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
-      <barcos xsi:type="BarcoRapido">
-        <nombre>barco1</nombre>
-        <cantidadPasajeros>12</cantidadPasajeros>
-        <cantidadTripulantes>10</cantidadTripulantes>
-        <velocidadMax>80</velocidadMax>
-      </barcos>
-      <nombreBarco>barco1</nombreBarco>
-      <tipobarco>Barco Rapido</tipobarco>
-      <TiposMantenimiento>
-        <codigo>1</codigo>
-        <precioBase>12</precioBase>
-        <descripcion>aa</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>216</precio>
-      <Terminado>false</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
-      <barcos xsi:type="BarcoLento">
-        <nombre>barco2</nombre>
-        <cantidadPasajeros>18</cantidadPasajeros>
-        <cantidadTripulantes>10</cantidadTripulantes>
-        <cantidadVehiculos>8</cantidadVehiculos>
-      </barcos>
-      <nombreBarco>barco2</nombreBarco>
-      <tipobarco>Barco Lento</tipobarco>
-      <TiposMantenimiento>
-        <codigo>2</codigo>
-        <precioBase>2000</precioBase>
-        <descripcion>Tipo mantenimiento 2</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>2000</precio>
-      <Terminado>false</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
       <barcos xsi:type="BarcoRapido">
         <nombre>barco1</nombre>
         <cantidadPasajeros>12</cantidadPasajeros>
@@ -152,11 +61,38 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>2800</precio>
-      <Terminado>false</Terminado>
+      <Terminado>true</Terminado>
     </Mantenimiento>
     <Mantenimiento>
+      <id>2</id>
       <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
+      <descripcion>Mantenimiento 2</descripcion>
+      <barcos xsi:type="BarcoRapido">
+        <nombre>barco1</nombre>
+        <cantidadPasajeros>12</cantidadPasajeros>
+        <cantidadTripulantes>10</cantidadTripulantes>
+        <velocidadMax>80</velocidadMax>
+      </barcos>
+      <nombreBarco>barco1</nombreBarco>
+      <tipobarco>Barco Rapido</tipobarco>
+      <TiposMantenimiento>
+        <codigo>2</codigo>
+        <precioBase>2000</precioBase>
+        <descripcion>Tipo mantenimiento 2</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>18349320</cedula>
+        <nombre>Ernesto Santos</nombre>
+        <correo>ernesto.santos@ejemplo.com</correo>
+        <cantidadPersonal>5</cantidadPersonal>
+      </encargados>
+      <precio>2800</precio>
+      <Terminado>true</Terminado>
+    </Mantenimiento>
+    <Mantenimiento>
+      <id>3</id>
+      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
+      <descripcion>Mantenimiento 3</descripcion>
       <barcos xsi:type="BarcoLento">
         <nombre>barco2</nombre>
         <cantidadPasajeros>18</cantidadPasajeros>
@@ -177,65 +113,10 @@
         <cantidadPersonal>5</cantidadPersonal>
       </encargados>
       <precio>2000</precio>
-      <Terminado>false</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
-      <barcos xsi:type="BarcoRapido">
-        <nombre>barco1</nombre>
-        <cantidadPasajeros>12</cantidadPasajeros>
-        <cantidadTripulantes>10</cantidadTripulantes>
-        <velocidadMax>80</velocidadMax>
-      </barcos>
-      <nombreBarco>barco1</nombreBarco>
-      <tipobarco>Barco Rapido</tipobarco>
-      <TiposMantenimiento>
-        <codigo>1</codigo>
-        <precioBase>12</precioBase>
-        <descripcion>aa</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>216</precio>
-      <Terminado>false</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>HOla</descripcion>
-      <barcos xsi:type="BarcoLento">
-        <nombre>barco2</nombre>
-        <cantidadPasajeros>18</cantidadPasajeros>
-        <cantidadTripulantes>10</cantidadTripulantes>
-        <cantidadVehiculos>8</cantidadVehiculos>
-      </barcos>
-      <nombreBarco>barco2</nombreBarco>
-      <tipobarco>Barco Lento</tipobarco>
-      <TiposMantenimiento>
-        <codigo>1</codigo>
-        <precioBase>12</precioBase>
-        <descripcion>aa</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>12</precio>
-      <Terminado>false</Terminado>
+      <Terminado>true</Terminado>
     </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
-    <Tipo_de_Mantenimiento>
-      <codigo>1</codigo>
-      <precioBase>12</precioBase>
-      <descripcion>aa</descripcion>
-    </Tipo_de_Mantenimiento>
     <Tipo_de_Mantenimiento>
       <codigo>2</codigo>
       <precioBase>2000</precioBase>

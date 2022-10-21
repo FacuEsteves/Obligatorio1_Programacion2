@@ -72,6 +72,7 @@ namespace Obligatorio_1_prog2
             //COMIENZO GUARDADO
             if (existe == false)
             {
+                m.id = Persistencia.idmantenimiento();
                 m.fechaMantenimiento = CalendarDate.SelectedDate;
                 m.descripcion = TxtDescripcion.Text;
 
@@ -149,26 +150,25 @@ namespace Obligatorio_1_prog2
         {
             //dar como terminado el mantenimeinto
 
-            String descripcion = e.Values["descripcion"].ToString();
+            String id = e.Values["id"].ToString();
+            int ide = Convert.ToInt32(id)-1;
 
-            for(int i=0; i< Global.transitoMaritimo.mantenimientos.Count; i++)
+            if (Global.transitoMaritimo.mantenimientos[ide].Terminado)
             {
-                if (true == Global.transitoMaritimo.mantenimientos[i].Terminado)
-                {
-                    LabelError.Text = "Este mantenimiento ya esta terminado";
-                    return;
-                }
-                else
-                {
-                    if (descripcion == Global.transitoMaritimo.mantenimientos[i].descripcion)
-                    {
-                        Global.transitoMaritimo.mantenimientos[i].Terminado = true;
-                        LabelError.Text = "Se registro el mantenimiento " + descripcion + " como terminado";
-                        break;
-                    }
-                }
-                
+                LabelError.Text = "Este mantenimiento ya esta terminado";
+                return;
             }
+
+            for (int i = 0; i < Global.transitoMaritimo.mantenimientos.Count; i++)
+            {
+                if (Convert.ToInt32(id) == Global.transitoMaritimo.mantenimientos[i].id)
+                {
+                            Global.transitoMaritimo.mantenimientos[i].Terminado = true;
+                            LabelError.Text = "Se registro el mantenimiento " + Global.transitoMaritimo.mantenimientos[i].id + " " + Global.transitoMaritimo.mantenimientos[i].descripcion + " como terminado";
+                            break;
+                }
+            }
+
             Persistencia.guardarDatos();
 
             GridMantenimientos.DataSource = Global.transitoMaritimo.mantenimientos;
