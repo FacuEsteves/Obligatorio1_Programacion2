@@ -16,6 +16,7 @@ namespace Obligatorio_1_prog2
 
         protected void btnIniciar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string message = "Hello! Mudassar.";
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             sb.Append("<script type = 'text/javascript'>");
@@ -25,6 +26,20 @@ namespace Obligatorio_1_prog2
             sb.Append("')};");
             sb.Append("</script>");
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+=======
+            for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
+            {
+                if(Global.transitoMaritimo.usuarios[i].nombreUsuario==txtUsuario.Text && Global.transitoMaritimo.usuarios[i].contraseña == txtUsuario.Text)
+                {
+                    LabelError.ForeColor = System.Drawing.Color.Blue;
+                    LabelError.Text = "Bienvenido";
+                }
+                else
+                {
+                    LabelError.Text = "Usuario o Contraseña Incorrecto";
+                }
+            }
+>>>>>>> Cambios
         }
     }
 }
