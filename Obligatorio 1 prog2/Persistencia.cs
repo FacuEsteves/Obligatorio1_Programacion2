@@ -89,6 +89,30 @@ namespace Obligatorio_1_prog2
 
             return id;
         }
+
+
+        public static void tipostripulantes()
+        {
+            
+            for(int i = 0; i < Global.transitoMaritimo.cargos.Count; i++)
+            {
+                cantidadTripulantesXtipo a = new cantidadTripulantesXtipo();
+                int cant = 0;
+                for (int index = 0; index < Global.transitoMaritimo.tripulantes.Count; index++)
+                {
+                    if (Global.transitoMaritimo.tripulantes[index].Cargo == Global.transitoMaritimo.cargos[i].nombreCargo)
+                    {
+                        cant++;
+                    }
+
+                }
+                a.Cargo = Global.transitoMaritimo.cargos[i].nombreCargo;
+                a.Cantidad = cant;
+                Global.transitoMaritimo.cantidadTripulantesXtipos.Add(a);
+            }
+
+
+        }
         /*public static string SplitMes(string Fecha)
         {
             string[] FechaDes = Fecha.Split('/');

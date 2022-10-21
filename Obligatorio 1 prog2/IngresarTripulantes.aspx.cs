@@ -21,6 +21,12 @@ namespace Obligatorio_1_prog2
                 DDCargo.DataValueField = "nombreCargo";
                 DDCargo.DataBind();
             }
+
+            TotalTripulantes.Text = Convert.ToString(Global.transitoMaritimo.tripulantes.Count);
+            Persistencia.tipostripulantes();
+
+            GridTipoTripulante.DataSource = Global.transitoMaritimo.cantidadTripulantesXtipos;
+            GridTipoTripulante.DataBind();
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
@@ -82,6 +88,7 @@ namespace Obligatorio_1_prog2
             //FIN GUARDADO
 
             Persistencia.guardarDatos();
+            Persistencia.tipostripulantes();
 
             //cargar grid 
             GridTripulantes.DataSource = Global.transitoMaritimo.tripulantes;
@@ -94,6 +101,7 @@ namespace Obligatorio_1_prog2
             TxtNombre.Text = "";
             TxtCorreo.Text = "";
             LabelError.Text = "";
+            TotalTripulantes.Text = Convert.ToString(Global.transitoMaritimo.tripulantes.Count);
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)

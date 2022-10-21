@@ -196,6 +196,7 @@
       <DependentUpon>BusquedaDeMantenimientos.aspx</DependentUpon>
     </Compile>
     <Compile Include="BusquedaMantenimiento.cs" />
+    <Compile Include="cantidadTripulantesXtipo.cs" />
     <Compile Include="Cargo.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

@@ -43,4 +43,18 @@
         <asp:GridView ID="GridTripulantes" runat="server">
         </asp:GridView>
     </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        Cantidad de tripulantes registrados :
+        <asp:Label ID="TotalTripulantes" runat="server"></asp:Label>
+    </p>
+    <p>
+        Cantidad por tipo:</p>
+    <p>
+        &nbsp;<asp:GridView ID="GridTipoTripulante" runat="server">
+        </asp:GridView>
+    </p>
+    <p>
+        &nbsp;</p>
 </asp:Content>
