@@ -33,6 +33,7 @@ namespace Obligatorio_1_prog2
         protected void Button1_Click(object sender, EventArgs e)
         {
             LabelError.Text = CBpermisos.SelectedValue;
+            Response.Redirect("About.aspx?nombre=" + txtNombre.Text);
         }
     }
 }

@@ -11,7 +11,11 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                Label.Text = Request.QueryString["nombre"].ToString();
+            }
+            
         }
     }
 }
