@@ -32,26 +32,75 @@ namespace Obligatorio_1_prog2
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            LabelError.Text = "";
-
+            if (txtNombre.Text == "")
+            {
+                LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
+            }
+            if (txtCedula.Text == "")
+            {
+                LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
+            }
+            if (txtContraseña.Text == "")
+            {
+                LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
+            }
+            if (txtID.Text == "")
+            {
+                LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
+            }
+            if (txtCorreo.Text == "")
+            {
+                LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
+            }
 
             Usuario us = new Usuario();
-            us.nombre = txtNombre.Text;
-            us.cedula = Convert.ToInt32(txtCedula.Text);
-            us.nombreUsuario = txtID.Text;
-            us.contraseña = txtContraseña.Text;
-            us.correo = txtCorreo.Text;
-            us.AsignarTripulacion=CheckBox1.Checked;
-            us.IngresarCargos=CheckBox2.Checked;
-            us.IngresarTripulantes=CheckBox3.Checked;
-            us.IngresarEncargados=CheckBox4.Checked;
-            us.IngresoMantenimiento=CheckBox5.Checked;
-            us.IngresoTipoMantenimiento = CheckBox6.Checked;
-            us.IngresoUsuarios = CheckBox7.Checked;
-            us.RegistroBarco = CheckBox8.Checked;
-            us.BusquedaMant = CheckBox9.Checked;
-            
-            Global.transitoMaritimo.usuarios.Add(us);
+
+            LabelError.Text = "";
+            bool existe = false;
+            for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
+            {
+                if (Global.transitoMaritimo.usuarios[i] != null)
+                {
+                    if (Global.transitoMaritimo.usuarios[i].cedula == Convert.ToInt32(txtCedula.Text))
+                    {
+                        LabelError.Text = "Ya se encuentra ingresado este usuario";
+                        us.nombre = txtNombre.Text;
+                        us.cedula = Convert.ToInt32(txtCedula.Text);
+                        us.nombreUsuario = txtID.Text;
+                        us.contraseña = txtContraseña.Text;
+                        us.correo = txtCorreo.Text;
+                        us.AsignarTripulacion = CheckBox1.Checked;
+                        us.IngresarCargos = CheckBox2.Checked;
+                        us.IngresarTripulantes = CheckBox3.Checked;
+                        us.IngresarEncargados = CheckBox4.Checked;
+                        us.IngresoMantenimiento = CheckBox5.Checked;
+                        us.IngresoTipoMantenimiento = CheckBox6.Checked;
+                        us.IngresoUsuarios = CheckBox7.Checked;
+                        us.RegistroBarco = CheckBox8.Checked;
+                        us.BusquedaMant = CheckBox9.Checked;
+                        existe = true;
+                        break;
+                    }
+                    if (existe == false)
+                    {
+                        us.nombre = txtNombre.Text;
+                        us.cedula = Convert.ToInt32(txtCedula.Text);
+                        us.nombreUsuario = txtID.Text;
+                        us.contraseña = txtContraseña.Text;
+                        us.correo = txtCorreo.Text;
+                        us.AsignarTripulacion = CheckBox1.Checked;
+                        us.IngresarCargos = CheckBox2.Checked;
+                        us.IngresarTripulantes = CheckBox3.Checked;
+                        us.IngresarEncargados = CheckBox4.Checked;
+                        us.IngresoMantenimiento = CheckBox5.Checked;
+                        us.IngresoTipoMantenimiento = CheckBox6.Checked;
+                        us.IngresoUsuarios = CheckBox7.Checked;
+                        us.RegistroBarco = CheckBox8.Checked;
+                        us.BusquedaMant = CheckBox9.Checked;
+                        Global.transitoMaritimo.usuarios.Add(us);
+                    }
+                }
+            } 
             GridUsuario.DataBind();
         }
 
@@ -64,10 +113,10 @@ namespace Obligatorio_1_prog2
             }
             for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
             {
-                if (txtID.Text == Global.transitoMaritimo.usuarios[i].nombreUsuario)
+                if (txtCedula.Text == Convert.ToString(Global.transitoMaritimo.usuarios[i].cedula))
                 {
                     txtNombre.Text = Global.transitoMaritimo.usuarios[i].nombre;
-                    txtCedula.Text = Convert.ToString(Global.transitoMaritimo.usuarios[i].cedula);
+                    txtID.Text = Global.transitoMaritimo.usuarios[i].nombreUsuario;
                     txtContraseña.Text= Global.transitoMaritimo.usuarios[i].contraseña;
                     txtCorreo.Text= Global.transitoMaritimo.usuarios[i].correo;
                     CheckBox1.Checked= Global.transitoMaritimo.usuarios[i].AsignarTripulacion;
