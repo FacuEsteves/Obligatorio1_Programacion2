@@ -6,6 +6,8 @@ using System.Web;
 using System.Xml.Serialization;
 using System.IO;
 using System.Web.Services.Description;
+using System.Web.UI.HtmlControls;
+using Microsoft.Ajax.Utilities;
 
 namespace Obligatorio_1_prog2
 {
@@ -110,20 +112,19 @@ namespace Obligatorio_1_prog2
                 a.Cantidad = cant;
                 Global.transitoMaritimo.cantidadTripulantesXtipos.Add(a);
             }
-
-
         }
-        /*public static string SplitMes(string Fecha)
-        {
-            string[] FechaDes = Fecha.Split('/');
-            string Mes = FechaDes[1];
-            return Mes;
-        }
-        public static string SplitAño(string Fecha)
-        {
-            string[] FechaDes = Fecha.Split('/');
-            string Año = FechaDes[2];
-            return Año;
-        }*/
     }
 }
+
+/*public static string SplitMes(string Fecha)
+{
+    string[] FechaDes = Fecha.Split('/');
+    string Mes = FechaDes[1];
+    return Mes;
+}
+public static string SplitAño(string Fecha)
+{
+    string[] FechaDes = Fecha.Split('/');
+    string Año = FechaDes[2];
+    return Año;
+}*/

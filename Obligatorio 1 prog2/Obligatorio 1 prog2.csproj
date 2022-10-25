@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Asignar Tripulacion.aspx" />
+    <Content Include="Bienvenido.aspx" />
     <Content Include="BusquedaDeMantenimientos.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -188,6 +189,13 @@
     <Compile Include="Barco.cs" />
     <Compile Include="BarcoLento.cs" />
     <Compile Include="BarcoRapido.cs" />
+    <Compile Include="Bienvenido.aspx.cs">
+      <DependentUpon>Bienvenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bienvenido.aspx.designer.cs">
+      <DependentUpon>Bienvenido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BusquedaDeMantenimientos.aspx.cs">
       <DependentUpon>BusquedaDeMantenimientos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
