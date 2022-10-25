@@ -41,6 +41,12 @@ namespace Obligatorio_1_prog2
         {
             //Errores
 
+            if (DDMes.SelectedIndex == 0)
+            {
+                LabelError.Text = "Datos faltantes para realizar la busqueda";
+                return;
+            }
+
             if (txtAño.Text == "")
             {
                 LabelError.Text = "Datos faltantes para realizar la busqueda";

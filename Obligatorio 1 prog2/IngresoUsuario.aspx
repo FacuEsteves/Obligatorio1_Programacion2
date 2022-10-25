@@ -33,8 +33,6 @@
     <p>
         Permisos:</p>
     <p>
-        Asignar Tripulacón:<asp:CheckBox ID="CheckBox1" runat="server" />
-    </p>
     <p>
         Ingresar Cargos:<asp:CheckBox ID="CheckBox2" runat="server" />
 </p>
@@ -64,7 +62,6 @@
         &nbsp;</p>
     <p>
         <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" />
-        <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
     </p>
     <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="#FF3300"></asp:Label>
