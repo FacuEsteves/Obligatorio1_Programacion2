@@ -64,7 +64,7 @@
         &nbsp;</p>
     <p>
         <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
     </p>
     <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="#FF3300"></asp:Label>

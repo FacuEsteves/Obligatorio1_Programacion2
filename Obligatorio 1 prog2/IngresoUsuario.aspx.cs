@@ -55,8 +55,33 @@ namespace Obligatorio_1_prog2
             GridUsuario.DataBind();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnBuscar_Click(object sender, EventArgs e)
         {
+            if (txtID.Text == "")
+            {
+                LabelError.Text = "Ingrese Nombre de Usuario Para Buscar";
+                return;
+            }
+            for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
+            {
+                if (txtID.Text == Global.transitoMaritimo.usuarios[i].nombreUsuario)
+                {
+                    txtNombre.Text = Global.transitoMaritimo.usuarios[i].nombre;
+                    txtCedula.Text = Convert.ToString(Global.transitoMaritimo.usuarios[i].cedula);
+                    txtContraseña.Text= Global.transitoMaritimo.usuarios[i].contraseña;
+                    txtCorreo.Text= Global.transitoMaritimo.usuarios[i].correo;
+                    CheckBox1.Checked= Global.transitoMaritimo.usuarios[i].AsignarTripulacion;
+                    CheckBox2.Checked= Global.transitoMaritimo.usuarios[i].IngresarCargos;
+                    CheckBox3.Checked= Global.transitoMaritimo.usuarios[i].IngresarTripulantes;
+                    CheckBox4.Checked= Global.transitoMaritimo.usuarios[i].IngresarEncargados;
+                    CheckBox5.Checked= Global.transitoMaritimo.usuarios[i].IngresoMantenimiento;
+                    CheckBox6.Checked= Global.transitoMaritimo.usuarios[i].IngresoTipoMantenimiento;
+                    CheckBox7.Checked= Global.transitoMaritimo.usuarios[i].IngresoUsuarios;
+                    CheckBox8.Checked= Global.transitoMaritimo.usuarios[i].RegistroBarco;
+                    CheckBox9.Checked= Global.transitoMaritimo.usuarios[i].BusquedaMant;
+
+                }
+            }
         }
     }
 }
