@@ -15,7 +15,7 @@ namespace Obligatorio_1_prog2
 
         public static void guardarDatos()
         {
-            XmlSerializer writer = new XmlSerializer(typeof(TransitoMaritimo), new Type[] { typeof(BarcoLento), typeof(BarcoRapido), typeof(Cargo), typeof(Encargado), typeof(Mantenimiento), typeof(Registro), typeof(Tipo_de_Mantenimiento), typeof(Tripulante), typeof(Usuario) });
+            XmlSerializer writer = new XmlSerializer(typeof(TransitoMaritimo), new Type[] { typeof(BarcoLento), typeof(BarcoRapido), typeof(Cargo), typeof(Encargado), typeof(Mantenimiento), typeof(RegistroAcceso), typeof(RegistroEgreso), typeof(RegistroCambio), typeof(Tipo_de_Mantenimiento), typeof(Tripulante), typeof(Usuario) });
 
             System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo);
             writer.Serialize(file, Global.transitoMaritimo);
@@ -28,7 +28,7 @@ namespace Obligatorio_1_prog2
 
             if (File.Exists(rutaArchivo))
             {
-                XmlSerializer reader = new XmlSerializer(typeof(TransitoMaritimo), new Type[] { typeof(BarcoLento), typeof(BarcoRapido), typeof(Cargo), typeof(Encargado), typeof(Mantenimiento), typeof(Registro), typeof(Tipo_de_Mantenimiento), typeof(Tripulante), typeof(Usuario) });
+                XmlSerializer reader = new XmlSerializer(typeof(TransitoMaritimo), new Type[] { typeof(BarcoLento), typeof(BarcoRapido), typeof(Cargo), typeof(Encargado), typeof(Mantenimiento), typeof(RegistroAcceso), typeof(RegistroEgreso), typeof(RegistroCambio), typeof(Tipo_de_Mantenimiento), typeof(Tripulante), typeof(Usuario) });
 
                 System.IO.StreamReader file = new System.IO.StreamReader(rutaArchivo);
                 Global.transitoMaritimo = (TransitoMaritimo)reader.Deserialize(file);
@@ -112,6 +112,157 @@ namespace Obligatorio_1_prog2
             }
 
 
+        }
+
+        public static void RegistroAcceso (String Usuario)
+        {
+            RegistroAcceso a = new RegistroAcceso();
+            a.usuarios = Usuario;
+            a.fechaAcceso = DateTime.Now;
+            Global.transitoMaritimo.registrosA.Add(a);
+
+            Persistencia.guardarDatos();
+        }
+        public static void RegistroEgreso (String Usuario)
+        {
+            RegistroEgreso eg = new RegistroEgreso();
+            eg.usuarios = Usuario;
+            eg.fechaEgreso = DateTime.Now;
+            Global.transitoMaritimo.registrosE.Add(eg);
+
+            Persistencia.guardarDatos();
+        }
+        public static void RegistroCambio (String Usuario, String Descripcion)
+        {
+            RegistroCambio c = new RegistroCambio();
+            c.usuarios = Usuario;
+            c.fechaCambio = DateTime.Now;
+            c.descripcion = Descripcion;
+            Global.transitoMaritimo.registrosC.Add(c);
+
+            Persistencia.guardarDatos();
+        }
+
+        public static List<RegistroAcceso> FiltroAcceso(DateTime fecha, String Usuario)
+        {
+            List<RegistroAcceso> lista = new List<RegistroAcceso>();
+
+            if (fecha != null && Usuario == "(Seleccionar)")//null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
+                {
+                    if(fecha == Global.transitoMaritimo.registrosA[i].fechaAcceso)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosA[i]);
+                    }
+                }
+            }
+            else if(fecha == null && Usuario != "(Seleccionar)")//null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
+                {
+                    if (Usuario == Global.transitoMaritimo.registrosA[i].usuarios)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosA[i]);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
+                {
+                    if (fecha == Global.transitoMaritimo.registrosA[i].fechaAcceso && Usuario == Global.transitoMaritimo.registrosA[i].usuarios)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosA[i]);
+                    }
+                }
+            }
+
+            return lista;
+        }
+        public static List<RegistroEgreso> FiltroEgreso(DateTime fecha, String Usuario)
+        {
+            List<RegistroEgreso> lista = new List<RegistroEgreso>();
+
+            if (fecha != null && Usuario == "(Seleccionar)")//null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
+                {
+                    if (fecha == Global.transitoMaritimo.registrosE[i].fechaEgreso)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosE[i]);
+                    }
+                }
+            }
+            else if (fecha == null && Usuario != "(Seleccionar)")//null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
+                {
+                    if (Usuario == Global.transitoMaritimo.registrosE[i].usuarios)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosE[i]);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
+                {
+                    if (fecha == Global.transitoMaritimo.registrosE[i].fechaEgreso && Usuario == Global.transitoMaritimo.registrosE[i].usuarios)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosE[i]);
+                    }
+                }
+            }
+
+            return lista;
+        }
+        public static List<RegistroCambio> FiltroCambios(DateTime fecha, String Usuario, String Descripcion)
+        {
+            List<RegistroCambio> lista = new List<RegistroCambio>();
+
+            if (fecha != null && Usuario == "(Seleccionar)" && Descripcion == null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
+                {
+                    if (fecha == Global.transitoMaritimo.registrosC[i].fechaCambio)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosC[i]);
+                    }
+                }
+            }
+            else if (fecha == null && Usuario != "(Seleccionar)" && Descripcion == null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
+                {
+                    if (Usuario == Global.transitoMaritimo.registrosC[i].usuarios)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosC[i]);
+                    }
+                }
+            }
+            else if (fecha == null && Usuario == "(Seleccionar)" && Descripcion != null)
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
+                {
+                    if (Descripcion == Global.transitoMaritimo.registrosC[i].descripcion)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosC[i]);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
+                {
+                    if (fecha == Global.transitoMaritimo.registrosC[i].fechaCambio && Usuario == Global.transitoMaritimo.registrosC[i].usuarios && Descripcion == Global.transitoMaritimo.registrosC[i].descripcion)
+                    {
+                        lista.Add(Global.transitoMaritimo.registrosC[i]);
+                    }
+                }
+            }
+
+            return lista;
         }
         /*public static string SplitMes(string Fecha)
         {

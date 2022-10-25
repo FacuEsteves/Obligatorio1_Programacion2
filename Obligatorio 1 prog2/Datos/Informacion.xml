@@ -130,6 +130,14 @@
       <correo>1</correo>
       <nombreUsuario>1</nombreUsuario>
       <contraseña>12345</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>false</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
     </Usuario>
   </usuarios>
   <tripulantes>
@@ -156,4 +164,57 @@
       <cantidadPersonal>5</cantidadPersonal>
     </Encargado>
   </encargados>
+  <cantidadTripulantesXtipos />
+  <registrosA>
+    <RegistroAcceso>
+      <usuarios>facundo</usuarios>
+      <fechaAcceso>2022-10-24T20:39:39.4462279-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Juan</usuarios>
+      <fechaAcceso>2022-10-24T20:45:14.7456737-03:00</fechaAcceso>
+    </RegistroAcceso>
+  </registrosA>
+  <registrosE>
+    <RegistroEgreso>
+      <usuarios>facundo</usuarios>
+      <fechaEgreso>2022-10-24T20:39:41.2695522-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>Juan</usuarios>
+      <fechaEgreso>2022-10-24T20:45:18.4614263-03:00</fechaEgreso>
+    </RegistroEgreso>
+  </registrosE>
+  <registrosC>
+    <RegistroCambio>
+      <usuarios>facundo</usuarios>
+      <fechaCambio>2022-10-24T20:39:42.5913464-03:00</fechaCambio>
+      <descripcion>Ingreso de barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>facundo</usuarios>
+      <fechaCambio>2022-10-24T20:39:47.2053601-03:00</fechaCambio>
+      <descripcion>Ingreso de barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>facundo</usuarios>
+      <fechaCambio>2022-10-24T20:40:12.2224702-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>facundo</usuarios>
+      <fechaCambio>2022-10-24T20:40:18.6533945-03:00</fechaCambio>
+      <descripcion>Ingreso usuario</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>facundo</usuarios>
+      <fechaCambio>2022-10-24T20:40:27.6340223-03:00</fechaCambio>
+      <descripcion>Ingreso usuario</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Juan</usuarios>
+      <fechaCambio>2022-10-24T20:45:20.7402966-03:00</fechaCambio>
+      <descripcion>Ingreso tripulantes</descripcion>
+    </RegistroCambio>
+  </registrosC>
 </TransitoMaritimo>

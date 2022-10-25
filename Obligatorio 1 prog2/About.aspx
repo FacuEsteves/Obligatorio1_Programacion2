@@ -6,6 +6,5 @@
     <p>Use this area to provide additional information.</p>
     <p>&nbsp;</p>
     <p>
-        <asp:Label ID="Label" runat="server"></asp:Label>
-    </p>
+        &nbsp;</p>
 </asp:Content>

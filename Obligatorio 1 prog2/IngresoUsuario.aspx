@@ -33,22 +33,11 @@
     <p>
         Permisos:</p>
     <p>
-        <asp:CheckBoxList ID="CBpermisos" runat="server">
-            <asp:ListItem Value="AsignarTripulación">Asignar Tripulación</asp:ListItem>
-            <asp:ListItem Value="Busqueda de mantenimientos">Busqueda de mantenimientos</asp:ListItem>
-            <asp:ListItem>Ingresar cargos</asp:ListItem>
-            <asp:ListItem>Ingresar Tripulantes</asp:ListItem>
-            <asp:ListItem>Ingresar Encargados</asp:ListItem>
-            <asp:ListItem>Ingresar Mantenimientos</asp:ListItem>
-            <asp:ListItem>Ingresar Usuarios</asp:ListItem>
-            <asp:ListItem>Registro Barco</asp:ListItem>
-        </asp:CheckBoxList>
-    </p>
+        &nbsp;</p>
     <p>
         &nbsp;</p>
     <p>
         <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     </p>
     <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="#FF3300"></asp:Label>

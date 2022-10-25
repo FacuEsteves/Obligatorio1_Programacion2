@@ -19,6 +19,7 @@
     <p>
         Mes:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DDMes" runat="server">
+            <asp:ListItem>(Seleccionar)</asp:ListItem>
             <asp:ListItem Value="01">Enero</asp:ListItem>
             <asp:ListItem Value="02">Febrero</asp:ListItem>
             <asp:ListItem Value="03">Marzo</asp:ListItem>
