@@ -136,6 +136,121 @@
       <IngresarTripulantes>false</IngresarTripulantes>
       <IngresarEncargados>false</IngresarEncargados>
       <IngresoMantenimiento>false</IngresoMantenimiento>
+
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>1</cedula>
+      <nombre>Roberto</nombre>
+      <correo>1</correo>
+      <nombreUsuario>1</nombreUsuario>
+      <contraseña>12345</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>false</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>1</cedula>
+      <nombre>Roberto</nombre>
+      <correo>1</correo>
+      <nombreUsuario>1</nombreUsuario>
+      <contraseña>12345</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>false</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>11111</cedula>
+      <nombre>Federico Barboza</nombre>
+      <correo>fedefedefede</correo>
+      <nombreUsuario>BarbozaF</nombreUsuario>
+      <contraseña>1234567</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>false</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>11111</cedula>
+      <nombre>Roberto</nombre>
+      <correo>1</correo>
+      <nombreUsuario>Google</nombreUsuario>
+      <contraseña>12345</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>false</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>1</cedula>
+      <nombre>Jose</nombre>
+      <correo>JoseMujica</correo>
+      <nombreUsuario>Mujica</nombreUsuario>
+      <contraseña>54321</contraseña>
+      <AsignarTripulacion>true</AsignarTripulacion>
+      <BusquedaMant>true</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>true</IngresarTripulantes>
+      <IngresarEncargados>true</IngresarEncargados>
+      <IngresoMantenimiento>true</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>true</IngresoTipoMantenimiento>
+      <IngresoUsuarios>true</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>1</cedula>
+      <nombre>Administrador</nombre>
+      <correo>1</correo>
+      <nombreUsuario>Admin</nombreUsuario>
+      <contraseña>12345</contraseña>
+      <AsignarTripulacion>true</AsignarTripulacion>
+      <BusquedaMant>true</BusquedaMant>
+      <IngresarCargos>true</IngresarCargos>
+      <IngresarTripulantes>true</IngresarTripulantes>
+      <IngresarEncargados>true</IngresarEncargados>
+      <IngresoMantenimiento>true</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>true</IngresoTipoMantenimiento>
+      <IngresoUsuarios>true</IngresoUsuarios>
+      <RegistroBarco>true</RegistroBarco>
+    </Usuario>
+    <Usuario>
+      <cedula>2</cedula>
+      <nombre>Maria</nombre>
+      <correo>2</correo>
+      <nombreUsuario>Maria</nombreUsuario>
+      <contraseña>1</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>true</BusquedaMant>
+      <IngresarCargos>false</IngresarCargos>
+      <IngresarTripulantes>false</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+
       <IngresoUsuarios>false</IngresoUsuarios>
       <RegistroBarco>false</RegistroBarco>
     </Usuario>
@@ -164,6 +279,7 @@
       <cantidadPersonal>5</cantidadPersonal>
     </Encargado>
   </encargados>
+
   <cantidadTripulantesXtipos />
   <registrosA>
     <RegistroAcceso>
@@ -217,4 +333,57 @@
       <descripcion>Ingreso tripulantes</descripcion>
     </RegistroCambio>
   </registrosC>
+
+  <cantidadTripulantesXtipos>
+    <cantidadTripulantesXtipo>
+      <Cargo>Capitán</Cargo>
+      <Cantidad>1</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Oficial de cubierta</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Piloto</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Comisario de a bordo</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Jefe de maquinas</Cargo>
+      <Cantidad>1</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Servicios</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Capitán</Cargo>
+      <Cantidad>1</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Oficial de cubierta</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Piloto</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Comisario de a bordo</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Jefe de maquinas</Cargo>
+      <Cantidad>1</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Servicios</Cargo>
+      <Cantidad>0</Cantidad>
+    </cantidadTripulantesXtipo>
+  </cantidadTripulantesXtipos>
+  <idUsuario />
+
 </TransitoMaritimo>

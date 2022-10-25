@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace Obligatorio_1_prog2
 {
@@ -11,7 +12,21 @@ namespace Obligatorio_1_prog2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Global.transitoMaritimo.idUsuario = null;
 
+            if (Global.transitoMaritimo.idUsuario == null)
+            {
+                this.Master.FindControl("Asignar_Tripulacion").Visible = false;
+                this.Master.FindControl("RegistroBarco").Visible = false;
+                this.Master.FindControl("IngresoCargos").Visible = false;
+                this.Master.FindControl("IngresarTripulantes").Visible = false;
+                this.Master.FindControl("IngresoEncargados").Visible = false;
+                this.Master.FindControl("IngresoMantenimiento").Visible = false;
+                this.Master.FindControl("IngresoUsuario").Visible = false;
+                this.Master.FindControl("IngresoTipoMantenimiento").Visible = false;
+                this.Master.FindControl("BusquedaDeMantenimientos").Visible = false;
+                this.Master.FindControl("Cerrar").Visible = false;
+            }
         }
 
         protected void btnIniciar_Click(object sender, EventArgs e)
@@ -37,16 +52,17 @@ namespace Obligatorio_1_prog2
             }
             if (txtContraseña.Text == "")
             {
-                LabelError.Text = "Ingrese el contraseña";
+                LabelError.Text = "Ingrese la contraseña";
                 return;
             }
 
             for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
             {
-                if(Global.transitoMaritimo.usuarios[i].nombreUsuario==txtUsuario.Text && Global.transitoMaritimo.usuarios[i].contraseña == txtUsuario.Text)
+                if(Global.transitoMaritimo.usuarios[i].nombreUsuario==txtUsuario.Text && Global.transitoMaritimo.usuarios[i].contraseña == txtContraseña.Text)
                 {
-                    LabelError.ForeColor = System.Drawing.Color.Blue;
-                    LabelError.Text = "Bienvenido";
+                    Global.transitoMaritimo.idUsuario = Global.transitoMaritimo.usuarios[i].nombreUsuario;
+                    Server.Transfer("Bienvenido.aspx");
+                    txtUsuario.Text = "";
                 }
                 else
                 {

@@ -16,6 +16,7 @@ namespace Obligatorio_1_prog2
         public Boolean IngresarTripulantes { get; set; }
         public Boolean IngresarEncargados { get; set; }
         public Boolean IngresoMantenimiento { get; set; }
+        public Boolean IngresoTipoMantenimiento { get; set; }
         public Boolean IngresoUsuarios { get; set; }
         public Boolean RegistroBarco { get; set; }
     }

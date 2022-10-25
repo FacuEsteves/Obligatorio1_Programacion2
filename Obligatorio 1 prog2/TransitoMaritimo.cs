@@ -19,5 +19,8 @@ namespace Obligatorio_1_prog2
         public List<RegistroAcceso> registrosA = new List<RegistroAcceso>();
         public List<RegistroEgreso> registrosE = new List<RegistroEgreso>();
         public List<RegistroCambio> registrosC = new List<RegistroCambio>();
+        public string idUsuario;
+
+
     }
 }

@@ -33,8 +33,32 @@
     <p>
         Permisos:</p>
     <p>
-        &nbsp;</p>
     <p>
+        Ingresar Cargos:<asp:CheckBox ID="CheckBox2" runat="server" />
+</p>
+<p>
+        Ingresar Tripulantes:<asp:CheckBox ID="CheckBox3" runat="server" />
+</p>
+<p>
+        Ingresar Encargados:<asp:CheckBox ID="CheckBox4" runat="server" />
+</p>
+<p>
+        Ingresar Mantenimiento:
+        <asp:CheckBox ID="CheckBox5" runat="server" />
+</p>
+<p>
+        Ingresar Tipo de Mantenimiento:<asp:CheckBox ID="CheckBox6" runat="server" />
+</p>
+<p>
+        Ingreso Usuario:<asp:CheckBox ID="CheckBox7" runat="server" />
+</p>
+<p>
+        Registro Barcos:<asp:CheckBox ID="CheckBox8" runat="server" />
+</p>
+<p>
+        Historial Mantenimientos:<asp:CheckBox ID="CheckBox9" runat="server" />
+</p>
+<p>
         &nbsp;</p>
     <p>
         <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" />
@@ -43,7 +67,10 @@
         <asp:Label ID="LabelError" runat="server" ForeColor="#FF3300"></asp:Label>
     </p>
     <p>
-        <asp:GridView ID="GridUsuario" runat="server">
+        <asp:GridView ID="GridUsuario" runat="server" AutoGenerateColumns="False" Width="200px">
+            <Columns>
+                <asp:BoundField DataField="nombreUsuario" HeaderText="Usuario" />
+            </Columns>
         </asp:GridView>
     </p>
     <p>
