@@ -104,6 +104,7 @@ namespace Obligatorio_1_prog2
             }
             //FIN GUARDADO
 
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Ingreso tripulantes");
             Persistencia.guardarDatos();
             Persistencia.tipostripulantes();
 

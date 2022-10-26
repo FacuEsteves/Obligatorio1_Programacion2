@@ -278,6 +278,22 @@
       <IngresoUsuarios>false</IngresoUsuarios>
       <RegistroBarco>false</RegistroBarco>
     </Usuario>
+    <Usuario>
+      <cedula>52845890</cedula>
+      <nombre>Facundo Esteves</nombre>
+      <correo>facundoesteves23@gmail.com</correo>
+      <nombreUsuario>facundoes</nombreUsuario>
+      <contraseña>5890</contraseña>
+      <AsignarTripulacion>false</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
+      <IngresarCargos>true</IngresarCargos>
+      <IngresarTripulantes>true</IngresarTripulantes>
+      <IngresarEncargados>true</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+    </Usuario>
   </usuarios>
   <tripulantes>
     <Tripulante>
@@ -375,6 +391,12 @@
       <fechaEgreso>2022-10-25T22:29:29.2562206-03:00</fechaEgreso>
     </RegistroEgreso>
   </registrosE>
-  <registrosC />
+  <registrosC>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-25T22:47:28.1410665-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+  </registrosC>
   <idUsuario>Admin</idUsuario>
 </TransitoMaritimo>

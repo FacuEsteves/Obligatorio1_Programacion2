@@ -86,7 +86,7 @@ namespace Obligatorio_1_prog2
                 Global.transitoMaritimo.tiposMantenimiento.Add(tm);
             }
             //FIN GUARDADO
-
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Ingreso tipo mantenimiento");
             Persistencia.guardarDatos();
 
             //cargar grid 

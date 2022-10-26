@@ -35,6 +35,9 @@
     <p>
         Asignar Tripulación:<asp:CheckBox ID="CheckBox1" runat="server" />
     <p>
+        Asignar Tripulantes:&nbsp;
+        <asp:CheckBox ID="CheckBox1" runat="server" />
+    <p>
         Ingresar Cargos:<asp:CheckBox ID="CheckBox2" runat="server" />
 </p>
 <p>

@@ -9,20 +9,6 @@
     <p>
         &nbsp;</p>
     <p>
-        &nbsp;<br />
-    </p>
-    <p>
-        usuario:<asp:TextBox ID="usua" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        descripcion cambios:<asp:TextBox ID="descripcion" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        <asp:Button ID="BtnEntrar" runat="server" Text="entrar" OnClick="BtnEntrar_Click" />
-        <asp:Button ID="BtnSalir" runat="server" Text="Salir" OnClick="BtnSalir_Click" />
-        <asp:Button ID="BtnCambio" runat="server" Text="Cambio" OnClick="BtnCambio_Click" />
-    </p>
-    <p>
         Fecha:
         <asp:Calendar ID="FechaFiltro" runat="server"></asp:Calendar>
 &nbsp;Usuario:

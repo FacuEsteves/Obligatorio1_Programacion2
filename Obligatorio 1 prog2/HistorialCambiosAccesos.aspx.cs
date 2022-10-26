@@ -49,34 +49,13 @@ namespace Obligatorio_1_prog2
             }
         }
 
-        protected void BtnEntrar_Click(object sender, EventArgs e)
-        {
-            Persistencia.RegistroAcceso(usua.Text);
-            GridAccesos.DataSource = Global.transitoMaritimo.registrosA;
-            GridAccesos.DataBind();
-        }
-
-        protected void BtnSalir_Click(object sender, EventArgs e)
-        {
-            Persistencia.RegistroEgreso(usua.Text);
-            GridEgresos.DataSource = Global.transitoMaritimo.registrosE;
-            GridEgresos.DataBind();
-        }
-
-        protected void BtnCambio_Click(object sender, EventArgs e)
-        {
-            Persistencia.RegistroCambio(usua.Text, descripcion.Text);
-
-            GridCambios.DataSource = Global.transitoMaritimo.registrosC;
-            GridCambios.DataBind();
-        }
 
         protected void BtnBuscar_Click(object sender, EventArgs e)
         {
-            /*
+            
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
             //ERRORES
-            
+            /*
             if (FechaFiltro.SelectedDate == fechanull || DD_Usuarios.SelectedIndex == -1 || DD_Cambios.SelectedIndex == 0)
             {
                 Label1.Text = "ELIJA UNA OPCION DE FILTRADO";

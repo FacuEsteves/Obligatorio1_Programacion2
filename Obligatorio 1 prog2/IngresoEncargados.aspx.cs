@@ -94,7 +94,7 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = "Se guardó con exito";
             }
             //FIN GUARDADO
-
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Ingreso encargados");
             Persistencia.guardarDatos();
 
             //cargar grid 

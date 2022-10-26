@@ -15,51 +15,6 @@ namespace Obligatorio_1_prog2
     {
 
         /// <summary>
-        /// Control usua.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usua;
-
-        /// <summary>
-        /// Control descripcion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descripcion;
-
-        /// <summary>
-        /// Control BtnEntrar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEntrar;
-
-        /// <summary>
-        /// Control BtnSalir.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSalir;
-
-        /// <summary>
-        /// Control BtnCambio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCambio;
-
-        /// <summary>
         /// Control FechaFiltro.
         /// </summary>
         /// <remarks>
