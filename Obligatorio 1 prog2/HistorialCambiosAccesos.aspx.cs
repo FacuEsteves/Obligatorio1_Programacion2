@@ -16,7 +16,7 @@ namespace Obligatorio_1_prog2
      
                 DD_Usuarios.DataSource = Global.transitoMaritimo.usuarios;
                 DD_Usuarios.DataTextField = "nombre";
-                DD_Usuarios.DataValueField = "nombre";
+                DD_Usuarios.DataValueField = "nombreUsuario";
                 DD_Usuarios.DataBind();
                 
                 DD_Usuarios.SelectedIndex = -1;
