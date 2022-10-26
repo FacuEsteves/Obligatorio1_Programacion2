@@ -2,15 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         &nbsp;</p>
-    <p>
+<p>
         &nbsp;</p>
-    <p>
+<p>
         &nbsp;</p>
-    <p>
+<p>
         &nbsp;</p>
-    <p>
+<p>
         &nbsp;</p>
-    <p>
+<p>
         Cedula :
         <asp:TextBox ID="TxtCedula" runat="server"></asp:TextBox>
     </p>

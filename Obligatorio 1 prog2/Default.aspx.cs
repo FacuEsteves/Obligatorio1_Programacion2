@@ -25,6 +25,7 @@ namespace Obligatorio_1_prog2
                 this.Master.FindControl("IngresoUsuario").Visible = false;
                 this.Master.FindControl("IngresoTipoMantenimiento").Visible = false;
                 this.Master.FindControl("BusquedaDeMantenimientos").Visible = false;
+                this.Master.FindControl("HistorialCambiosAccesos").Visible = false;
                 this.Master.FindControl("Cerrar").Visible = false;
             }
         }

@@ -19,5 +19,6 @@ namespace Obligatorio_1_prog2
         public Boolean IngresoTipoMantenimiento { get; set; }
         public Boolean IngresoUsuarios { get; set; }
         public Boolean RegistroBarco { get; set; }
+        public Boolean Historial { get; set; }
     }
 }

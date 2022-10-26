@@ -24,6 +24,7 @@ namespace Obligatorio_1_prog2
                     this.Master.FindControl("IngresoUsuario").Visible = Global.transitoMaritimo.usuarios[i].IngresoUsuarios;
                     this.Master.FindControl("RegistroBarco").Visible = Global.transitoMaritimo.usuarios[i].RegistroBarco;
                     this.Master.FindControl("BusquedaDeMantenimientos").Visible = Global.transitoMaritimo.usuarios[i].BusquedaMant;
+                    this.Master.FindControl("HistorialCambiosAccesos").Visible = Global.transitoMaritimo.usuarios[i].Historial;
                 }
             }
 
@@ -79,6 +80,7 @@ namespace Obligatorio_1_prog2
                         us.IngresoUsuarios = CheckBox7.Checked;
                         us.RegistroBarco = CheckBox8.Checked;
                         us.BusquedaMant = CheckBox9.Checked;
+                        us.Historial = CheckBox10.Checked;
                         existe = true;
                         break;
                     }
@@ -98,6 +100,7 @@ namespace Obligatorio_1_prog2
                         us.IngresoUsuarios = CheckBox7.Checked;
                         us.RegistroBarco = CheckBox8.Checked;
                         us.BusquedaMant = CheckBox9.Checked;
+                        us.Historial = CheckBox10.Checked;
                         Global.transitoMaritimo.usuarios.Add(us);
                     }
                 }
@@ -130,6 +133,7 @@ namespace Obligatorio_1_prog2
                     CheckBox7.Checked= Global.transitoMaritimo.usuarios[i].IngresoUsuarios;
                     CheckBox8.Checked= Global.transitoMaritimo.usuarios[i].RegistroBarco;
                     CheckBox9.Checked= Global.transitoMaritimo.usuarios[i].BusquedaMant;
+                    CheckBox10.Checked = Global.transitoMaritimo.usuarios[i].Historial;
 
                 }
             }

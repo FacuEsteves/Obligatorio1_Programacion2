@@ -33,6 +33,7 @@
     <p>
         Permisos:</p>
     <p>
+        Asignar Tripulación:<asp:CheckBox ID="CheckBox1" runat="server" />
     <p>
         Ingresar Cargos:<asp:CheckBox ID="CheckBox2" runat="server" />
 </p>
@@ -59,6 +60,9 @@
         Historial Mantenimientos:<asp:CheckBox ID="CheckBox9" runat="server" />
 </p>
 <p>
+        Historial Cambios:<asp:CheckBox ID="CheckBox10" runat="server" />
+    </p>
+    <p>
         &nbsp;</p>
     <p>
         <asp:Button ID="btnGuardar" runat="server" OnClick="btnGuardar_Click" Text="Guardar" />
