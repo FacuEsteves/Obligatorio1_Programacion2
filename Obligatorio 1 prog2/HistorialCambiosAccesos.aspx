@@ -25,6 +25,13 @@
             <asp:ListItem>Ingreso tipo mantenimiento</asp:ListItem>
             <asp:ListItem>Ingreso usuarios</asp:ListItem>
             <asp:ListItem>Registro barco</asp:ListItem>
+            <asp:ListItem>Borrar asignado</asp:ListItem>
+            <asp:ListItem>Borrar cargo</asp:ListItem>
+            <asp:ListItem>Borrar tripulantes</asp:ListItem>
+            <asp:ListItem>Borrar encargado</asp:ListItem>
+            <asp:ListItem>Mantenimiento terminado</asp:ListItem>
+            <asp:ListItem>Borrar tipo de mantenimiento</asp:ListItem>
+            <asp:ListItem>Borrar usuario</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>

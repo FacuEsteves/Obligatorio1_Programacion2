@@ -128,7 +128,7 @@ namespace Obligatorio_1_prog2
 
             int cedula = Convert.ToInt32(TxtCedula.Text);
 
-            //BUSCAR BARCO LENTO REGISTRADO
+            //BUSCAR Tripulante REGISTRADO
             for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
             {
                 if (Global.transitoMaritimo.tripulantes[i].cedula == cedula)
@@ -146,6 +146,27 @@ namespace Obligatorio_1_prog2
             {
                 LabelError.Text = "No se encontro registro de este tripulante";
             }
+        }
+
+        protected void GridTripulantes_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String cedula = e.Values["cedula"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+            {
+                if (Global.transitoMaritimo.tripulantes[i].cedula == Convert.ToInt32(cedula))
+                {
+                    LabelError.Text = "Se borro el tripulante " + Global.transitoMaritimo.tripulantes[i].nombre;
+                    Global.transitoMaritimo.tripulantes.Remove(Global.transitoMaritimo.tripulantes[i]);                   
+                    break;
+                }
+            }
+
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar tripulantes");
+            Persistencia.guardarDatos();
+            Persistencia.tipostripulantes();
+
+            GridTripulantes.DataBind();
         }
     }
 }

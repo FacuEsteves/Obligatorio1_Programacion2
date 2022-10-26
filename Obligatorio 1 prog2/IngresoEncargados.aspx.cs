@@ -139,5 +139,25 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = "No se encontro registro de este encargado";
             }
         }
+
+        protected void GridEncargados_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String cedula = e.Values["cedula"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.encargados.Count; i++)
+            {
+                if (Global.transitoMaritimo.encargados[i].cedula == Convert.ToInt32(cedula))
+                {
+                    LabelError.Text = "Se borro el encargado " + Global.transitoMaritimo.encargados[i].nombre;
+                    Global.transitoMaritimo.encargados.Remove(Global.transitoMaritimo.encargados[i]);
+                    break;
+                }
+            }
+
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar encargado");
+            Persistencia.guardarDatos();
+
+            GridEncargados.DataBind();
+        }
     }
 }

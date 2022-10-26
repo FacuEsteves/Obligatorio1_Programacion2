@@ -84,31 +84,34 @@ namespace Obligatorio_1_prog2
                         existe = true;
                         break;
                     }
-                    if (existe == false)
-                    {
-                        us.nombre = txtNombre.Text;
-                        us.cedula = Convert.ToInt32(txtCedula.Text);
-                        us.nombreUsuario = txtID.Text;
-                        us.contraseña = txtContraseña.Text;
-                        us.correo = txtCorreo.Text;
-                        us.AsignarTripulacion = CheckBox1.Checked;
-                        us.IngresarCargos = CheckBox2.Checked;
-                        us.IngresarTripulantes = CheckBox3.Checked;
-                        us.IngresarEncargados = CheckBox4.Checked;
-                        us.IngresoMantenimiento = CheckBox5.Checked;
-                        us.IngresoTipoMantenimiento = CheckBox6.Checked;
-                        us.IngresoUsuarios = CheckBox7.Checked;
-                        us.RegistroBarco = CheckBox8.Checked;
-                        us.BusquedaMant = CheckBox9.Checked;
-                        us.Historial = CheckBox10.Checked;
-                        Global.transitoMaritimo.usuarios.Add(us);
-                    }
                 }
             }
+
+            if (existe == false)
+            {
+                us.nombre = txtNombre.Text;
+                us.cedula = Convert.ToInt32(txtCedula.Text);
+                us.nombreUsuario = txtID.Text;
+                us.contraseña = txtContraseña.Text;
+                us.correo = txtCorreo.Text;
+                us.AsignarTripulacion = CheckBox1.Checked;
+                us.IngresarCargos = CheckBox2.Checked;
+                us.IngresarTripulantes = CheckBox3.Checked;
+                us.IngresarEncargados = CheckBox4.Checked;
+                us.IngresoMantenimiento = CheckBox5.Checked;
+                us.IngresoTipoMantenimiento = CheckBox6.Checked;
+                us.IngresoUsuarios = CheckBox7.Checked;
+                us.RegistroBarco = CheckBox8.Checked;
+                us.BusquedaMant = CheckBox9.Checked;
+                us.Historial = CheckBox10.Checked;
+                Global.transitoMaritimo.usuarios.Add(us);
+            }
+
             Persistencia.guardarDatos();
             GridUsuario.DataBind();
         }
 
+        /*
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             if (txtID.Text == "")
@@ -137,6 +140,50 @@ namespace Obligatorio_1_prog2
 
                 }
             }
+        }
+        */
+        protected void GridUsuario_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String nombre = e.Values["nombreUsuario"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
+            {
+                if (nombre == Global.transitoMaritimo.usuarios[i].nombreUsuario){
+                    LabelError.Text = "Se elimino el usuario " + Global.transitoMaritimo.usuarios[i].nombre;
+                    Global.transitoMaritimo.usuarios.Remove(Global.transitoMaritimo.usuarios[i]);
+                    break;
+                }
+            }
+            
+        }
+
+        protected void GridUsuario_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            int index = Convert.ToInt32(e);
+
+            LabelError.Text = "Usuarios seleccionado: " + Global.transitoMaritimo.usuarios[index].cedula;
+            /*
+            for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
+            {
+                if (txtCedula.Text == Convert.ToString(Global.transitoMaritimo.usuarios[i].cedula))
+                {
+                    txtNombre.Text = Global.transitoMaritimo.usuarios[i].nombre;
+                    txtID.Text = Global.transitoMaritimo.usuarios[i].nombreUsuario;
+                    txtContraseña.Text = Global.transitoMaritimo.usuarios[i].contraseña;
+                    txtCorreo.Text = Global.transitoMaritimo.usuarios[i].correo;
+                    CheckBox1.Checked = Global.transitoMaritimo.usuarios[i].AsignarTripulacion;
+                    CheckBox2.Checked = Global.transitoMaritimo.usuarios[i].IngresarCargos;
+                    CheckBox3.Checked = Global.transitoMaritimo.usuarios[i].IngresarTripulantes;
+                    CheckBox4.Checked = Global.transitoMaritimo.usuarios[i].IngresarEncargados;
+                    CheckBox5.Checked = Global.transitoMaritimo.usuarios[i].IngresoMantenimiento;
+                    CheckBox6.Checked = Global.transitoMaritimo.usuarios[i].IngresoTipoMantenimiento;
+                    CheckBox7.Checked = Global.transitoMaritimo.usuarios[i].IngresoUsuarios;
+                    CheckBox8.Checked = Global.transitoMaritimo.usuarios[i].RegistroBarco;
+                    CheckBox9.Checked = Global.transitoMaritimo.usuarios[i].BusquedaMant;
+                    CheckBox10.Checked = Global.transitoMaritimo.usuarios[i].Historial;
+
+                }
+            }*/
         }
     }
 }

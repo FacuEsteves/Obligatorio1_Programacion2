@@ -101,5 +101,28 @@ namespace Obligatorio_1_prog2
             TxtDescripcion.Text = "";
             LabelError.Text = "";
         }
+
+        protected void GridTiposMantenimiento_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String codigo = e.Values["codigo"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.tiposMantenimiento.Count; i++)
+            {
+                if (Global.transitoMaritimo.tiposMantenimiento[i] != null)
+                {
+                    if (Convert.ToInt32(codigo) == Global.transitoMaritimo.tiposMantenimiento[i].codigo)
+                    {
+                        LabelError.Text = "Se elimino el tipo de mantenimiento " + Global.transitoMaritimo.tiposMantenimiento[i].descripcion;
+                        Global.transitoMaritimo.tiposMantenimiento.Remove(Global.transitoMaritimo.tiposMantenimiento[i]);
+                        break;
+                    }
+                }
+            }
+
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar tipo de mantenimiento");
+            Persistencia.guardarDatos();
+
+            GridTiposMantenimiento.DataBind();
+        }
     }
 }

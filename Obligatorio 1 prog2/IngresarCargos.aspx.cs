@@ -86,5 +86,29 @@ namespace Obligatorio_1_prog2
             TxtNombreCargo.Text = "";;
             LabelError.Text = "";
         }
+
+        protected void GridCargos_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String cargo = e.Values["nombreCargo"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.cargos.Count; i++)
+            {
+                if (Global.transitoMaritimo.cargos[i] != null)
+                {
+                    if (cargo == Global.transitoMaritimo.cargos[i].nombreCargo)
+                    {
+
+                        Global.transitoMaritimo.cargos.Remove(Global.transitoMaritimo.cargos[i]);
+                        LabelError.Text = "Se borro el cargo " + cargo;        
+                        break;
+                    }
+                }
+            }
+
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar cargo");
+            Persistencia.guardarDatos();
+
+            GridCargos.DataBind();
+        }
     }
 }

@@ -90,7 +90,7 @@ namespace Obligatorio_1_prog2
             if (countCapitan == 1)
             {
                 LabelError.ForeColor = System.Drawing.Color.Red;
-                LabelError.Text = "No se asigno el tripulante, ya tiene capitan";
+                LabelError.Text = "Ya existe un capitan en este barco";
             }
             else
             {
@@ -108,14 +108,11 @@ namespace Obligatorio_1_prog2
             GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
             GridAsignar.DataBind();
 
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Asignar tripulación");
             Persistencia.guardarDatos();
 
             GridAsignados.DataSource = Persistencia.TripulantesAsignados(DD_Barcos.SelectedValue);
             GridAsignados.DataBind();
-
-
-
-
         }
        
 
@@ -151,13 +148,16 @@ namespace Obligatorio_1_prog2
                 }
             }
 
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar asignado");
+            Persistencia.guardarDatos();
+
             GridAsignados.DataSource = Persistencia.TripulantesAsignados(DD_Barcos.SelectedValue);
             GridAsignados.DataBind();
 
             GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
             GridAsignar.DataBind();
 
-            Persistencia.guardarDatos();
+            
         }
     }
 }

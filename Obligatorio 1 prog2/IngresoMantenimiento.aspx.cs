@@ -187,11 +187,10 @@ namespace Obligatorio_1_prog2
                     break;
                 }
             }
-            
 
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Mantenimiento terminado");
             Persistencia.guardarDatos();
-
-            GridMantenimientos.DataSource = Global.transitoMaritimo.mantenimientos;
+       
             GridMantenimientos.DataBind();
         }
     }
