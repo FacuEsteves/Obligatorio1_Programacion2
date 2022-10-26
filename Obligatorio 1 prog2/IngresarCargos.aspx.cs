@@ -72,6 +72,7 @@ namespace Obligatorio_1_prog2
             }
             //FIN GUARDADO
 
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Ingresar cargo");
             Persistencia.guardarDatos();
 
             //cargar grid 

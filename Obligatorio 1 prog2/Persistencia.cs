@@ -151,18 +151,19 @@ namespace Obligatorio_1_prog2
         public static List<RegistroAcceso> FiltroAcceso(DateTime fecha, String Usuario)
         {
             List<RegistroAcceso> lista = new List<RegistroAcceso>();
+            DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-            if (fecha != null && Usuario == "(Seleccionar)")//null)
+            if (fecha != fechanull && Usuario == null)
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
                 {
-                    if(fecha == Global.transitoMaritimo.registrosA[i].fechaAcceso)
+                    if(fecha == Global.transitoMaritimo.registrosA[i].fechaAcceso.Date)
                     {
                         lista.Add(Global.transitoMaritimo.registrosA[i]);
                     }
                 }
             }
-            else if(fecha == null && Usuario != "(Seleccionar)")//null)
+            else if(fecha == fechanull && Usuario != null)
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
                 {
@@ -176,7 +177,7 @@ namespace Obligatorio_1_prog2
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
                 {
-                    if (fecha == Global.transitoMaritimo.registrosA[i].fechaAcceso && Usuario == Global.transitoMaritimo.registrosA[i].usuarios)
+                    if (fecha == Global.transitoMaritimo.registrosA[i].fechaAcceso.Date && Usuario == Global.transitoMaritimo.registrosA[i].usuarios)
                     {
                         lista.Add(Global.transitoMaritimo.registrosA[i]);
                     }
@@ -188,18 +189,19 @@ namespace Obligatorio_1_prog2
         public static List<RegistroEgreso> FiltroEgreso(DateTime fecha, String Usuario)
         {
             List<RegistroEgreso> lista = new List<RegistroEgreso>();
+            DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-            if (fecha != null && Usuario == "(Seleccionar)")//null)
+            if (fecha != fechanull && Usuario == null)
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
                 {
-                    if (fecha == Global.transitoMaritimo.registrosE[i].fechaEgreso)
+                    if (fecha == Global.transitoMaritimo.registrosE[i].fechaEgreso.Date)
                     {
                         lista.Add(Global.transitoMaritimo.registrosE[i]);
                     }
                 }
             }
-            else if (fecha == null && Usuario != "(Seleccionar)")//null)
+            else if (fecha == fechanull && Usuario != null)
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
                 {
@@ -213,7 +215,7 @@ namespace Obligatorio_1_prog2
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
                 {
-                    if (fecha == Global.transitoMaritimo.registrosE[i].fechaEgreso && Usuario == Global.transitoMaritimo.registrosE[i].usuarios)
+                    if (fecha == Global.transitoMaritimo.registrosE[i].fechaEgreso.Date && Usuario == Global.transitoMaritimo.registrosE[i].usuarios)
                     {
                         lista.Add(Global.transitoMaritimo.registrosE[i]);
                     }
@@ -225,18 +227,19 @@ namespace Obligatorio_1_prog2
         public static List<RegistroCambio> FiltroCambios(DateTime fecha, String Usuario, String Descripcion)
         {
             List<RegistroCambio> lista = new List<RegistroCambio>();
+            DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-            if (fecha != null && Usuario == "(Seleccionar)" && Descripcion == null)
+            if (fecha != fechanull && Usuario == null && Descripcion == "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {
-                    if (fecha == Global.transitoMaritimo.registrosC[i].fechaCambio)
+                    if (fecha == Global.transitoMaritimo.registrosC[i].fechaCambio.Date)
                     {
                         lista.Add(Global.transitoMaritimo.registrosC[i]);
                     }
                 }
             }
-            else if (fecha == null && Usuario != "(Seleccionar)" && Descripcion == null)
+            else if (fecha == fechanull && Usuario != null && Descripcion == "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {
@@ -246,7 +249,7 @@ namespace Obligatorio_1_prog2
                     }
                 }
             }
-            else if (fecha == null && Usuario == "(Seleccionar)" && Descripcion != null)
+            else if (fecha == fechanull && Usuario == null && Descripcion != "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {
@@ -260,7 +263,7 @@ namespace Obligatorio_1_prog2
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {
-                    if (fecha == Global.transitoMaritimo.registrosC[i].fechaCambio && Usuario == Global.transitoMaritimo.registrosC[i].usuarios && Descripcion == Global.transitoMaritimo.registrosC[i].descripcion)
+                    if (fecha == Global.transitoMaritimo.registrosC[i].fechaCambio.Date && Usuario == Global.transitoMaritimo.registrosC[i].usuarios && Descripcion == Global.transitoMaritimo.registrosC[i].descripcion)
                     {
                         lista.Add(Global.transitoMaritimo.registrosC[i]);
                     }

@@ -27,9 +27,6 @@
         <asp:Calendar ID="FechaFiltro" runat="server"></asp:Calendar>
 &nbsp;Usuario:
         <asp:DropDownList ID="DD_Usuarios" runat="server">
-            <asp:ListItem>(Seleccionar)</asp:ListItem>
-            <asp:ListItem>facundo</asp:ListItem>
-            <asp:ListItem>Juan</asp:ListItem>
         </asp:DropDownList>
 &nbsp;Cambio realizado:
         <asp:DropDownList ID="DD_Cambios" runat="server">

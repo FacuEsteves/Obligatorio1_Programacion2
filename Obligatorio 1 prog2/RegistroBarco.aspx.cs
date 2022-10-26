@@ -149,6 +149,7 @@ namespace Obligatorio_1_prog2
                 }
             }
 
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Registro barco");
             Persistencia.guardarDatos();
             //cargar grid lentos
             GridBarcoLento.DataSource = Global.transitoMaritimo.barcoLentos;

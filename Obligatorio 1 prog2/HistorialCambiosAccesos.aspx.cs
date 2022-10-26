@@ -13,12 +13,14 @@ namespace Obligatorio_1_prog2
         {
             if (!IsPostBack)
             {
-                /*
+     
                 DD_Usuarios.DataSource = Global.transitoMaritimo.usuarios;
                 DD_Usuarios.DataTextField = "nombre";
-                DD_Usuarios.DataValueField = "nombreUsuario";
+                DD_Usuarios.DataValueField = "nombre";
                 DD_Usuarios.DataBind();
-                */
+                
+                DD_Usuarios.SelectedIndex = -1;
+                
                 GridAccesos.DataSource = Global.transitoMaritimo.registrosA;
                 GridAccesos.DataBind();
 
@@ -54,6 +56,17 @@ namespace Obligatorio_1_prog2
 
         protected void BtnBuscar_Click(object sender, EventArgs e)
         {
+            /*
+            DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            //ERRORES
+            
+            if (FechaFiltro.SelectedDate == fechanull || DD_Usuarios.SelectedIndex == -1 || DD_Cambios.SelectedIndex == 0)
+            {
+                Label1.Text = "ELIJA UNA OPCION DE FILTRADO";
+                return;
+            }
+            */
+            
             GridAccesos.DataSource = Persistencia.FiltroAcceso(FechaFiltro.SelectedDate, DD_Usuarios.SelectedValue.ToString());
             GridAccesos.DataBind();
             GridEgresos.DataSource = Persistencia.FiltroEgreso(FechaFiltro.SelectedDate, DD_Usuarios.SelectedValue.ToString());
@@ -64,6 +77,8 @@ namespace Obligatorio_1_prog2
 
         protected void BtnBorrar_Click(object sender, EventArgs e)
         {
+            DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
             GridAccesos.DataSource = Global.transitoMaritimo.registrosA;
             GridAccesos.DataBind();
 
@@ -74,8 +89,8 @@ namespace Obligatorio_1_prog2
             GridCambios.DataBind();
 
             DD_Cambios.SelectedIndex = 0;
-            DD_Usuarios.SelectedIndex = 0;
-            FechaFiltro.SelectedDate = DateTime.Now;
+            DD_Usuarios.SelectedIndex = -1;
+            FechaFiltro.SelectedDate = fechanull;
         }
     }
 }
