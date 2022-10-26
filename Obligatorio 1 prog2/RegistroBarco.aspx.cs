@@ -241,5 +241,49 @@ namespace Obligatorio_1_prog2
                 TxtCantVehiculos.Visible = false;
             }
         }
+
+        protected void GridBarcoRapido_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String nombreB = e.Values["nombre"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.barcoRapidos.Count; i++)
+            {
+                if (Global.transitoMaritimo.barcoRapidos[i] != null)
+                {
+                    if (nombreB == Global.transitoMaritimo.barcoRapidos[i].nombre)
+                    {
+                        LabelError.Text = "Se borro el barco " + Global.transitoMaritimo.barcoRapidos[i].nombre;
+                        Global.transitoMaritimo.barcoRapidos.Remove(Global.transitoMaritimo.barcoRapidos[i]);
+                        break;
+                    }
+                }
+            }
+
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar barco");
+            Persistencia.guardarDatos();
+
+            GridBarcoRapido.DataBind();
+        }
+
+        protected void GridBarcoLento_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            String nombreB = e.Values["nombre"].ToString();
+
+            for (int i = 0; i < Global.transitoMaritimo.barcoLentos.Count; i++)
+            {
+                if (Global.transitoMaritimo.barcoLentos[i].nombre == nombreB)
+                {
+                    LabelError.Text = "Se borro el barco " + Global.transitoMaritimo.barcoLentos[i].nombre;
+                    Global.transitoMaritimo.barcoLentos.Remove(Global.transitoMaritimo.barcoLentos[i]);
+                    break;
+                }
+
+            }
+
+            Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Borrar barco");
+            Persistencia.guardarDatos();
+
+            GridBarcoLento.DataBind();
+        }
     }
 }

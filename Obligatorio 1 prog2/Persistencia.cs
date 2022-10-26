@@ -153,7 +153,7 @@ namespace Obligatorio_1_prog2
             List<RegistroAcceso> lista = new List<RegistroAcceso>();
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-            if (fecha != fechanull && Usuario == null)
+            if (fecha != fechanull && Usuario == "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
                 {
@@ -163,7 +163,7 @@ namespace Obligatorio_1_prog2
                     }
                 }
             }
-            else if(fecha == fechanull && Usuario != null)
+            else if(fecha == fechanull && Usuario != "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosA.Count; i++)
                 {
@@ -191,7 +191,7 @@ namespace Obligatorio_1_prog2
             List<RegistroEgreso> lista = new List<RegistroEgreso>();
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-            if (fecha != fechanull && Usuario == null)
+            if (fecha != fechanull && Usuario == "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
                 {
@@ -201,7 +201,7 @@ namespace Obligatorio_1_prog2
                     }
                 }
             }
-            else if (fecha == fechanull && Usuario != null)
+            else if (fecha == fechanull && Usuario != "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosE.Count; i++)
                 {
@@ -229,7 +229,7 @@ namespace Obligatorio_1_prog2
             List<RegistroCambio> lista = new List<RegistroCambio>();
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-            if (fecha != fechanull && Usuario == null && Descripcion == "(Seleccionar)")
+            if (fecha != fechanull && Usuario == "(Seleccionar)" && Descripcion == "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {
@@ -239,7 +239,7 @@ namespace Obligatorio_1_prog2
                     }
                 }
             }
-            else if (fecha == fechanull && Usuario != null && Descripcion == "(Seleccionar)")
+            else if (fecha == fechanull && Usuario != "(Seleccionar)" && Descripcion == "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {
@@ -249,7 +249,7 @@ namespace Obligatorio_1_prog2
                     }
                 }
             }
-            else if (fecha == fechanull && Usuario == null && Descripcion != "(Seleccionar)")
+            else if (fecha == fechanull && Usuario == "(Seleccionar)" && Descripcion != "(Seleccionar)")
             {
                 for (int i = 0; i < Global.transitoMaritimo.registrosC.Count; i++)
                 {

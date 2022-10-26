@@ -55,13 +55,13 @@ namespace Obligatorio_1_prog2
             
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
             //ERRORES
-            /*
-            if (FechaFiltro.SelectedDate == fechanull || DD_Usuarios.SelectedIndex == -1 || DD_Cambios.SelectedIndex == 0)
+            
+            if (FechaFiltro.SelectedDate == fechanull && DD_Usuarios.SelectedIndex == 0 && DD_Cambios.SelectedIndex == 0)
             {
                 Label1.Text = "ELIJA UNA OPCION DE FILTRADO";
                 return;
             }
-            */
+            
             
             GridAccesos.DataSource = Persistencia.FiltroAcceso(FechaFiltro.SelectedDate, DD_Usuarios.SelectedValue.ToString());
             GridAccesos.DataBind();
@@ -85,7 +85,7 @@ namespace Obligatorio_1_prog2
             GridCambios.DataBind();
 
             DD_Cambios.SelectedIndex = 0;
-            DD_Usuarios.SelectedIndex = -1;
+            DD_Usuarios.SelectedIndex = 0;
             FechaFiltro.SelectedDate = fechanull;
         }
     }

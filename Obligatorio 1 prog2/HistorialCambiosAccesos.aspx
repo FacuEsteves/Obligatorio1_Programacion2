@@ -12,7 +12,8 @@
         Fecha:
         <asp:Calendar ID="FechaFiltro" runat="server"></asp:Calendar>
 &nbsp;Usuario:
-        <asp:DropDownList ID="DD_Usuarios" runat="server">
+        <asp:DropDownList ID="DD_Usuarios" runat="server" AppendDataBoundItems="True">
+            <asp:ListItem>(Seleccionar)</asp:ListItem>
         </asp:DropDownList>
 &nbsp;Cambio realizado:
         <asp:DropDownList ID="DD_Cambios" runat="server">
@@ -32,10 +33,11 @@
             <asp:ListItem>Mantenimiento terminado</asp:ListItem>
             <asp:ListItem>Borrar tipo de mantenimiento</asp:ListItem>
             <asp:ListItem>Borrar usuario</asp:ListItem>
+            <asp:ListItem>Borrar barco</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>
-        <asp:Label ID="Label1" runat="server"></asp:Label>
+        <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
     </p>
     <p>
         <asp:Button ID="BtnBuscar" runat="server" OnClick="BtnBuscar_Click" Text="Buscar" />
