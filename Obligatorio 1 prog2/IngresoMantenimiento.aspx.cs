@@ -180,10 +180,13 @@ namespace Obligatorio_1_prog2
                 if (Convert.ToInt32(id) == Global.transitoMaritimo.mantenimientos[i].id)
                 {
                     Global.transitoMaritimo.mantenimientos[i].Terminado = true;
+                    String correo =  Global.transitoMaritimo.mantenimientos[i].encargados.correo;
+                    Persistencia.enviarEmail("Mantenimiento Terminado", "Se termino el mantenimiento del barco " + Global.transitoMaritimo.mantenimientos[i].nombreBarco, correo);
                     LabelError.Text = "Se registro el mantenimiento " + Global.transitoMaritimo.mantenimientos[i].id + " " + Global.transitoMaritimo.mantenimientos[i].descripcion + " como terminado";
                     break;
                 }
             }
+            
 
             Persistencia.guardarDatos();
 

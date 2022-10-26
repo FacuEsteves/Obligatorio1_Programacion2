@@ -115,6 +115,32 @@
       <precio>2000</precio>
       <Terminado>true</Terminado>
     </Mantenimiento>
+    <Mantenimiento>
+      <id>4</id>
+      <fechaMantenimiento>2022-10-25T00:00:00-03:00</fechaMantenimiento>
+      <descripcion>Se Ingreso Un Mantenimiento</descripcion>
+      <barcos xsi:type="BarcoRapido">
+        <nombre>barco1</nombre>
+        <cantidadPasajeros>12</cantidadPasajeros>
+        <cantidadTripulantes>10</cantidadTripulantes>
+        <velocidadMax>80</velocidadMax>
+      </barcos>
+      <nombreBarco>barco1</nombreBarco>
+      <tipobarco>Barco Rapido</tipobarco>
+      <TiposMantenimiento>
+        <codigo>2</codigo>
+        <precioBase>2000</precioBase>
+        <descripcion>Tipo mantenimiento 2</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>4681003</cedula>
+        <nombre>Federico Barboza</nombre>
+        <correo>21fede95@gmail.com</correo>
+        <cantidadPersonal>2121</cantidadPersonal>
+      </encargados>
+      <precio>2800</precio>
+      <Terminado>true</Terminado>
+    </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
     <Tipo_de_Mantenimiento>
@@ -275,6 +301,12 @@
       <nombre>Ernesto Santos</nombre>
       <correo>ernesto.santos@ejemplo.com</correo>
       <cantidadPersonal>5</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>4681003</cedula>
+      <nombre>Federico Barboza</nombre>
+      <correo>21fede95@gmail.com</correo>
+      <cantidadPersonal>2121</cantidadPersonal>
     </Encargado>
   </encargados>
   <cantidadTripulantesXtipos>
