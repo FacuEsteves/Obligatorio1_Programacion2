@@ -14,36 +14,27 @@
 &nbsp;<asp:TextBox ID="TxtCedula" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;</p>
-    <p>
         <asp:Label ID="Label2" runat="server" Text="Nombre:"></asp:Label>
         <asp:TextBox ID="TxtNombre" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;</p>
-    <p>
         <asp:Label ID="Label3" runat="server" Text="Correo:"></asp:Label>
 &nbsp;
-        <asp:TextBox ID="TxtCorreo" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TxtCorreo" runat="server" TextMode="Email"></asp:TextBox>
     </p>
-    <p>
-        &nbsp;</p>
     <p>
         <asp:Label ID="Label4" runat="server" Text="Cargo:"></asp:Label>
 &nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DDCargo" runat="server">
+        <asp:DropDownList ID="DDCargo" runat="server" AppendDataBoundItems="True">
+            <asp:ListItem>(Seleccionar)</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>
-        &nbsp;</p>
+        <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
+    </p>
     <p>
         <asp:Button ID="btnIngresar" runat="server" OnClick="btnIngresar_Click" Text="Ingresar" />
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
-    </p>
-    <p>
-        &nbsp;</p>
-    <p>
-        <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
     </p>
     <p>
         &nbsp;</p>

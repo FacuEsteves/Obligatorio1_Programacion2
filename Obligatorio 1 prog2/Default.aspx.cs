@@ -75,3 +75,9 @@ namespace Obligatorio_1_prog2
         }
     }
 }
+
+/*
+ * PARA ERROR --> "could not find file…\bin\roslyn\csc.exe"
+ * Barra superior --> Herramientas --> Administrador de paquetes NuGet --> Consola del Administrador de paquetes
+ * pegar este codigo --> update-package Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+ */

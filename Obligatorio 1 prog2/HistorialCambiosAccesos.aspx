@@ -10,7 +10,7 @@
         &nbsp;</p>
     <p>
         Fecha:
-        <asp:Calendar ID="FechaFiltro" runat="server"></asp:Calendar>
+        <asp:TextBox ID="TxtFecha" runat="server" TextMode="Date"></asp:TextBox>
 &nbsp;Usuario:
         <asp:DropDownList ID="DD_Usuarios" runat="server" AppendDataBoundItems="True">
             <asp:ListItem>(Seleccionar)</asp:ListItem>

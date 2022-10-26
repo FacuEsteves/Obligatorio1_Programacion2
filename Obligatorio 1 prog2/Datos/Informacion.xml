@@ -390,6 +390,11 @@
       <fechaCambio>2022-10-26T18:59:09.9483431-03:00</fechaCambio>
       <descripcion>Borrar usuario</descripcion>
     </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-26T19:57:47.1964993-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
   </registrosC>
   <idUsuario>Admin</idUsuario>
 </TransitoMaritimo>

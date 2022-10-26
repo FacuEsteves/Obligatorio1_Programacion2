@@ -36,7 +36,7 @@ namespace Obligatorio_1_prog2
                 DD_Usuarios.DataValueField = "nombreUsuario";
                 DD_Usuarios.DataBind();
                 
-                DD_Usuarios.SelectedIndex = -1;
+                DD_Usuarios.SelectedIndex = 0;
                 
                 GridAccesos.DataSource = Global.transitoMaritimo.registrosA;
                 GridAccesos.DataBind();
@@ -56,18 +56,19 @@ namespace Obligatorio_1_prog2
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
             //ERRORES
             
-            if (FechaFiltro.SelectedDate == fechanull && DD_Usuarios.SelectedIndex == 0 && DD_Cambios.SelectedIndex == 0)
+            if (TxtFecha.Text == "" && DD_Usuarios.SelectedIndex == 0 && DD_Cambios.SelectedIndex == 0)
             {
                 Label1.Text = "ELIJA UNA OPCION DE FILTRADO";
                 return;
             }
-            
-            
-            GridAccesos.DataSource = Persistencia.FiltroAcceso(FechaFiltro.SelectedDate, DD_Usuarios.SelectedValue.ToString());
+
+            DateTime fecha = DateTime.Parse(TxtFecha.Text);
+
+            GridAccesos.DataSource = Persistencia.FiltroAcceso(fecha, DD_Usuarios.SelectedValue.ToString());
             GridAccesos.DataBind();
-            GridEgresos.DataSource = Persistencia.FiltroEgreso(FechaFiltro.SelectedDate, DD_Usuarios.SelectedValue.ToString());
+            GridEgresos.DataSource = Persistencia.FiltroEgreso(fecha, DD_Usuarios.SelectedValue.ToString());
             GridEgresos.DataBind();
-            GridCambios.DataSource = Persistencia.FiltroCambios(FechaFiltro.SelectedDate, DD_Usuarios.SelectedValue.ToString(), DD_Cambios.SelectedValue.ToString());
+            GridCambios.DataSource = Persistencia.FiltroCambios(fecha, DD_Usuarios.SelectedValue.ToString(), DD_Cambios.SelectedValue.ToString());
             GridCambios.DataBind();
         }
 
@@ -86,7 +87,7 @@ namespace Obligatorio_1_prog2
 
             DD_Cambios.SelectedIndex = 0;
             DD_Usuarios.SelectedIndex = 0;
-            FechaFiltro.SelectedDate = fechanull;
+            TxtFecha.Text = "";
         }
     }
 }

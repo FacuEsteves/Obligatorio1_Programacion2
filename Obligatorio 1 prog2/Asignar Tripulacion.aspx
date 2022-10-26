@@ -13,7 +13,8 @@
         <asp:Label ID="Label1" runat="server" Text="Nombre Barco"></asp:Label>
     </p>
     <p>
-        <asp:DropDownList ID="DD_Barcos" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DD_Barcos_SelectedIndexChanged">
+        <asp:DropDownList ID="DD_Barcos" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DD_Barcos_SelectedIndexChanged" AppendDataBoundItems="True">
+            <asp:ListItem>(Seleccionar)</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>

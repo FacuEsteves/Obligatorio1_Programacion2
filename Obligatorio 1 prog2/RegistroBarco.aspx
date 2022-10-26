@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistroBarco.aspx.cs" Inherits="Obligatorio_1_prog2.RegistroBarco" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
         Nombre de barco :
         <asp:TextBox ID="TxtNombreBarco" runat="server"></asp:TextBox>
     </p>
@@ -29,12 +37,8 @@
         <asp:TextBox ID="TxtCantVehiculos" runat="server" Visible="False"></asp:TextBox>
     </p>
     <p>
-        &nbsp;</p>
-    <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
     </p>
-    <p>
-        &nbsp;</p>
     <p>
         <asp:Button ID="BtnGuardar" runat="server" OnClick="BtnGuardar_Click" Text="Guardar" />
         <asp:Button ID="BtnBuscar" runat="server" OnClick="BtnBuscar_Click" Text="Buscar" />

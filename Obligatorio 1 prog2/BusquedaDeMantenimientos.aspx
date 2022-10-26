@@ -11,7 +11,8 @@
         &nbsp;</p>
     <p>
         Barco:&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DD_Barco" runat="server">
+        <asp:DropDownList ID="DD_Barco" runat="server" AppendDataBoundItems="True">
+            <asp:ListItem>(Seleccionar)</asp:ListItem>
         </asp:DropDownList>
     </p>
     <p>

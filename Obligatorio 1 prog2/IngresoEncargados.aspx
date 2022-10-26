@@ -20,18 +20,14 @@
     </p>
     <p>
         Correo :
-        <asp:TextBox ID="TxtCorreo" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TxtCorreo" runat="server" TextMode="Email"></asp:TextBox>
     </p>
     <p>
         Cantidad de personas a cargo : <asp:TextBox ID="TxtCantPersonas" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;</p>
-    <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
     </p>
-    <p>
-        &nbsp;</p>
     <p>
         <asp:Button ID="BtnIngresar" runat="server" OnClick="BtnIngresar_Click" Text="Ingresar" />
         <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" />

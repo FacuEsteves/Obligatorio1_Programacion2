@@ -42,6 +42,12 @@ namespace Obligatorio_1_prog2
         {
             //Errores
 
+            if (DD_Barco.SelectedIndex == 0)
+            {
+                LabelError.Text = "Datos faltantes para realizar la busqueda";
+                return;
+            }
+
             if (DDMes.SelectedIndex == 0)
             {
                 LabelError.Text = "Datos faltantes para realizar la busqueda";

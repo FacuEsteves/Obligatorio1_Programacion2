@@ -46,8 +46,6 @@ namespace Obligatorio_1_prog2
                 DD_Encargado.DataBind();
             }
 
-            CalendarDate.SelectedDate = DateTime.Today;
-
             GridMantenimientos.DataSource = Global.transitoMaritimo.mantenimientos;
             GridMantenimientos.DataBind();
 
@@ -60,22 +58,27 @@ namespace Obligatorio_1_prog2
 
 
             //COMIENZO ERRORES
+            if (TxtFecha.Text == "")
+            {
+                LabelError.Text = "Ingrese la fecha";
+                return;
+            }
             if (TxtDescripcion.Text == "")
             {
                 LabelError.Text = "Ingrese la descripción";
                 return;
             }
-            if (DD_Barco.SelectedIndex == -1)
+            if (DD_Barco.SelectedIndex == 0)
             {
                 LabelError.Text = "Elija un barco";
                 return;
             }
-            if (DD_TipoM.SelectedIndex == -1)
+            if (DD_TipoM.SelectedIndex == 0)
             {
                 LabelError.Text = "Elija un tipo de mantenimiento";
                 return;
             }
-            if (DD_Encargado.SelectedIndex == -1)
+            if (DD_Encargado.SelectedIndex == 0)
             {
                 LabelError.Text = "Elija un encargado";
                 return;
@@ -84,13 +87,13 @@ namespace Obligatorio_1_prog2
 
             Mantenimiento m = new Mantenimiento();
             bool existe = false;
-
+            DateTime fecha = DateTime.Parse(TxtFecha.Text);
 
             //COMIENZO GUARDADO
             if (existe == false)
             {
                 m.id = Persistencia.idmantenimiento();
-                m.fechaMantenimiento = CalendarDate.SelectedDate;
+                m.fechaMantenimiento = fecha;
                 m.descripcion = TxtDescripcion.Text;
 
                 String barco = DD_Barco.SelectedValue;
@@ -155,11 +158,11 @@ namespace Obligatorio_1_prog2
 
 
             //LIMPIAR CAMPOS
-            CalendarDate.SelectedDate = DateTime.Today;
+            TxtFecha.Text = "";            
             TxtDescripcion.Text = "";
-            DD_Barco.SelectedIndex = -1;
-            DD_TipoM.SelectedIndex = -1;
-            DD_Encargado.SelectedIndex = -1;
+            DD_Barco.SelectedIndex = 0;
+            DD_TipoM.SelectedIndex = 0;
+            DD_Encargado.SelectedIndex = 0;
             LabelError.Text = "";
         }
 

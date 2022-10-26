@@ -67,6 +67,11 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = "Ingrese el correo del tripulante";
                 return;
             }
+            if (DDCargo.SelectedIndex == 0)
+            {
+                LabelError.Text = "Ingrese el cargo";
+                return;
+            }
             //FIN ERRORES
 
             Tripulante tr = new Tripulante();

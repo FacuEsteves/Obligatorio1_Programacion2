@@ -15,13 +15,13 @@ namespace Obligatorio_1_prog2
     {
 
         /// <summary>
-        /// Control FechaFiltro.
+        /// Control TxtFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar FechaFiltro;
+        protected global::System.Web.UI.WebControls.TextBox TxtFecha;
 
         /// <summary>
         /// Control DD_Usuarios.
