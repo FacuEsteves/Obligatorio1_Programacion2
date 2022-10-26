@@ -301,6 +301,7 @@
       <nombre>Mario Gimenez</nombre>
       <correo>mario.gimenez@ejemplo.com</correo>
       <fechaIngreso>2022-10-13T00:00:00-03:00</fechaIngreso>
+      <NombreBarco>barco1</NombreBarco>
       <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
     <Tripulante>
@@ -309,6 +310,29 @@
       <correo>facundoesteves@ejemplo.com</correo>
       <fechaIngreso>2022-10-13T00:00:00-03:00</fechaIngreso>
       <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>45454</cedula>
+      <nombre>mateo</nombre>
+      <correo>sssss</correo>
+      <fechaIngreso>2022-10-25T00:00:00-03:00</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>12</cedula>
+      <nombre>h</nombre>
+      <correo>haha</correo>
+      <fechaIngreso>2022-10-26T00:00:00-03:00</fechaIngreso>
+      <NombreBarco>barco1</NombreBarco>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>2</cedula>
+      <nombre>da</nombre>
+      <correo>ss</correo>
+      <fechaIngreso>2022-10-26T00:00:00-03:00</fechaIngreso>
+      <NombreBarco>barco1</NombreBarco>
+      <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
   </tripulantes>
   <encargados>

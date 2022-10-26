@@ -4,6 +4,12 @@
         <br />
     </p>
     <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
         <asp:Label ID="Label1" runat="server" Text="Nombre Barco"></asp:Label>
     </p>
     <p>

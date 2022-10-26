@@ -2,6 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         <br />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
         <asp:Label ID="Label1" runat="server" Text="Cedula:"></asp:Label>
 &nbsp;<asp:TextBox ID="TxtCedula" runat="server"></asp:TextBox>
     </p>

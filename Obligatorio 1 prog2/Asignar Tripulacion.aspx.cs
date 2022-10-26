@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using Obligatorio_1_prog2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -51,7 +54,7 @@ namespace Obligatorio_1_prog2
                 LabelError.Text = "Elija un barco";
                 return;
             }
-            String barcoAsignado = DD_Barcos.SelectedValue; ;
+            String barcoAsignado = DD_Barcos.SelectedValue; 
             int index = GridAsignar.SelectedIndex;
 
             List<Tripulante> triAsignar = new List<Tripulante>();
@@ -59,19 +62,49 @@ namespace Obligatorio_1_prog2
             triAsignar = Persistencia.TripulantesSinAsignar();
 
             int cedula = triAsignar[index].cedula;
-
-
-            for(int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+            int countCapitan = 0;
+             
+            //recorre la tripulacion
+            foreach(var item in Global.transitoMaritimo.tripulantes)
             {
-                if(cedula == Global.transitoMaritimo.tripulantes[i].cedula)
+                //buscar que la tripulacion tenga un barco asignado
+                if (!String.IsNullOrEmpty(item.NombreBarco))
                 {
-                    Global.transitoMaritimo.tripulantes[i].NombreBarco = barcoAsignado;
-                    LabelError.ForeColor = System.Drawing.Color.Green;
-                    LabelError.Text = "Se asigno el tripulante " + cedula + " al barco " + barcoAsignado;
-                    break;
+                    //buscar que un barco ya tenga o no capitan
+                    if(item.NombreBarco == barcoAsignado)
+                    {
+                        if(item.Cargo == "Capitán") {
+                            countCapitan++;
+                        }
+                        
+                    }        
+                   
                 }
             }
+            //si el cargo del seleccionado es distinto a capitan se setea el contador 0 para que lo ingrese pq no es necesario validar
+            if(triAsignar[index].Cargo != "Capitán") {
+                countCapitan = 0;
+            }
 
+
+            if (countCapitan == 1)
+            {
+                LabelError.ForeColor = System.Drawing.Color.Red;
+                LabelError.Text = "No se asigno el tripulante, ya tiene capitan";
+            }
+            else
+            {
+                for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+                {
+                    if (cedula == Global.transitoMaritimo.tripulantes[i].cedula)
+                    {
+                        Global.transitoMaritimo.tripulantes[i].NombreBarco = barcoAsignado;
+                        LabelError.ForeColor = System.Drawing.Color.Green;
+                        LabelError.Text = "Se asigno el tripulante " + cedula + " al barco " + barcoAsignado;
+                        break;
+                    }
+                }
+            }
             GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();
             GridAsignar.DataBind();
 
@@ -82,7 +115,9 @@ namespace Obligatorio_1_prog2
 
 
 
+
         }
+       
 
         protected void DD_Barcos_SelectedIndexChanged(object sender, EventArgs e)
         {
