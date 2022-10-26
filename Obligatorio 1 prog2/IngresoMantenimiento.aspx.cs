@@ -179,9 +179,9 @@ namespace Obligatorio_1_prog2
             {
                 if (Convert.ToInt32(id) == Global.transitoMaritimo.mantenimientos[i].id)
                 {
-                            Global.transitoMaritimo.mantenimientos[i].Terminado = true;
-                            LabelError.Text = "Se registro el mantenimiento " + Global.transitoMaritimo.mantenimientos[i].id + " " + Global.transitoMaritimo.mantenimientos[i].descripcion + " como terminado";
-                            break;
+                    Global.transitoMaritimo.mantenimientos[i].Terminado = true;
+                    LabelError.Text = "Se registro el mantenimiento " + Global.transitoMaritimo.mantenimientos[i].id + " " + Global.transitoMaritimo.mantenimientos[i].descripcion + " como terminado";
+                    break;
                 }
             }
 

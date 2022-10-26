@@ -8,6 +8,8 @@ using System.IO;
 using System.Web.Services.Description;
 using System.Web.UI.HtmlControls;
 using Microsoft.Ajax.Utilities;
+using System.Net.Mail;
+using System.Net;
 
 namespace Obligatorio_1_prog2
 {
@@ -266,6 +268,35 @@ namespace Obligatorio_1_prog2
             }
 
             return lista;
+        }
+        public static string enviarEmail(string asunto, string htmlString, string emailDestinatario)
+        {
+            string resultado = "";
+            try
+            {
+                MailMessage message = new MailMessage();
+                SmtpClient smtp = new SmtpClient();
+
+                message.From = new MailAddress("maritimotransito@gmail.com");
+                message.To.Add(new MailAddress(emailDestinatario));
+                message.Subject = asunto;
+                message.IsBodyHtml = true; //to make message body as html  
+                message.Body = htmlString;
+
+                smtp.Port = 587;
+                smtp.Host = "smtp.gmail.com"; //for gmail host  
+                smtp.EnableSsl = true;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential("maritimotransito@gmail.com", "cptswphhphgvkohq");
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Send(message);
+            }
+            catch (Exception ex)
+            {
+                resultado = ex.Message;
+            }
+
+            return resultado;
         }
     }
 }

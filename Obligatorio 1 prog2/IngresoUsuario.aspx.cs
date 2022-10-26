@@ -28,6 +28,7 @@ namespace Obligatorio_1_prog2
             }
 
             GridUsuario.DataSource = Global.transitoMaritimo.usuarios;
+            GridUsuario.DataBind();
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -100,7 +101,8 @@ namespace Obligatorio_1_prog2
                         Global.transitoMaritimo.usuarios.Add(us);
                     }
                 }
-            } 
+            }
+            Persistencia.guardarDatos();
             GridUsuario.DataBind();
         }
 
