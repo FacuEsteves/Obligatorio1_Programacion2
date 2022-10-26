@@ -69,7 +69,7 @@
                         <li><a id="IngresoTipoMantenimiento" runat="server" href="~/IngresoTipoMantenimiento">Ingreso de Tipo M.</a></li>
                         <li><a id="IngresoUsuario" runat="server" href="~/IngresoUsuario">Registro De Usuarios</a></li>
                         <li><a id="HistorialCambiosAccesos" runat="server" href="~/HistorialCambiosAccesos">Historial Cambios</a></li>
-                        <li><a id="Cerrar" runat="server" href="~/">CERRAR SESION</a></li>
+                        <asp:Button ID="BtnSalir" runat="server" OnClick="BtnSalir_Click" Text="Cerrar Sesión" />
                     </ul>
                 </div>
             </div>

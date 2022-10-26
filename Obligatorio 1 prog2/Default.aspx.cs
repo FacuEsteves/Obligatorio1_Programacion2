@@ -61,6 +61,7 @@ namespace Obligatorio_1_prog2
                 if(Global.transitoMaritimo.usuarios[i].nombreUsuario==txtUsuario.Text && Global.transitoMaritimo.usuarios[i].contraseña == txtContraseña.Text)
                 {
                     Global.transitoMaritimo.idUsuario = Global.transitoMaritimo.usuarios[i].nombreUsuario;
+                    Persistencia.RegistroAcceso(Global.transitoMaritimo.idUsuario);
                     Server.Transfer("Bienvenido.aspx");
                     txtUsuario.Text = "";
                 }

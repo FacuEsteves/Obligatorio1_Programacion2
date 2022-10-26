@@ -360,10 +360,21 @@
     </cantidadTripulantesXtipo>
   </cantidadTripulantesXtipos>
   <registrosA>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-25T22:22:30.6797223-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-25T22:29:21.5127835-03:00</fechaAcceso>
+    </RegistroAcceso>
   </registrosA>
   <registrosE>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-10-25T22:29:29.2562206-03:00</fechaEgreso>
+    </RegistroEgreso>
   </registrosE>
-  <registrosC>
-  </registrosC>
-  <idUsuario />
+  <registrosC />
+  <idUsuario>Admin</idUsuario>
 </TransitoMaritimo>
