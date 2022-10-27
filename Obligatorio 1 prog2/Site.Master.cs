@@ -15,7 +15,8 @@ namespace Obligatorio_1_prog2
         protected void BtnSalir_Click(object sender, EventArgs e)
         {
             Persistencia.RegistroEgreso(Global.transitoMaritimo.idUsuario);
-            Server.Transfer("Default.aspx");
+            Response.Redirect("Default.aspx");
+            //Server.Transfer("Default.aspx");
         }
     }
 }

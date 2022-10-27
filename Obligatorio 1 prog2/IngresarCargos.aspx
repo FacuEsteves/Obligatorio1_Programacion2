@@ -7,6 +7,8 @@
     <p>
         &nbsp;</p>
     <p>
+        &nbsp;</p>
+    <p>
         Nombre cargo :
         <asp:TextBox ID="TxtNombreCargo" runat="server"></asp:TextBox>
     </p>

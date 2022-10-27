@@ -63,7 +63,8 @@ namespace Obligatorio_1_prog2
                 {
                     Global.transitoMaritimo.idUsuario = Global.transitoMaritimo.usuarios[i].nombreUsuario;
                     Persistencia.RegistroAcceso(Global.transitoMaritimo.idUsuario);
-                    Server.Transfer("Bienvenido.aspx");
+                    Response.Redirect("Bienvenido.aspx");
+                    //Server.Transfer("");
                     txtUsuario.Text = "";
                 }
                 else

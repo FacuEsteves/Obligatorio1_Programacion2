@@ -353,6 +353,26 @@
       <usuarios>Admin</usuarios>
       <fechaAcceso>2022-10-26T18:20:22.9916197-03:00</fechaAcceso>
     </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-27T16:15:01.9180481-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-27T16:15:16.7312339-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-27T16:18:59.4995037-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-27T16:19:17.486368-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-10-27T16:19:21.2946261-03:00</fechaAcceso>
+    </RegistroAcceso>
   </registrosA>
   <registrosE>
     <RegistroEgreso>
@@ -362,6 +382,22 @@
     <RegistroEgreso>
       <usuarios>Admin</usuarios>
       <fechaEgreso>2022-10-26T18:59:13.5112464-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-10-27T16:15:09.0525753-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-10-27T16:15:20.6321025-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-10-27T16:19:02.0288343-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-10-27T16:19:18.9342972-03:00</fechaEgreso>
     </RegistroEgreso>
   </registrosE>
   <registrosC>
