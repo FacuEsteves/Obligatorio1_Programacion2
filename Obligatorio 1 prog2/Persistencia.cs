@@ -97,10 +97,28 @@ namespace Obligatorio_1_prog2
 
         public static void tipostripulantes()
         {
+            /*
+            Dictionary<string, int> datos = new Dictionary<string, int>();
+
+
+            datos.Add("lunes", 0);
+            //...
+
+            datos["lunes"] = datos["lunes"] + 1;
+
+            if (!datos.ContainsKey("lunes"))
+                datos["lunes"] = 1;
+
+            for (int q=0; q< datos.Keys.Count; q++)
+            {
+                //datos[datos.Keys[q]]
+            }
+            */
             
             for(int i = 0; i < Global.transitoMaritimo.cargos.Count; i++)
             {
                 cantidadTripulantesXtipo a = new cantidadTripulantesXtipo();
+                Boolean EXISTE = false;
                 int cant = 0;
                 for (int index = 0; index < Global.transitoMaritimo.tripulantes.Count; index++)
                 {
@@ -108,15 +126,26 @@ namespace Obligatorio_1_prog2
                     {
                         cant++;
                     }
-
                 }
-                a.Cargo = Global.transitoMaritimo.cargos[i].nombreCargo;
-                a.Cantidad = cant;
-                Global.transitoMaritimo.cantidadTripulantesXtipos.Add(a);
+
+                for (int g = 0; g < Global.transitoMaritimo.cantidadTripulantesXtipos.Count; g++)
+                {
+                    if (Global.transitoMaritimo.cantidadTripulantesXtipos[g].Cargo == Global.transitoMaritimo.cargos[i].nombreCargo)
+                    {
+                        a = Global.transitoMaritimo.cantidadTripulantesXtipos[g];
+                        a.Cantidad = cant;
+                        EXISTE = true;
+                        break;
+                    }
+                }
+
+                if (!EXISTE)
+                {
+                    a.Cargo = Global.transitoMaritimo.cargos[i].nombreCargo;
+                    a.Cantidad = cant;
+                    Global.transitoMaritimo.cantidadTripulantesXtipos.Add(a);
+                }
             }
-
-
-
         }
 
         public static void RegistroAcceso (String Usuario)

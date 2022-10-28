@@ -37,6 +37,8 @@ namespace Obligatorio_1_prog2
                 DDCargo.DataTextField = "nombreCargo";
                 DDCargo.DataValueField = "nombreCargo";
                 DDCargo.DataBind();
+
+                
             }
 
             TotalTripulantes.Text = Convert.ToString(Global.transitoMaritimo.tripulantes.Count);

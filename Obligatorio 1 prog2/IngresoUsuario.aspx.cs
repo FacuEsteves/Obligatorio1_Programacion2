@@ -110,6 +110,23 @@ namespace Obligatorio_1_prog2
             Persistencia.RegistroCambio(Global.transitoMaritimo.idUsuario, "Ingreso usuarios");
             Persistencia.guardarDatos();
             GridUsuario.DataBind();
+
+
+            txtNombre.Text = "";
+            txtCedula.Text = "";
+            txtID.Text = "";
+            txtContraseña.Text = "";
+            txtCorreo.Text = "";
+            CheckBox1.Checked = false;
+            CheckBox2.Checked = false;
+            CheckBox3.Checked = false;
+            CheckBox4.Checked = false;
+            CheckBox5.Checked = false;
+            CheckBox6.Checked = false;
+            CheckBox7.Checked = false;
+            CheckBox8.Checked = false;
+            CheckBox9.Checked = false;
+            CheckBox10.Checked = false;
         }
 
         

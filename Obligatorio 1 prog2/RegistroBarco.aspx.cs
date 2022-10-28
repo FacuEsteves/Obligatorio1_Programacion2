@@ -83,6 +83,7 @@ namespace Obligatorio_1_prog2
                         bl.cantidadPasajeros = Convert.ToInt32(TxtCantPasajeros.Text);
                         bl.cantidadTripulantes = Convert.ToInt32(TxtCantMaxTripulantes.Text);
                         bl.cantidadVehiculos = Convert.ToInt32(TxtCantVehiculos.Text);
+                        bl.precioMantenimiento = Convert.ToInt32(TxtPrecioMant.Text);
                         existe = true;
                         break;
                     }
@@ -120,6 +121,7 @@ namespace Obligatorio_1_prog2
                         bl.cantidadPasajeros = Convert.ToInt32(TxtCantPasajeros.Text);
                         bl.cantidadTripulantes = Convert.ToInt32(TxtCantMaxTripulantes.Text);
                         bl.cantidadVehiculos = Convert.ToInt32(TxtCantVehiculos.Text);
+                        bl.precioMantenimiento = Convert.ToInt32(TxtPrecioMant.Text);
                         Global.transitoMaritimo.barcoLentos.Add(bl);
                         LabelError.Text = "Se guardó con exito";
 
@@ -223,22 +225,29 @@ namespace Obligatorio_1_prog2
             {
                 LabelCantVehi.Visible = false;
                 LabelVelMax.Visible = false;
+                LabelPrecioM.Visible = false;
                 TxtVelMaxima.Visible = false;
                 TxtCantVehiculos.Visible = false;
+                TxtPrecioMant.Visible = false;
+
             }
             else if (TipoBarco.SelectedValue == "BarcoLento")
             {
                 LabelCantVehi.Visible = true;
                 LabelVelMax.Visible = false;
+                LabelPrecioM.Visible = true;
                 TxtVelMaxima.Visible = false;
                 TxtCantVehiculos.Visible = true;
+                TxtPrecioMant.Visible = true;
             }
             else
             {
                 LabelCantVehi.Visible = false;
                 LabelVelMax.Visible = true;
+                LabelPrecioM.Visible = false;
                 TxtVelMaxima.Visible = true;
                 TxtCantVehiculos.Visible = false;
+                TxtPrecioMant.Visible = false;
             }
         }
 

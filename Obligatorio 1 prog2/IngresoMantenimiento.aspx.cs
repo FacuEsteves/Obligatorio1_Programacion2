@@ -88,6 +88,7 @@ namespace Obligatorio_1_prog2
             Mantenimiento m = new Mantenimiento();
             bool existe = false;
             DateTime fecha = DateTime.Parse(TxtFecha.Text);
+            int precioAgregar = 0;
 
             //COMIENZO GUARDADO
             if (existe == false)
@@ -104,6 +105,7 @@ namespace Obligatorio_1_prog2
                     {
                         m.barcos = Global.transitoMaritimo.barcoLentos[i];
                         m.tipobarco = "Barco Lento";
+                        precioAgregar = Global.transitoMaritimo.barcoLentos[i].precioMantenimiento;
                         break;
                     }
                 }
@@ -125,7 +127,7 @@ namespace Obligatorio_1_prog2
                         m.TiposMantenimiento = Global.transitoMaritimo.tiposMantenimiento[i];
                         if (m.tipobarco=="Barco Lento") 
                         {
-                            m.precio = Global.transitoMaritimo.tiposMantenimiento[i].precioBase;
+                            m.precio = Global.transitoMaritimo.tiposMantenimiento[i].precioBase + precioAgregar;
                         }
                         if (m.tipobarco=="Barco Rapido")
                         {

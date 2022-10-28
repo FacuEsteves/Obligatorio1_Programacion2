@@ -37,6 +37,10 @@
         <asp:TextBox ID="TxtCantVehiculos" runat="server" Visible="False"></asp:TextBox>
     </p>
     <p>
+        <asp:Label runat="server" Text="Precio mantenimiento : " ID="LabelPrecioM" Visible="False"></asp:Label>
+        <asp:TextBox ID="TxtPrecioMant" runat="server" Visible="False"></asp:TextBox>
+    </p>
+    <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
     </p>
     <p>

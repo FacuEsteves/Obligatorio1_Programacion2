@@ -54,6 +54,7 @@ namespace Obligatorio_1_prog2
         {
             
             DateTime fechanull = new DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            DateTime fecha = fechanull;
             //ERRORES
             
             if (TxtFecha.Text == "" && DD_Usuarios.SelectedIndex == 0 && DD_Cambios.SelectedIndex == 0)
@@ -62,7 +63,12 @@ namespace Obligatorio_1_prog2
                 return;
             }
 
-            DateTime fecha = DateTime.Parse(TxtFecha.Text);
+            if (TxtFecha.Text != "")
+            {
+               fecha = DateTime.Parse(TxtFecha.Text);
+            }
+   
+            
 
             GridAccesos.DataSource = Persistencia.FiltroAcceso(fecha, DD_Usuarios.SelectedValue.ToString());
             GridAccesos.DataBind();

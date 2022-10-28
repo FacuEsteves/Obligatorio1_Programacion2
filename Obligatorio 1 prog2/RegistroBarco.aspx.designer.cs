@@ -87,6 +87,24 @@ namespace Obligatorio_1_prog2
         protected global::System.Web.UI.WebControls.TextBox TxtCantVehiculos;
 
         /// <summary>
+        /// Control LabelPrecioM.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelPrecioM;
+
+        /// <summary>
+        /// Control TxtPrecioMant.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtPrecioMant;
+
+        /// <summary>
         /// Control LabelError.
         /// </summary>
         /// <remarks>

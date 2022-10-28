@@ -2,16 +2,37 @@
 <TransitoMaritimo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <barcoLentos>
     <BarcoLento>
-      <nombre>barco2</nombre>
-      <cantidadPasajeros>18</cantidadPasajeros>
+      <nombre>Barco 1</nombre>
+      <cantidadPasajeros>20</cantidadPasajeros>
       <cantidadTripulantes>10</cantidadTripulantes>
+      <cantidadVehiculos>15</cantidadVehiculos>
+      <precioMantenimiento>0</precioMantenimiento>
+    </BarcoLento>
+    <BarcoLento>
+      <nombre>Barco 4</nombre>
+      <cantidadPasajeros>19</cantidadPasajeros>
+      <cantidadTripulantes>12</cantidadTripulantes>
       <cantidadVehiculos>8</cantidadVehiculos>
+      <precioMantenimiento>0</precioMantenimiento>
+    </BarcoLento>
+    <BarcoLento>
+      <nombre>Barco 5</nombre>
+      <cantidadPasajeros>12</cantidadPasajeros>
+      <cantidadTripulantes>6</cantidadTripulantes>
+      <cantidadVehiculos>4</cantidadVehiculos>
+      <precioMantenimiento>1000</precioMantenimiento>
     </BarcoLento>
   </barcoLentos>
   <barcoRapidos>
     <BarcoRapido>
-      <nombre>barco1</nombre>
-      <cantidadPasajeros>12</cantidadPasajeros>
+      <nombre>Barco 2</nombre>
+      <cantidadPasajeros>25</cantidadPasajeros>
+      <cantidadTripulantes>20</cantidadTripulantes>
+      <velocidadMax>80</velocidadMax>
+    </BarcoRapido>
+    <BarcoRapido>
+      <nombre>Barco 3</nombre>
+      <cantidadPasajeros>25</cantidadPasajeros>
       <cantidadTripulantes>10</cantidadTripulantes>
       <velocidadMax>80</velocidadMax>
     </BarcoRapido>
@@ -39,155 +60,171 @@
   <mantenimientos>
     <Mantenimiento>
       <id>1</id>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
+      <fechaMantenimiento>2022-10-27T00:00:00</fechaMantenimiento>
       <descripcion>Mantenimiento 1</descripcion>
-      <barcos xsi:type="BarcoRapido">
-        <nombre>barco1</nombre>
-        <cantidadPasajeros>12</cantidadPasajeros>
+      <barcos xsi:type="BarcoLento">
+        <nombre>Barco 1</nombre>
+        <cantidadPasajeros>20</cantidadPasajeros>
         <cantidadTripulantes>10</cantidadTripulantes>
-        <velocidadMax>80</velocidadMax>
+        <cantidadVehiculos>15</cantidadVehiculos>
+        <precioMantenimiento>0</precioMantenimiento>
       </barcos>
-      <nombreBarco>barco1</nombreBarco>
-      <tipobarco>Barco Rapido</tipobarco>
+      <nombreBarco>Barco 1</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
       <TiposMantenimiento>
-        <codigo>2</codigo>
-        <precioBase>2000</precioBase>
-        <descripcion>Tipo mantenimiento 2</descripcion>
+        <codigo>4</codigo>
+        <precioBase>420</precioBase>
+        <descripcion>T M 4</descripcion>
       </TiposMantenimiento>
       <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
+        <cedula>64996801</cedula>
+        <nombre>Ezmeralda</nombre>
+        <correo>egorriessen4@freewebs.com</correo>
+        <cantidadPersonal>20</cantidadPersonal>
       </encargados>
-      <precio>2800</precio>
-      <Terminado>true</Terminado>
+      <precio>320</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <id>2</id>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
+      <fechaMantenimiento>2022-10-05T00:00:00</fechaMantenimiento>
       <descripcion>Mantenimiento 2</descripcion>
-      <barcos xsi:type="BarcoRapido">
-        <nombre>barco1</nombre>
-        <cantidadPasajeros>12</cantidadPasajeros>
+      <barcos xsi:type="BarcoLento">
+        <nombre>Barco 1</nombre>
+        <cantidadPasajeros>20</cantidadPasajeros>
         <cantidadTripulantes>10</cantidadTripulantes>
-        <velocidadMax>80</velocidadMax>
+        <cantidadVehiculos>15</cantidadVehiculos>
+        <precioMantenimiento>0</precioMantenimiento>
       </barcos>
-      <nombreBarco>barco1</nombreBarco>
-      <tipobarco>Barco Rapido</tipobarco>
+      <nombreBarco>Barco 1</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
       <TiposMantenimiento>
-        <codigo>2</codigo>
-        <precioBase>2000</precioBase>
-        <descripcion>Tipo mantenimiento 2</descripcion>
+        <codigo>3</codigo>
+        <precioBase>250</precioBase>
+        <descripcion>T M 3</descripcion>
       </TiposMantenimiento>
       <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
+        <cedula>628945829</cedula>
+        <nombre>Pedro Fernandez</nombre>
+        <correo>facundoesteves23@gmail.com</correo>
+        <cantidadPersonal>12</cantidadPersonal>
       </encargados>
-      <precio>2800</precio>
+      <precio>150</precio>
       <Terminado>true</Terminado>
     </Mantenimiento>
     <Mantenimiento>
       <id>3</id>
-      <fechaMantenimiento>2022-10-20T00:00:00-03:00</fechaMantenimiento>
+      <fechaMantenimiento>2022-09-15T00:00:00</fechaMantenimiento>
       <descripcion>Mantenimiento 3</descripcion>
-      <barcos xsi:type="BarcoLento">
-        <nombre>barco2</nombre>
-        <cantidadPasajeros>18</cantidadPasajeros>
-        <cantidadTripulantes>10</cantidadTripulantes>
-        <cantidadVehiculos>8</cantidadVehiculos>
-      </barcos>
-      <nombreBarco>barco2</nombreBarco>
-      <tipobarco>Barco Lento</tipobarco>
-      <TiposMantenimiento>
-        <codigo>2</codigo>
-        <precioBase>2000</precioBase>
-        <descripcion>Tipo mantenimiento 2</descripcion>
-      </TiposMantenimiento>
-      <encargados>
-        <cedula>18349320</cedula>
-        <nombre>Ernesto Santos</nombre>
-        <correo>ernesto.santos@ejemplo.com</correo>
-        <cantidadPersonal>5</cantidadPersonal>
-      </encargados>
-      <precio>2000</precio>
-      <Terminado>true</Terminado>
-    </Mantenimiento>
-    <Mantenimiento>
-      <id>4</id>
-      <fechaMantenimiento>2022-10-25T00:00:00-03:00</fechaMantenimiento>
-      <descripcion>Se Ingreso Un Mantenimiento</descripcion>
       <barcos xsi:type="BarcoRapido">
-        <nombre>barco1</nombre>
-        <cantidadPasajeros>12</cantidadPasajeros>
+        <nombre>Barco 3</nombre>
+        <cantidadPasajeros>25</cantidadPasajeros>
         <cantidadTripulantes>10</cantidadTripulantes>
         <velocidadMax>80</velocidadMax>
       </barcos>
-      <nombreBarco>barco1</nombreBarco>
+      <nombreBarco>Barco 3</nombreBarco>
       <tipobarco>Barco Rapido</tipobarco>
       <TiposMantenimiento>
         <codigo>2</codigo>
-        <precioBase>2000</precioBase>
-        <descripcion>Tipo mantenimiento 2</descripcion>
+        <precioBase>220</precioBase>
+        <descripcion>T M 2</descripcion>
       </TiposMantenimiento>
       <encargados>
-        <cedula>4681003</cedula>
-        <nombre>Federico Barboza</nombre>
-        <correo>21fede95@gmail.com</correo>
-        <cantidadPersonal>2121</cantidadPersonal>
+        <cedula>77456361</cedula>
+        <nombre>Waverley</nombre>
+        <correo>wbuttwell2@sourceforge.net</correo>
+        <cantidadPersonal>15</cantidadPersonal>
       </encargados>
-      <precio>2800</precio>
-      <Terminado>true</Terminado>
+      <precio>486</precio>
+      <Terminado>false</Terminado>
+    </Mantenimiento>
+    <Mantenimiento>
+      <id>4</id>
+      <fechaMantenimiento>2022-09-24T00:00:00</fechaMantenimiento>
+      <descripcion>Mantenimiento 4</descripcion>
+      <barcos xsi:type="BarcoLento">
+        <nombre>Barco 4</nombre>
+        <cantidadPasajeros>19</cantidadPasajeros>
+        <cantidadTripulantes>12</cantidadTripulantes>
+        <cantidadVehiculos>8</cantidadVehiculos>
+        <precioMantenimiento>0</precioMantenimiento>
+      </barcos>
+      <nombreBarco>Barco 4</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
+      <TiposMantenimiento>
+        <codigo>4</codigo>
+        <precioBase>320</precioBase>
+        <descripcion>T M 4</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>16414313</cedula>
+        <nombre>Melessa</nombre>
+        <correo>mmccorkell0@nsw.gov.au</correo>
+        <cantidadPersonal>15</cantidadPersonal>
+      </encargados>
+      <precio>320</precio>
+      <Terminado>false</Terminado>
+    </Mantenimiento>
+    <Mantenimiento>
+      <id>5</id>
+      <fechaMantenimiento>2022-10-26T00:00:00</fechaMantenimiento>
+      <descripcion>Mantenimiento 5</descripcion>
+      <barcos xsi:type="BarcoLento">
+        <nombre>Barco 5</nombre>
+        <cantidadPasajeros>12</cantidadPasajeros>
+        <cantidadTripulantes>6</cantidadTripulantes>
+        <cantidadVehiculos>4</cantidadVehiculos>
+        <precioMantenimiento>1000</precioMantenimiento>
+      </barcos>
+      <nombreBarco>Barco 5</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
+      <TiposMantenimiento>
+        <codigo>1</codigo>
+        <precioBase>100</precioBase>
+        <descripcion>T M 1</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>53550601</cedula>
+        <nombre>Seamus</nombre>
+        <correo>sskepper9@wsj.com</correo>
+        <cantidadPersonal>21</cantidadPersonal>
+      </encargados>
+      <precio>1100</precio>
+      <Terminado>false</Terminado>
     </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
     <Tipo_de_Mantenimiento>
+      <codigo>1</codigo>
+      <precioBase>100</precioBase>
+      <descripcion>T M 1</descripcion>
+    </Tipo_de_Mantenimiento>
+    <Tipo_de_Mantenimiento>
       <codigo>2</codigo>
-      <precioBase>2000</precioBase>
-      <descripcion>Tipo mantenimiento 2</descripcion>
+      <precioBase>220</precioBase>
+      <descripcion>T M 2</descripcion>
+    </Tipo_de_Mantenimiento>
+    <Tipo_de_Mantenimiento>
+      <codigo>3</codigo>
+      <precioBase>150</precioBase>
+      <descripcion>T M 3</descripcion>
+    </Tipo_de_Mantenimiento>
+    <Tipo_de_Mantenimiento>
+      <codigo>4</codigo>
+      <precioBase>320</precioBase>
+      <descripcion>T M 4</descripcion>
+    </Tipo_de_Mantenimiento>
+    <Tipo_de_Mantenimiento>
+      <codigo>5</codigo>
+      <precioBase>525</precioBase>
+      <descripcion>T M 5</descripcion>
     </Tipo_de_Mantenimiento>
   </tiposMantenimiento>
   <usuarios>
     <Usuario>
-      <cedula>11111</cedula>
-      <nombre>Roberto</nombre>
-      <correo>1</correo>
-      <nombreUsuario>Google</nombreUsuario>
-      <contraseña>12345</contraseña>
-      <AsignarTripulacion>false</AsignarTripulacion>
-      <BusquedaMant>false</BusquedaMant>
-      <IngresarCargos>false</IngresarCargos>
-      <IngresarTripulantes>false</IngresarTripulantes>
-      <IngresarEncargados>false</IngresarEncargados>
-      <IngresoMantenimiento>false</IngresoMantenimiento>
-      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
-      <IngresoUsuarios>false</IngresoUsuarios>
-      <RegistroBarco>false</RegistroBarco>
-      <Historial>false</Historial>
-    </Usuario>
-    <Usuario>
-      <cedula>1</cedula>
-      <nombre>Jose</nombre>
-      <correo>JoseMujica</correo>
-      <nombreUsuario>Mujica</nombreUsuario>
-      <contraseña>54321</contraseña>
-      <AsignarTripulacion>true</AsignarTripulacion>
-      <BusquedaMant>true</BusquedaMant>
-      <IngresarCargos>false</IngresarCargos>
-      <IngresarTripulantes>true</IngresarTripulantes>
-      <IngresarEncargados>true</IngresarEncargados>
-      <IngresoMantenimiento>true</IngresoMantenimiento>
-      <IngresoTipoMantenimiento>true</IngresoTipoMantenimiento>
-      <IngresoUsuarios>true</IngresoUsuarios>
-      <RegistroBarco>false</RegistroBarco>
-      <Historial>false</Historial>
-    </Usuario>
-    <Usuario>
-      <cedula>1</cedula>
+      <cedula>11111111</cedula>
       <nombre>Administrador</nombre>
-      <correo>1</correo>
+      <correo>admin@exemplo.com</correo>
       <nombreUsuario>Admin</nombreUsuario>
       <contraseña>12345</contraseña>
       <AsignarTripulacion>true</AsignarTripulacion>
@@ -199,16 +236,16 @@
       <IngresoTipoMantenimiento>true</IngresoTipoMantenimiento>
       <IngresoUsuarios>true</IngresoUsuarios>
       <RegistroBarco>true</RegistroBarco>
-      <Historial>false</Historial>
+      <Historial>true</Historial>
     </Usuario>
     <Usuario>
-      <cedula>2</cedula>
-      <nombre>Maria</nombre>
-      <correo>2</correo>
-      <nombreUsuario>Maria</nombreUsuario>
-      <contraseña>1</contraseña>
-      <AsignarTripulacion>false</AsignarTripulacion>
-      <BusquedaMant>true</BusquedaMant>
+      <cedula>12345678</cedula>
+      <nombre>Pepe</nombre>
+      <correo>ppe@exe.com</correo>
+      <nombreUsuario>pepe</nombreUsuario>
+      <contraseña>12</contraseña>
+      <AsignarTripulacion>true</AsignarTripulacion>
+      <BusquedaMant>false</BusquedaMant>
       <IngresarCargos>false</IngresarCargos>
       <IngresarTripulantes>false</IngresarTripulantes>
       <IngresarEncargados>false</IngresarEncargados>
@@ -218,218 +255,571 @@
       <RegistroBarco>false</RegistroBarco>
       <Historial>false</Historial>
     </Usuario>
-    <Usuario>
-      <cedula>52845890</cedula>
-      <nombre>Facundo Esteves</nombre>
-      <correo>facundoesteves23@gmail.com</correo>
-      <nombreUsuario>facundoes</nombreUsuario>
-      <contraseña>5890</contraseña>
-      <AsignarTripulacion>false</AsignarTripulacion>
-      <BusquedaMant>false</BusquedaMant>
-      <IngresarCargos>true</IngresarCargos>
-      <IngresarTripulantes>true</IngresarTripulantes>
-      <IngresarEncargados>true</IngresarEncargados>
-      <IngresoMantenimiento>false</IngresoMantenimiento>
-      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
-      <IngresoUsuarios>false</IngresoUsuarios>
-      <RegistroBarco>false</RegistroBarco>
-      <Historial>false</Historial>
-    </Usuario>
   </usuarios>
   <tripulantes>
     <Tripulante>
-      <cedula>57248903</cedula>
-      <nombre>Mario Gimenez</nombre>
-      <correo>mario.gimenez@ejemplo.com</correo>
-      <fechaIngreso>2022-10-13T00:00:00-03:00</fechaIngreso>
-      <NombreBarco>barco1</NombreBarco>
+      <cedula>52845890</cedula>
+      <nombre>Facundo Esteves</nombre>
+      <correo>facundo.esteves@exemplo.com</correo>
+      <fechaIngreso>2022-10-27T00:00:00-03:00</fechaIngreso>
+      <NombreBarco>Barco 1</NombreBarco>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>30226560</cedula>
+      <nombre>Janey</nombre>
+      <correo>jbrignell0@discovery.com</correo>
+      <fechaIngreso>2021-10-27T06:18:01Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>87859842</cedula>
+      <nombre>Marven</nombre>
+      <correo>marpur1@wix.com</correo>
+      <fechaIngreso>2021-12-19T07:26:40Z</fechaIngreso>
+      <NombreBarco>Barco 1</NombreBarco>
+      <Cargo>Comisario de a bordo</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>58888280</cedula>
+      <nombre>Bee</nombre>
+      <correo>bbrezlaw2@meetup.com</correo>
+      <fechaIngreso>2022-04-03T21:57:09Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>42276551</cedula>
+      <nombre>Ransom</nombre>
+      <correo>rhudless3@utexas.edu</correo>
+      <fechaIngreso>2021-12-26T07:55:46Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>66918653</cedula>
+      <nombre>Nathanil</nombre>
+      <correo>nwhewill4@naver.com</correo>
+      <fechaIngreso>2022-09-22T13:21:04Z</fechaIngreso>
+      <NombreBarco>Barco 1</NombreBarco>
+      <Cargo>Piloto</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>45311131</cedula>
+      <nombre>Nada</nombre>
+      <correo>nkruse5@hexun.com</correo>
+      <fechaIngreso>2022-03-07T17:33:17Z</fechaIngreso>
+      <Cargo>Piloto</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>86896851</cedula>
+      <nombre>Claiborn</nombre>
+      <correo>cdewes6@zimbio.com</correo>
+      <fechaIngreso>2022-01-09T09:13:55Z</fechaIngreso>
+      <Cargo>Comisario de a bordo</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>58168212</cedula>
+      <nombre>Riki</nombre>
+      <correo>rcoverly7@admin.ch</correo>
+      <fechaIngreso>2021-11-06T10:13:54Z</fechaIngreso>
+      <NombreBarco>Barco 1</NombreBarco>
+      <Cargo>Oficial de cubierta</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>98724439</cedula>
+      <nombre>Goldina</nombre>
+      <correo>gheinonen8@dagondesign.com</correo>
+      <fechaIngreso>2022-05-30T23:37:25Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>60030145</cedula>
+      <nombre>Tabb</nombre>
+      <correo>thaquin9@techcrunch.com</correo>
+      <fechaIngreso>2022-08-20T18:34:34Z</fechaIngreso>
+      <Cargo>Comisario de a bordo</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>15006767</cedula>
+      <nombre>Else</nombre>
+      <correo>eharrolda@a8.net</correo>
+      <fechaIngreso>2022-07-31T01:49:47Z</fechaIngreso>
+      <Cargo>Comisario de a bordo</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>56192250</cedula>
+      <nombre>Chaddie</nombre>
+      <correo>ctweedyb@gov.uk</correo>
+      <fechaIngreso>2022-03-03T12:05:45Z</fechaIngreso>
       <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
     <Tripulante>
-      <cedula>52845890</cedula>
-      <nombre>Facundo esteves</nombre>
-      <correo>facundoesteves@ejemplo.com</correo>
-      <fechaIngreso>2022-10-13T00:00:00-03:00</fechaIngreso>
+      <cedula>37115508</cedula>
+      <nombre>Cordelie</nombre>
+      <correo>cbottomc@nhs.uk</correo>
+      <fechaIngreso>2022-02-06T00:55:58Z</fechaIngreso>
+      <Cargo>Piloto</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>76222058</cedula>
+      <nombre>Valentino</nombre>
+      <correo>vmeanyd@e-recht24.de</correo>
+      <fechaIngreso>2022-08-03T02:15:14Z</fechaIngreso>
+      <Cargo>Oficial de cubierta</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>65281119</cedula>
+      <nombre>Lamar</nombre>
+      <correo>lclitsomee@omniture.com</correo>
+      <fechaIngreso>2022-01-07T18:35:34Z</fechaIngreso>
+      <Cargo>Servicios</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>58177814</cedula>
+      <nombre>Courtney</nombre>
+      <correo>cmackessockf@ebay.co.uk</correo>
+      <fechaIngreso>2022-05-02T16:52:58Z</fechaIngreso>
+      <NombreBarco>Barco 1</NombreBarco>
+      <Cargo>Jefe de maquinas</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>25513350</cedula>
+      <nombre>Charlene</nombre>
+      <correo>csivillsg@shareasale.com</correo>
+      <fechaIngreso>2022-01-12T04:17:13Z</fechaIngreso>
+      <Cargo>Servicios</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>73848806</cedula>
+      <nombre>Allsun</nombre>
+      <correo>aclemitsh@live.com</correo>
+      <fechaIngreso>2021-12-02T17:36:53Z</fechaIngreso>
       <Cargo>Capitán</Cargo>
     </Tripulante>
     <Tripulante>
-      <cedula>45454</cedula>
-      <nombre>mateo</nombre>
-      <correo>sssss</correo>
-      <fechaIngreso>2022-10-25T00:00:00-03:00</fechaIngreso>
-      <Cargo>Capitán</Cargo>
-    </Tripulante>
-    <Tripulante>
-      <cedula>12</cedula>
-      <nombre>h</nombre>
-      <correo>haha</correo>
-      <fechaIngreso>2022-10-26T00:00:00-03:00</fechaIngreso>
-      <NombreBarco>barco1</NombreBarco>
-      <Cargo>Capitán</Cargo>
-    </Tripulante>
-    <Tripulante>
-      <cedula>2</cedula>
-      <nombre>da</nombre>
-      <correo>ss</correo>
-      <fechaIngreso>2022-10-26T00:00:00-03:00</fechaIngreso>
-      <NombreBarco>barco1</NombreBarco>
+      <cedula>39015489</cedula>
+      <nombre>Inigo</nombre>
+      <correo>ilippoi@irs.gov</correo>
+      <fechaIngreso>2021-11-07T22:20:04Z</fechaIngreso>
       <Cargo>Comisario de a bordo</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>24853650</cedula>
+      <nombre>Moina</nombre>
+      <correo>mocrianej@nhs.uk</correo>
+      <fechaIngreso>2022-03-03T19:59:47Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>86777428</cedula>
+      <nombre>Holt</nombre>
+      <correo>hgoldneyk@cloudflare.com</correo>
+      <fechaIngreso>2022-09-21T18:47:20Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>51205325</cedula>
+      <nombre>Wilbur</nombre>
+      <correo>wbrazenerl@theglobeandmail.com</correo>
+      <fechaIngreso>2022-10-15T05:20:52Z</fechaIngreso>
+      <Cargo>Jefe de maquinas</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>20428680</cedula>
+      <nombre>Babs</nombre>
+      <correo>bhiggenm@devhub.com</correo>
+      <fechaIngreso>2021-11-17T01:24:07Z</fechaIngreso>
+      <Cargo>Servicios</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>11088640</cedula>
+      <nombre>Lora</nombre>
+      <correo>lcarniliann@soundcloud.com</correo>
+      <fechaIngreso>2022-02-02T00:27:10Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>35058693</cedula>
+      <nombre>Hashim</nombre>
+      <correo>hdenoreo@buzzfeed.com</correo>
+      <fechaIngreso>2022-06-08T21:43:58Z</fechaIngreso>
+      <Cargo>Piloto</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>34248146</cedula>
+      <nombre>Tandi</nombre>
+      <correo>tackermannp@reuters.com</correo>
+      <fechaIngreso>2021-12-08T09:14:51Z</fechaIngreso>
+      <Cargo>Oficial de cubierta</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>58120187</cedula>
+      <nombre>Leicester</nombre>
+      <correo>ltoulminq@macromedia.com</correo>
+      <fechaIngreso>2022-08-29T21:16:50Z</fechaIngreso>
+      <Cargo>Servicios</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>86697838</cedula>
+      <nombre>Jaime</nombre>
+      <correo>jbarthroppr@msu.edu</correo>
+      <fechaIngreso>2021-10-29T01:22:14Z</fechaIngreso>
+      <Cargo>Capitán</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>13774325</cedula>
+      <nombre>Kim</nombre>
+      <correo>khousbys@printfriendly.com</correo>
+      <fechaIngreso>2022-04-20T04:11:09Z</fechaIngreso>
+      <Cargo>Oficial de cubierta</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>35076816</cedula>
+      <nombre>Maudie</nombre>
+      <correo>mplaskettt@bbc.co.uk</correo>
+      <fechaIngreso>2021-11-17T17:29:58Z</fechaIngreso>
+      <Cargo>Piloto</Cargo>
+    </Tripulante>
+    <Tripulante>
+      <cedula>1111111</cedula>
+      <nombre>Carlos Gardel</nombre>
+      <correo>carlitos@exe.com</correo>
+      <fechaIngreso>2022-10-27T00:00:00-03:00</fechaIngreso>
+      <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
   </tripulantes>
   <encargados>
     <Encargado>
-      <cedula>18349320</cedula>
-      <nombre>Ernesto Santos</nombre>
-      <correo>ernesto.santos@ejemplo.com</correo>
-      <cantidadPersonal>5</cantidadPersonal>
+      <cedula>628945829</cedula>
+      <nombre>Pedro Fernandez</nombre>
+      <correo>facundoesteves23@gmail.com</correo>
+      <cantidadPersonal>12</cantidadPersonal>
     </Encargado>
     <Encargado>
-      <cedula>4681003</cedula>
-      <nombre>Federico Barboza</nombre>
-      <correo>21fede95@gmail.com</correo>
-      <cantidadPersonal>2121</cantidadPersonal>
+      <cedula>16414313</cedula>
+      <nombre>Melessa</nombre>
+      <correo>mmccorkell0@nsw.gov.au</correo>
+      <cantidadPersonal>15</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>29049455</cedula>
+      <nombre>Theresa</nombre>
+      <correo>tsidon1@nationalgeographic.com</correo>
+      <cantidadPersonal>16</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>77456361</cedula>
+      <nombre>Waverley</nombre>
+      <correo>wbuttwell2@sourceforge.net</correo>
+      <cantidadPersonal>15</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>27890628</cedula>
+      <nombre>Emlynne</nombre>
+      <correo>eibbetson3@netvibes.com</correo>
+      <cantidadPersonal>13</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>64996801</cedula>
+      <nombre>Ezmeralda</nombre>
+      <correo>egorriessen4@freewebs.com</correo>
+      <cantidadPersonal>20</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>93523788</cedula>
+      <nombre>Catha</nombre>
+      <correo>ccunniff5@xing.com</correo>
+      <cantidadPersonal>23</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>62793775</cedula>
+      <nombre>Humfried</nombre>
+      <correo>hduchateau6@sciencedirect.com</correo>
+      <cantidadPersonal>12</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>41978877</cedula>
+      <nombre>Colleen</nombre>
+      <correo>cmangenet7@disqus.com</correo>
+      <cantidadPersonal>13</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>16403479</cedula>
+      <nombre>Ralina</nombre>
+      <correo>rgrim8@yellowpages.com</correo>
+      <cantidadPersonal>24</cantidadPersonal>
+    </Encargado>
+    <Encargado>
+      <cedula>53550601</cedula>
+      <nombre>Seamus</nombre>
+      <correo>sskepper9@wsj.com</correo>
+      <cantidadPersonal>21</cantidadPersonal>
     </Encargado>
   </encargados>
   <cantidadTripulantesXtipos>
     <cantidadTripulantesXtipo>
       <Cargo>Capitán</Cargo>
-      <Cantidad>1</Cantidad>
+      <Cantidad>10</Cantidad>
     </cantidadTripulantesXtipo>
     <cantidadTripulantesXtipo>
       <Cargo>Oficial de cubierta</Cargo>
-      <Cantidad>0</Cantidad>
+      <Cantidad>4</Cantidad>
     </cantidadTripulantesXtipo>
     <cantidadTripulantesXtipo>
       <Cargo>Piloto</Cargo>
-      <Cantidad>0</Cantidad>
+      <Cantidad>5</Cantidad>
     </cantidadTripulantesXtipo>
     <cantidadTripulantesXtipo>
       <Cargo>Comisario de a bordo</Cargo>
-      <Cantidad>0</Cantidad>
+      <Cantidad>5</Cantidad>
     </cantidadTripulantesXtipo>
     <cantidadTripulantesXtipo>
       <Cargo>Jefe de maquinas</Cargo>
-      <Cantidad>1</Cantidad>
+      <Cantidad>4</Cantidad>
     </cantidadTripulantesXtipo>
     <cantidadTripulantesXtipo>
       <Cargo>Servicios</Cargo>
-      <Cantidad>0</Cantidad>
-    </cantidadTripulantesXtipo>
-    <cantidadTripulantesXtipo>
-      <Cargo>Capitán</Cargo>
-      <Cantidad>1</Cantidad>
-    </cantidadTripulantesXtipo>
-    <cantidadTripulantesXtipo>
-      <Cargo>Oficial de cubierta</Cargo>
-      <Cantidad>0</Cantidad>
-    </cantidadTripulantesXtipo>
-    <cantidadTripulantesXtipo>
-      <Cargo>Piloto</Cargo>
-      <Cantidad>0</Cantidad>
-    </cantidadTripulantesXtipo>
-    <cantidadTripulantesXtipo>
-      <Cargo>Comisario de a bordo</Cargo>
-      <Cantidad>0</Cantidad>
-    </cantidadTripulantesXtipo>
-    <cantidadTripulantesXtipo>
-      <Cargo>Jefe de maquinas</Cargo>
-      <Cantidad>1</Cantidad>
-    </cantidadTripulantesXtipo>
-    <cantidadTripulantesXtipo>
-      <Cargo>Servicios</Cargo>
-      <Cantidad>0</Cantidad>
+      <Cantidad>4</Cantidad>
     </cantidadTripulantesXtipo>
   </cantidadTripulantesXtipos>
   <registrosA>
     <RegistroAcceso>
       <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-25T22:22:30.6797223-03:00</fechaAcceso>
+      <fechaAcceso>2022-10-27T20:44:45.5492984-03:00</fechaAcceso>
     </RegistroAcceso>
     <RegistroAcceso>
       <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-25T22:29:21.5127835-03:00</fechaAcceso>
+      <fechaAcceso>2022-10-27T20:49:05.5418334-03:00</fechaAcceso>
     </RegistroAcceso>
     <RegistroAcceso>
       <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-26T18:20:22.9916197-03:00</fechaAcceso>
+      <fechaAcceso>2022-10-27T20:49:19.8935046-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>pepe</usuarios>
+      <fechaAcceso>2022-10-27T22:32:46.0415112-03:00</fechaAcceso>
     </RegistroAcceso>
     <RegistroAcceso>
       <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-27T16:15:01.9180481-03:00</fechaAcceso>
-    </RegistroAcceso>
-    <RegistroAcceso>
-      <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-27T16:15:16.7312339-03:00</fechaAcceso>
-    </RegistroAcceso>
-    <RegistroAcceso>
-      <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-27T16:18:59.4995037-03:00</fechaAcceso>
-    </RegistroAcceso>
-    <RegistroAcceso>
-      <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-27T16:19:17.486368-03:00</fechaAcceso>
-    </RegistroAcceso>
-    <RegistroAcceso>
-      <usuarios>Admin</usuarios>
-      <fechaAcceso>2022-10-27T16:19:21.2946261-03:00</fechaAcceso>
+      <fechaAcceso>2022-10-27T22:32:55.7492125-03:00</fechaAcceso>
     </RegistroAcceso>
   </registrosA>
   <registrosE>
     <RegistroEgreso>
       <usuarios>Admin</usuarios>
-      <fechaEgreso>2022-10-25T22:29:29.2562206-03:00</fechaEgreso>
+      <fechaEgreso>2022-10-27T20:48:58.8474438-03:00</fechaEgreso>
     </RegistroEgreso>
     <RegistroEgreso>
       <usuarios>Admin</usuarios>
-      <fechaEgreso>2022-10-26T18:59:13.5112464-03:00</fechaEgreso>
+      <fechaEgreso>2022-10-27T20:49:15.2612762-03:00</fechaEgreso>
     </RegistroEgreso>
     <RegistroEgreso>
       <usuarios>Admin</usuarios>
-      <fechaEgreso>2022-10-27T16:15:09.0525753-03:00</fechaEgreso>
+      <fechaEgreso>2022-10-27T22:32:40.3755126-03:00</fechaEgreso>
     </RegistroEgreso>
     <RegistroEgreso>
-      <usuarios>Admin</usuarios>
-      <fechaEgreso>2022-10-27T16:15:20.6321025-03:00</fechaEgreso>
-    </RegistroEgreso>
-    <RegistroEgreso>
-      <usuarios>Admin</usuarios>
-      <fechaEgreso>2022-10-27T16:19:02.0288343-03:00</fechaEgreso>
-    </RegistroEgreso>
-    <RegistroEgreso>
-      <usuarios>Admin</usuarios>
-      <fechaEgreso>2022-10-27T16:19:18.9342972-03:00</fechaEgreso>
+      <usuarios>pepe</usuarios>
+      <fechaEgreso>2022-10-27T22:32:53.8908966-03:00</fechaEgreso>
     </RegistroEgreso>
   </registrosE>
   <registrosC>
     <RegistroCambio>
-      <usuarios>Admin</usuarios>
-      <fechaCambio>2022-10-25T22:47:28.1410665-03:00</fechaCambio>
+      <fechaCambio>2022-10-27T20:43:45.7599705-03:00</fechaCambio>
       <descripcion>Ingreso usuarios</descripcion>
     </RegistroCambio>
     <RegistroCambio>
       <usuarios>Admin</usuarios>
-      <fechaCambio>2022-10-26T18:58:58.2605791-03:00</fechaCambio>
-      <descripcion>Borrar usuario</descripcion>
+      <fechaCambio>2022-10-27T20:45:21.125215-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
     </RegistroCambio>
     <RegistroCambio>
       <usuarios>Admin</usuarios>
-      <fechaCambio>2022-10-26T18:59:00.1473071-03:00</fechaCambio>
-      <descripcion>Borrar usuario</descripcion>
+      <fechaCambio>2022-10-27T20:45:46.2243096-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
     </RegistroCambio>
     <RegistroCambio>
       <usuarios>Admin</usuarios>
-      <fechaCambio>2022-10-26T18:59:01.8511862-03:00</fechaCambio>
-      <descripcion>Borrar usuario</descripcion>
+      <fechaCambio>2022-10-27T20:46:34.0379352-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
     </RegistroCambio>
     <RegistroCambio>
       <usuarios>Admin</usuarios>
-      <fechaCambio>2022-10-26T18:59:09.9483431-03:00</fechaCambio>
-      <descripcion>Borrar usuario</descripcion>
+      <fechaCambio>2022-10-27T20:46:47.1793053-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
     </RegistroCambio>
     <RegistroCambio>
       <usuarios>Admin</usuarios>
-      <fechaCambio>2022-10-26T19:57:47.1964993-03:00</fechaCambio>
+      <fechaCambio>2022-10-27T20:47:38.1627478-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:48:13.2401553-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:49:30.6942283-03:00</fechaCambio>
+      <descripcion>Ingresar cargo</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:49:43.3474711-03:00</fechaCambio>
+      <descripcion>Ingresar cargo</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:49:48.603887-03:00</fechaCambio>
+      <descripcion>Ingresar cargo</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:49:58.7123592-03:00</fechaCambio>
+      <descripcion>Ingresar cargo</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:50:05.2675791-03:00</fechaCambio>
+      <descripcion>Ingresar cargo</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:50:10.0275266-03:00</fechaCambio>
+      <descripcion>Ingresar cargo</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T20:51:55.1936153-03:00</fechaCambio>
+      <descripcion>Ingreso tripulantes</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:26:14.6293844-03:00</fechaCambio>
+      <descripcion>Ingreso tripulantes</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:27:15.2115198-03:00</fechaCambio>
+      <descripcion>Borrar tripulantes</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:51:02.4325956-03:00</fechaCambio>
+      <descripcion>Ingreso tripulantes</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:55:52.2452995-03:00</fechaCambio>
+      <descripcion>Ingreso encargados</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:58:08.9842863-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:58:21.1105606-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:58:40.0091599-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T21:59:05.2372798-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:00:15.6193172-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:00:52.786426-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:01:07.1893232-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:03:28.3248753-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:04:26.2467816-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:04:54.8673126-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:05:23.489945-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:24:02.3020201-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:24:49.8202072-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:25:35.4124065-03:00</fechaCambio>
       <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:25:43.7089313-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:25:51.3294956-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:25:53.9165114-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:25:57.4218948-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:26:01.8665213-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:28:02.8421255-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:43:19.921534-03:00</fechaCambio>
+      <descripcion>Mantenimiento terminado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-27T22:46:01.1314086-03:00</fechaCambio>
+      <descripcion>Mantenimiento terminado</descripcion>
     </RegistroCambio>
   </registrosC>
   <idUsuario>Admin</idUsuario>
