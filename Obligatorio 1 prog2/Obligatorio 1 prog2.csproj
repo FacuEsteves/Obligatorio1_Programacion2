@@ -113,6 +113,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Datos\Informacion.xml" />
     <Content Include="Default.aspx" />
+    <Content Include="Diseño\General.css" />
+    <Content Include="Diseño\InicioSesion.css" />
+    <Content Include="Diseño\Menu.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

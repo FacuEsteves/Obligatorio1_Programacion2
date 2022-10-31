@@ -1,17 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BusquedaDeMantenimientos.aspx.cs" Inherits="Obligatorio_1_prog2.BusquedaDeMantenimientos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link rel="stylesheet" type="text/css" href="Diseño/General.css" />
     <p>
         <br />
     </p>
     <p>
         &nbsp;</p>
     <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
         Barco:&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DD_Barco" runat="server" AppendDataBoundItems="True">
+        <asp:DropDownList ID="DD_Barco" class="form-select" runat="server" AppendDataBoundItems="True">
             <asp:ListItem>(Seleccionar)</asp:ListItem>
         </asp:DropDownList>
     </p>
@@ -19,7 +16,7 @@
         &nbsp;</p>
     <p>
         Mes:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DDMes" runat="server">
+        <asp:DropDownList ID="DDMes" class="form-select" runat="server">
             <asp:ListItem>(Seleccionar)</asp:ListItem>
             <asp:ListItem Value="01">Enero</asp:ListItem>
             <asp:ListItem Value="02">Febrero</asp:ListItem>
@@ -39,18 +36,18 @@
         &nbsp;</p>
     <p>
         Año:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtAño" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtAño" class="form-control" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;<asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
     </p>
     <p>
-        <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
+        <asp:Button ID="btnBuscar" class="btn-success" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
     </p>
     <p>
         &nbsp;</p>
     <p>
-        <asp:GridView ID="GridView1" runat="server">
+        <asp:GridView ID="GridView1" class="table table-dark table-striped" runat="server">
         </asp:GridView>
     </p>
     <p>

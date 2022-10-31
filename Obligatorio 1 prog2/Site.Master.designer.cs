@@ -15,13 +15,13 @@ namespace Obligatorio_1_prog2
     {
 
         /// <summary>
-        /// Control RegistroBarco.
+        /// Control BtnSalir.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor RegistroBarco;
+        protected global::System.Web.UI.WebControls.Button BtnSalir;
 
         /// <summary>
         /// Control IngresarTripulantes.
@@ -31,15 +31,6 @@ namespace Obligatorio_1_prog2
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor IngresarTripulantes;
-
-        /// <summary>
-        /// Control Asignar_Tripulacion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Asignar_Tripulacion;
 
         /// <summary>
         /// Control IngresoEncargados.
@@ -58,6 +49,33 @@ namespace Obligatorio_1_prog2
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor IngresoCargos;
+
+        /// <summary>
+        /// Control IngresoUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor IngresoUsuario;
+
+        /// <summary>
+        /// Control RegistroBarco.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor RegistroBarco;
+
+        /// <summary>
+        /// Control Asignar_Tripulacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor Asignar_Tripulacion;
 
         /// <summary>
         /// Control IngresoMantenimiento.
@@ -87,15 +105,6 @@ namespace Obligatorio_1_prog2
         protected global::System.Web.UI.HtmlControls.HtmlAnchor IngresoTipoMantenimiento;
 
         /// <summary>
-        /// Control IngresoUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor IngresoUsuario;
-
-        /// <summary>
         /// Control HistorialCambiosAccesos.
         /// </summary>
         /// <remarks>
@@ -103,15 +112,6 @@ namespace Obligatorio_1_prog2
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor HistorialCambiosAccesos;
-
-        /// <summary>
-        /// Control BtnSalir.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSalir;
 
         /// <summary>
         /// Control MainContent.

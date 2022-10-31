@@ -2,20 +2,26 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>&nbsp;</h1>
-        <h1>Bienvenido:&nbsp;&nbsp; </h1>
-        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usuario:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-            <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
-        </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contraseña:&nbsp;<asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
-        </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
-        </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnIniciar" class="btn-primary"  runat="server" Text="Iniciar Sesion" OnClick="btnIniciar_Click" />
-        </p>
+    <link rel="stylesheet" type="text/css" href="Diseño/InicioSesion.css" />
+
+    <div class="Inicio">
+        <h1>Bienvenido:</h1>
+        <div class="campos">
+            <p>
+                <asp:Label ID="Label1" runat="server" Text="Usuario: "></asp:Label>
+                <asp:TextBox ID="txtUsuario" runat="server" class="form-control"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label2" runat="server" Text="Contraseña: "></asp:Label>
+                <asp:TextBox ID="txtContraseña" runat="server" class="form-control" TextMode="Password"></asp:TextBox>
+            </p>
+         </div>
+            <p class="error">
+                <asp:Label ID="LabelError" runat="server" ForeColor="Red"></asp:Label>
+            </p>
+            <p class="boton">
+                <asp:Button ID="btnIniciar" runat="server"  class="btn-primary" Text="Iniciar Sesion" OnClick="btnIniciar_Click" Height="40px" Width="150px" />
+            </p>
     </div>
 
     <div class="row">
