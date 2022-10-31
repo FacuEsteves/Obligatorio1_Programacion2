@@ -270,6 +270,7 @@
       <nombre>Janey</nombre>
       <correo>jbrignell0@discovery.com</correo>
       <fechaIngreso>2021-10-27T06:18:01Z</fechaIngreso>
+      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Capitán</Cargo>
     </Tripulante>
     <Tripulante>
@@ -307,6 +308,7 @@
       <nombre>Nada</nombre>
       <correo>nkruse5@hexun.com</correo>
       <fechaIngreso>2022-03-07T17:33:17Z</fechaIngreso>
+      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Piloto</Cargo>
     </Tripulante>
     <Tripulante>
@@ -314,6 +316,7 @@
       <nombre>Claiborn</nombre>
       <correo>cdewes6@zimbio.com</correo>
       <fechaIngreso>2022-01-09T09:13:55Z</fechaIngreso>
+      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
     <Tripulante>
@@ -343,6 +346,7 @@
       <nombre>Else</nombre>
       <correo>eharrolda@a8.net</correo>
       <fechaIngreso>2022-07-31T01:49:47Z</fechaIngreso>
+      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
     <Tripulante>
@@ -350,6 +354,7 @@
       <nombre>Chaddie</nombre>
       <correo>ctweedyb@gov.uk</correo>
       <fechaIngreso>2022-03-03T12:05:45Z</fechaIngreso>
+      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
     <Tripulante>
@@ -449,6 +454,7 @@
       <nombre>Tandi</nombre>
       <correo>tackermannp@reuters.com</correo>
       <fechaIngreso>2021-12-08T09:14:51Z</fechaIngreso>
+      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Oficial de cubierta</Cargo>
     </Tripulante>
     <Tripulante>
@@ -820,6 +826,61 @@
       <usuarios>Admin</usuarios>
       <fechaCambio>2022-10-27T22:46:01.1314086-03:00</fechaCambio>
       <descripcion>Mantenimiento terminado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:36.3672103-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:42.0860256-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:46.7637093-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:48.8762139-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:50.3897695-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:52.9771568-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:06:57.5892436-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:07:00.0323149-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:07:13.6340254-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:59:40.4324902-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-10-31T16:59:44.5224169-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
     </RegistroCambio>
   </registrosC>
   <idUsuario>Admin</idUsuario>
