@@ -40,35 +40,34 @@
         <asp:Button ID="BtnBuscar" class="btn-success" runat="server" OnClick="BtnBuscar_Click" Text="Buscar" />
         <asp:Button ID="BtnBorrar" class="btn-danger" runat="server" OnClick="BtnBorrar_Click" Text="Borrar filtros" />
     </p>
-    <h3>
-        Accesos</h3>
-    <p>
-        <asp:GridView ID="GridAccesos" class="table table-primary" runat="server" AutoGenerateColumns="False" Width="333px" >
-            <Columns>
-                <asp:BoundField DataField="usuarios" HeaderText="Usuario" />
-                <asp:BoundField DataField="fechaAcceso" HeaderText="Fecha acceso" />
-            </Columns>
-        </asp:GridView>
-    </p>
-    <h3>
-        Egresos</h3>
-    <p>
-        <asp:GridView ID="GridEgresos" class="table table-danger" runat="server" AutoGenerateColumns="False" Width="333px">
-            <Columns>
-                <asp:BoundField DataField="usuarios" HeaderText="Usuario" />
-                <asp:BoundField DataField="fechaEgreso" HeaderText="Fecha egreso" />
-            </Columns>
-        </asp:GridView>
-    </p>
-    <h3>
-        Cambios en el sistema</h3>
-    <p>
-        <asp:GridView ID="GridCambios" class="table table-success" runat="server" AutoGenerateColumns="False"  Width="500px">
-            <Columns>
-                <asp:BoundField DataField="usuarios" HeaderText="Usuario" />
-                <asp:BoundField DataField="fechaCambio" HeaderText="Fecha cambio" />
-                <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
-            </Columns>
-        </asp:GridView>
-    </p>
+    <div class="espaciado">
+    <h3>Accesos</h3><h3>Egresos</h3><h3>Cambios en el sistema</h3>
+    </div>
+    <div class="division">
+        <p>
+            <asp:GridView ID="GridAccesos" class="table table-primary" runat="server" AutoGenerateColumns="False" Width="333px" >
+                <Columns>
+                    <asp:BoundField DataField="usuarios" HeaderText="Usuario" />
+                    <asp:BoundField DataField="fechaAcceso" HeaderText="Fecha acceso" />
+                </Columns>
+            </asp:GridView>
+        </p>
+        <p>
+            <asp:GridView ID="GridEgresos" class="table table-danger" runat="server" AutoGenerateColumns="False" Width="333px">
+                <Columns>
+                    <asp:BoundField DataField="usuarios" HeaderText="Usuario" />
+                    <asp:BoundField DataField="fechaEgreso" HeaderText="Fecha egreso" />
+                </Columns>
+            </asp:GridView>
+        </p>
+        <p>
+            <asp:GridView ID="GridCambios" class="table table-success" runat="server" AutoGenerateColumns="False"  Width="500px">
+                <Columns>
+                    <asp:BoundField DataField="usuarios" HeaderText="Usuario" />
+                    <asp:BoundField DataField="fechaCambio" HeaderText="Fecha cambio" />
+                    <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
+                </Columns>
+            </asp:GridView>
+        </p>
+    </div>
 </asp:Content>

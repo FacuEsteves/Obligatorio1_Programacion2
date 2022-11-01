@@ -774,6 +774,10 @@
       <usuarios>Admin</usuarios>
       <fechaAcceso>2022-10-31T00:27:27.7342315-03:00</fechaAcceso>
     </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-11-01T08:59:22.5260325-03:00</fechaAcceso>
+    </RegistroAcceso>
   </registrosA>
   <registrosE>
     <RegistroEgreso>

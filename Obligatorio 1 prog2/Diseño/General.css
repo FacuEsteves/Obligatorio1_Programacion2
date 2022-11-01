@@ -19,6 +19,17 @@ h3{
     color:black;
 }
 
+.division{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.espaciado{
+    display: flex;
+    column-gap: 40rem;
+    text-align:center;
+}
+
 .orden{
     text-align:center;
 }
@@ -29,4 +40,9 @@ h3{
 
 .form-select {
     font-size: 2rem;
+}
+
+.divisionUsuario{
+    display: flex;
+    column-gap: 20rem;
 }
