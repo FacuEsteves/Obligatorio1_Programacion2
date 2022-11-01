@@ -6,57 +6,61 @@
     </p>
     <p>
         &nbsp;</p>
-    <p>
-        Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtNombre" class="form-control" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        Cedula:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtCedula" class="form-control" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        ID Usuario:&nbsp;&nbsp;
-        <asp:TextBox ID="txtID" class="form-control" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        Contraseña:
-        <asp:TextBox ID="txtContraseña" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
-    </p>
-    <p>
-        Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtCorreo" class="form-control" runat="server" TextMode="Email"></asp:TextBox>
-    </p>
-    <p>
-        &nbsp;</p>
-        <h3>Permisos:</h3>
-    <p>
-        Asignar Tripulación:<asp:CheckBox ID="CheckBox1" runat="server" />
-    <p>
-        Ingresar Cargos:<asp:CheckBox ID="CheckBox2" runat="server" />
-<p>
-        Ingresar Tripulantes:<asp:CheckBox ID="CheckBox3" runat="server" />
-</p>
-<p>
-        Ingresar Encargados:<asp:CheckBox ID="CheckBox4" runat="server" />
-</p>
-<p>
-        Ingresar Mantenimiento:
-        <asp:CheckBox ID="CheckBox5" runat="server" />
-</p>
-<p>
-        Ingresar Tipo de Mantenimiento:<asp:CheckBox ID="CheckBox6" runat="server" />
-</p>
-<p>
-        Ingreso Usuario:<asp:CheckBox ID="CheckBox7" runat="server" />
-</p>
-<p>
-        Registro Barcos:<asp:CheckBox ID="CheckBox8" runat="server" />
-</p>
-<p>
-        Historial Mantenimientos:<asp:CheckBox ID="CheckBox9" runat="server" />
-</p>
-<p>
-        Historial Cambios:<asp:CheckBox ID="CheckBox10" runat="server" />
-    </p>
+    <div class="divisionUsuario">
+        <div>
+            <p>
+                Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtNombre" class="form-control" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Cedula:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="txtCedula" class="form-control" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                ID Usuario:&nbsp;&nbsp;
+                <asp:TextBox ID="txtID" class="form-control" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Contraseña:
+                <asp:TextBox ID="txtContraseña" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
+            </p>
+            <p>
+                Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="txtCorreo" class="form-control" runat="server" TextMode="Email"></asp:TextBox>
+            </p>
+        </div>
+        <div>
+            <h3>Permisos:</h3>
+            <p>
+                Asignar Tripulación:<asp:CheckBox ID="CheckBox1" runat="server" />
+            <p>
+                Ingresar Cargos:<asp:CheckBox ID="CheckBox2" runat="server" />
+            <p>
+                Ingresar Tripulantes:<asp:CheckBox ID="CheckBox3" runat="server" />
+            </p>
+            <p>
+                Ingresar Encargados:<asp:CheckBox ID="CheckBox4" runat="server" />
+            </p>
+            <p>
+                Ingresar Mantenimiento:
+                <asp:CheckBox ID="CheckBox5" runat="server" />
+            </p>
+            <p>
+                Ingresar Tipo de Mantenimiento:<asp:CheckBox ID="CheckBox6" runat="server" />
+            </p>
+            <p>
+                Ingreso Usuario:<asp:CheckBox ID="CheckBox7" runat="server" />
+            </p>
+            <p>
+                Registro Barcos:<asp:CheckBox ID="CheckBox8" runat="server" />
+            </p>
+            <p>
+                Historial Mantenimientos:<asp:CheckBox ID="CheckBox9" runat="server" />
+            </p>
+            <p>
+                Historial Cambios:<asp:CheckBox ID="CheckBox10" runat="server" />
+            </p>
+        </div>
+    </div>
     <p>
         <asp:Label ID="LabelError" runat="server" ForeColor="#FF3300"></asp:Label>
     </p>
