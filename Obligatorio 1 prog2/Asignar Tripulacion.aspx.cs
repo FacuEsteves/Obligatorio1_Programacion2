@@ -85,58 +85,66 @@ namespace Obligatorio_1_prog2
                 }
             }
 
-            //recorre la tripulacion
-            foreach (var item in Global.transitoMaritimo.tripulantes)
+            if (triAsignar[index].Cargo != "Capitán")
             {
-                //buscar que la tripulacion tenga un barco asignado
-                if (!String.IsNullOrEmpty(item.NombreBarco))
-                {
-                    //buscar que un barco ya tenga o no capitan
-                    if(item.NombreBarco == barcoAsignado)
-                    {
-                        if(item.Cargo == "Capitán") {
-                            countCapitan++;
-                        }
-                        
-                    }        
-                   
-                }
-            }
-            //si el cargo del seleccionado es distinto a capitan se setea el contador 0 para que lo ingrese pq no es necesario validar
-            if(triAsignar[index].Cargo != "Capitán") {
                 countCapitan = 0;
             }
+            else
+            {
+                //recorre la tripulacion
+                foreach (var item in Global.transitoMaritimo.tripulantes)
+                {
+                    //buscar que la tripulacion tenga un barco asignado
+                    if (!String.IsNullOrEmpty(item.NombreBarco))
+                    {
+                        //buscar que un barco ya tenga o no capitan
+                        if (item.NombreBarco == barcoAsignado)
+                        {
+                            if (item.Cargo == "Capitán")
+                            {
+                                countCapitan++;
+                            }
 
+                        }
+
+                    }
+                }
+            }
+            
+            //si el cargo del seleccionado es distinto a capitan se setea el contador 0 para que lo ingrese pq no es necesario validar
 
             if (countCapitan == 1)
             {
                 LabelError.ForeColor = System.Drawing.Color.Red;
                 LabelError.Text = "Ya existe un capitan en este barco";
+                return;
             }
             else
             {
-                for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+                for (int j = 0; j < Global.transitoMaritimo.tripulantes.Count; j++)
                 {
-                    if (Global.transitoMaritimo.tripulantes[i].NombreBarco == barcoAsignado)
+                    if (Global.transitoMaritimo.tripulantes[j].NombreBarco == barcoAsignado)
                     {
                         contador++;
-                        if (contador > maximo)
-                        {
-                            LabelError.ForeColor = System.Drawing.Color.Red;
-                            LabelError.Text = "El barco " + barcoAsignado+" "+"supero su maximo de: "+maximo+ " tripulantes";
-                            return;
-                        }
-                        else
-                        {
-                            if (cedula == Global.transitoMaritimo.tripulantes[i].cedula)
-                            {
-                                Global.transitoMaritimo.tripulantes[i].NombreBarco = barcoAsignado;
-                                LabelError.ForeColor = System.Drawing.Color.Green;
-                                LabelError.Text = "Se asigno el tripulante " + cedula + " al barco " + barcoAsignado;
-                                break;
-                            }
-                        }
                     }
+                }
+
+                if (contador > maximo)
+                {
+                    LabelError.ForeColor = System.Drawing.Color.Red;
+                    LabelError.Text = "El barco " + barcoAsignado + " " + "supero su maximo de: " + maximo + " tripulantes";
+                    return;
+                }
+
+                for (int i = 0; i < Global.transitoMaritimo.tripulantes.Count; i++)
+                {
+                    if (cedula == Global.transitoMaritimo.tripulantes[i].cedula)
+                    {
+                        Global.transitoMaritimo.tripulantes[i].NombreBarco = barcoAsignado;
+                        LabelError.ForeColor = System.Drawing.Color.Green;
+                        LabelError.Text = "Se asigno el tripulante " + cedula + " al barco " + barcoAsignado;
+                        break;
+                    }                    
                 }
             }
             GridAsignar.DataSource = Persistencia.TripulantesSinAsignar();

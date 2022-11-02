@@ -18,15 +18,15 @@
         Mes:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DDMes" class="form-select" runat="server">
             <asp:ListItem>(Seleccionar)</asp:ListItem>
-            <asp:ListItem Value="01">Enero</asp:ListItem>
-            <asp:ListItem Value="02">Febrero</asp:ListItem>
-            <asp:ListItem Value="03">Marzo</asp:ListItem>
-            <asp:ListItem Value="04">Abril</asp:ListItem>
-            <asp:ListItem Value="05">Mayo</asp:ListItem>
-            <asp:ListItem Value="06">Junio</asp:ListItem>
-            <asp:ListItem Value="07">Julio</asp:ListItem>
-            <asp:ListItem Value="08">Agosto</asp:ListItem>
-            <asp:ListItem Value="09">Septiembre</asp:ListItem>
+            <asp:ListItem Value="1">Enero</asp:ListItem>
+            <asp:ListItem Value="2">Febrero</asp:ListItem>
+            <asp:ListItem Value="3">Marzo</asp:ListItem>
+            <asp:ListItem Value="4">Abril</asp:ListItem>
+            <asp:ListItem Value="5">Mayo</asp:ListItem>
+            <asp:ListItem Value="6">Junio</asp:ListItem>
+            <asp:ListItem Value="7">Julio</asp:ListItem>
+            <asp:ListItem Value="8">Agosto</asp:ListItem>
+            <asp:ListItem Value="9">Septiembre</asp:ListItem>
             <asp:ListItem Value="10">Octubre</asp:ListItem>
             <asp:ListItem Value="11">Noviembre</asp:ListItem>
             <asp:ListItem Value="12">Diciembre</asp:ListItem>

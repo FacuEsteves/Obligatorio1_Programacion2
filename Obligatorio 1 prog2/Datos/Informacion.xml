@@ -36,6 +36,12 @@
       <cantidadTripulantes>10</cantidadTripulantes>
       <velocidadMax>80</velocidadMax>
     </BarcoRapido>
+    <BarcoRapido>
+      <nombre>Barco 6</nombre>
+      <cantidadPasajeros>15</cantidadPasajeros>
+      <cantidadTripulantes>15</cantidadTripulantes>
+      <velocidadMax>20</velocidadMax>
+    </BarcoRapido>
   </barcoRapidos>
   <cargos>
     <Cargo>
@@ -58,6 +64,60 @@
     </Cargo>
   </cargos>
   <mantenimientos>
+    <Mantenimiento>
+      <id>1</id>
+      <fechaMantenimiento>2022-04-12T00:00:00</fechaMantenimiento>
+      <descripcion>prueba</descripcion>
+      <barcos xsi:type="BarcoLento">
+        <nombre>Barco 5</nombre>
+        <cantidadPasajeros>12</cantidadPasajeros>
+        <cantidadTripulantes>6</cantidadTripulantes>
+        <cantidadVehiculos>4</cantidadVehiculos>
+        <precioMantenimiento>1000</precioMantenimiento>
+      </barcos>
+      <nombreBarco>Barco 5</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
+      <TiposMantenimiento>
+        <codigo>3</codigo>
+        <precioBase>150</precioBase>
+        <descripcion>T M 3</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>628945829</cedula>
+        <nombre>Pedro Fernandez</nombre>
+        <correo>facundoesteves23@gmail.com</correo>
+        <cantidadPersonal>12</cantidadPersonal>
+      </encargados>
+      <precio>1150</precio>
+      <Terminado>false</Terminado>
+    </Mantenimiento>
+    <Mantenimiento>
+      <id>2</id>
+      <fechaMantenimiento>2022-02-05T00:00:00</fechaMantenimiento>
+      <descripcion>ww</descripcion>
+      <barcos xsi:type="BarcoLento">
+        <nombre>Barco 4</nombre>
+        <cantidadPasajeros>19</cantidadPasajeros>
+        <cantidadTripulantes>12</cantidadTripulantes>
+        <cantidadVehiculos>8</cantidadVehiculos>
+        <precioMantenimiento>0</precioMantenimiento>
+      </barcos>
+      <nombreBarco>Barco 4</nombreBarco>
+      <tipobarco>Barco Lento</tipobarco>
+      <TiposMantenimiento>
+        <codigo>1</codigo>
+        <precioBase>100</precioBase>
+        <descripcion>T M 1</descripcion>
+      </TiposMantenimiento>
+      <encargados>
+        <cedula>16414313</cedula>
+        <nombre>Melessa</nombre>
+        <correo>facundoesteves23@gmail.com</correo>
+        <cantidadPersonal>15</cantidadPersonal>
+      </encargados>
+      <precio>100</precio>
+      <Terminado>false</Terminado>
+    </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
     <Tipo_de_Mantenimiento>
@@ -84,6 +144,11 @@
       <codigo>5</codigo>
       <precioBase>525</precioBase>
       <descripcion>T M 5</descripcion>
+    </Tipo_de_Mantenimiento>
+    <Tipo_de_Mantenimiento>
+      <codigo>6</codigo>
+      <precioBase>500</precioBase>
+      <descripcion>sss</descripcion>
     </Tipo_de_Mantenimiento>
   </tiposMantenimiento>
   <usuarios>
@@ -121,23 +186,23 @@
       <RegistroBarco>false</RegistroBarco>
       <Historial>false</Historial>
     </Usuario>
-	    <Usuario>
-		  <cedula>12345679</cedula>
-		  <nombre>Juan Manuel</nombre>
-		  <correo>ppe@exe.com</correo>
-		  <nombreUsuario>pepe</nombreUsuario>
-		  <contraseña>12</contraseña>
-		  <AsignarTripulacion>true</AsignarTripulacion>
-		  <BusquedaMant>true</BusquedaMant>
-		  <IngresarCargos>true</IngresarCargos>
-		  <IngresarTripulantes>true</IngresarTripulantes>
-		  <IngresarEncargados>false</IngresarEncargados>
-		  <IngresoMantenimiento>false</IngresoMantenimiento>
-		  <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
-		  <IngresoUsuarios>false</IngresoUsuarios>
-		  <RegistroBarco>false</RegistroBarco>
-		  <Historial>false</Historial>
-	  </Usuario>
+    <Usuario>
+      <cedula>12345679</cedula>
+      <nombre>Juan Manuel</nombre>
+      <correo>ppe@exe.com</correo>
+      <nombreUsuario>pepe</nombreUsuario>
+      <contraseña>12</contraseña>
+      <AsignarTripulacion>true</AsignarTripulacion>
+      <BusquedaMant>true</BusquedaMant>
+      <IngresarCargos>true</IngresarCargos>
+      <IngresarTripulantes>true</IngresarTripulantes>
+      <IngresarEncargados>false</IngresarEncargados>
+      <IngresoMantenimiento>false</IngresoMantenimiento>
+      <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
+      <IngresoUsuarios>false</IngresoUsuarios>
+      <RegistroBarco>false</RegistroBarco>
+      <Historial>false</Historial>
+    </Usuario>
   </usuarios>
   <tripulantes>
     <Tripulante>
@@ -153,7 +218,6 @@
       <nombre>Janey</nombre>
       <correo>jbrignell0@discovery.com</correo>
       <fechaIngreso>2021-10-27T06:18:01Z</fechaIngreso>
-      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Capitán</Cargo>
     </Tripulante>
     <Tripulante>
@@ -199,7 +263,6 @@
       <nombre>Claiborn</nombre>
       <correo>cdewes6@zimbio.com</correo>
       <fechaIngreso>2022-01-09T09:13:55Z</fechaIngreso>
-      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
     <Tripulante>
@@ -375,6 +438,13 @@
       <fechaIngreso>2022-10-27T00:00:00-03:00</fechaIngreso>
       <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
+    <Tripulante>
+      <cedula>4</cedula>
+      <nombre>nateo</nombre>
+      <correo>aaa@gmail.com</correo>
+      <fechaIngreso>2022-11-01T00:00:00-03:00</fechaIngreso>
+      <Cargo>Jefe de maquinas</Cargo>
+    </Tripulante>
   </tripulantes>
   <encargados>
     <Encargado>
@@ -421,12 +491,158 @@
     </Encargado>
   </encargados>
   <cantidadTripulantesXtipos>
+    <cantidadTripulantesXtipo>
+      <Cargo>Capitán</Cargo>
+      <Cantidad>10</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Oficial de cubierta</Cargo>
+      <Cantidad>4</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Piloto</Cargo>
+      <Cantidad>5</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Comisario de a bordo</Cargo>
+      <Cantidad>5</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Jefe de maquinas</Cargo>
+      <Cantidad>5</Cantidad>
+    </cantidadTripulantesXtipo>
+    <cantidadTripulantesXtipo>
+      <Cargo>Servicios</Cargo>
+      <Cantidad>4</Cantidad>
+    </cantidadTripulantesXtipo>
   </cantidadTripulantesXtipos>
   <registrosA>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-11-01T21:38:23.4587477-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-11-01T22:10:23.064832-03:00</fechaAcceso>
+    </RegistroAcceso>
   </registrosA>
   <registrosE>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-11-01T21:46:06.9827308-03:00</fechaEgreso>
+    </RegistroEgreso>
   </registrosE>
   <registrosC>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:39:26.6261794-03:00</fechaCambio>
+      <descripcion>Registro barco</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:40:19.0506542-03:00</fechaCambio>
+      <descripcion>Ingreso tripulantes</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:40:59.1258447-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:41:06.1016649-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:41:07.6341749-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:41:16.0896226-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:41:31.2093706-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:41:50.3318031-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:41:55.4013267-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:42:02.9706713-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:42:05.5137233-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:42:08.5258847-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:42:15.3921986-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:42:50.3141261-03:00</fechaCambio>
+      <descripcion>Ingreso tipo mantenimiento</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:43:31.557601-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T21:44:27.2936931-03:00</fechaCambio>
+      <descripcion>Ingreso mantenimientos</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:04:05.7351302-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:04:26.0278041-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:04:43.7467794-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:04:51.6313484-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:04:53.2957436-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:04:54.9309081-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
   </registrosC>
-  <idUsuario></idUsuario>
+  <idUsuario>Admin</idUsuario>
 </TransitoMaritimo>
