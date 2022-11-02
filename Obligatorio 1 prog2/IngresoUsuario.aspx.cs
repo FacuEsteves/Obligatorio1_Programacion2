@@ -42,7 +42,7 @@ namespace Obligatorio_1_prog2
             {
                 LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
             }
-            if (txtContraseña.Text == "")
+            if (txtContrasenia.Text == "")
             {
                 LabelError.Text = "Datos Faltantes Para La Creación de un Uusuario";
             }
@@ -66,10 +66,11 @@ namespace Obligatorio_1_prog2
                     if (Global.transitoMaritimo.usuarios[i].cedula == Convert.ToInt32(txtCedula.Text))
                     {
                         LabelError.Text = "Ya se encuentra ingresado este usuario";
+                        us = Global.transitoMaritimo.usuarios[i];
                         us.nombre = txtNombre.Text;
                         us.cedula = Convert.ToInt32(txtCedula.Text);
                         us.nombreUsuario = txtID.Text;
-                        us.contraseña = txtContraseña.Text;
+                        us.contrasenia = txtContrasenia.Text;
                         us.correo = txtCorreo.Text;
                         us.AsignarTripulacion = CheckBox1.Checked;
                         us.IngresarCargos = CheckBox2.Checked;
@@ -92,7 +93,7 @@ namespace Obligatorio_1_prog2
                 us.nombre = txtNombre.Text;
                 us.cedula = Convert.ToInt32(txtCedula.Text);
                 us.nombreUsuario = txtID.Text;
-                us.contraseña = txtContraseña.Text;
+                us.contrasenia = txtContrasenia.Text;
                 us.correo = txtCorreo.Text;
                 us.AsignarTripulacion = CheckBox1.Checked;
                 us.IngresarCargos = CheckBox2.Checked;
@@ -115,7 +116,7 @@ namespace Obligatorio_1_prog2
             txtNombre.Text = "";
             txtCedula.Text = "";
             txtID.Text = "";
-            txtContraseña.Text = "";
+            txtContrasenia.Text = "";
             txtCorreo.Text = "";
             CheckBox1.Checked = false;
             CheckBox2.Checked = false;
@@ -150,9 +151,9 @@ namespace Obligatorio_1_prog2
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (txtID.Text == "")
+            if (txtCedula.Text == "")
             {
-                LabelError.Text = "Ingrese Nombre de Usuario Para Buscar";
+                LabelError.Text = "Ingrese Cedula de Usuario Para Buscar";
                 return;
             }
             for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
@@ -161,7 +162,7 @@ namespace Obligatorio_1_prog2
                 {
                     txtNombre.Text = Global.transitoMaritimo.usuarios[i].nombre;
                     txtID.Text = Global.transitoMaritimo.usuarios[i].nombreUsuario;
-                    txtContraseña.Text = Global.transitoMaritimo.usuarios[i].contraseña;
+                    txtContrasenia.Text = Global.transitoMaritimo.usuarios[i].contrasenia;
                     txtCorreo.Text = Global.transitoMaritimo.usuarios[i].correo;
                     CheckBox1.Checked = Global.transitoMaritimo.usuarios[i].AsignarTripulacion;
                     CheckBox2.Checked = Global.transitoMaritimo.usuarios[i].IngresarCargos;

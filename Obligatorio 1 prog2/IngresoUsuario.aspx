@@ -21,7 +21,7 @@
             </p>
             <p>
                 Contraseña:
-                <asp:TextBox ID="txtContraseña" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="txtContrasenia" class="form-control" runat="server"></asp:TextBox>
             </p>
             <p>
                 Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

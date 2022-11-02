@@ -8,7 +8,7 @@ namespace Obligatorio_1_prog2
     public class Usuario:Persona
     {
         public string nombreUsuario { get; set; }
-        public string contraseña { get; set; }
+        public string contrasenia { get; set; }
         public string tipoUsuario { get; set; }
         public Boolean AsignarTripulacion { get; set; }
         public Boolean BusquedaMant { get; set; }

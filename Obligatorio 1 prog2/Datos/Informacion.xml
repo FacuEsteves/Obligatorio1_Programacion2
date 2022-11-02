@@ -116,7 +116,7 @@
         <cantidadPersonal>15</cantidadPersonal>
       </encargados>
       <precio>100</precio>
-      <Terminado>false</Terminado>
+      <Terminado>true</Terminado>
     </Mantenimiento>
   </mantenimientos>
   <tiposMantenimiento>
@@ -157,7 +157,7 @@
       <nombre>Administrador</nombre>
       <correo>admin@exemplo.com</correo>
       <nombreUsuario>Admin</nombreUsuario>
-      <contraseña>12345</contraseña>
+      <contrasenia>hola</contrasenia>
       <AsignarTripulacion>true</AsignarTripulacion>
       <BusquedaMant>true</BusquedaMant>
       <IngresarCargos>true</IngresarCargos>
@@ -170,15 +170,15 @@
       <Historial>true</Historial>
     </Usuario>
     <Usuario>
-      <cedula>12345678</cedula>
-      <nombre>Pepe</nombre>
+      <cedula>12345679</cedula>
+      <nombre>Juan Manuel</nombre>
       <correo>ppe@exe.com</correo>
       <nombreUsuario>pepe</nombreUsuario>
-      <contraseña>12</contraseña>
+      <contrasenia>hola</contrasenia>
       <AsignarTripulacion>true</AsignarTripulacion>
-      <BusquedaMant>false</BusquedaMant>
-      <IngresarCargos>false</IngresarCargos>
-      <IngresarTripulantes>false</IngresarTripulantes>
+      <BusquedaMant>true</BusquedaMant>
+      <IngresarCargos>true</IngresarCargos>
+      <IngresarTripulantes>true</IngresarTripulantes>
       <IngresarEncargados>false</IngresarEncargados>
       <IngresoMantenimiento>false</IngresoMantenimiento>
       <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
@@ -187,15 +187,15 @@
       <Historial>false</Historial>
     </Usuario>
     <Usuario>
-      <cedula>12345679</cedula>
-      <nombre>Juan Manuel</nombre>
-      <correo>ppe@exe.com</correo>
-      <nombreUsuario>pepe</nombreUsuario>
-      <contraseña>12</contraseña>
+      <cedula>123456</cedula>
+      <nombre>pepe2</nombre>
+      <correo>juan@exe.com</correo>
+      <nombreUsuario>pepe2</nombreUsuario>
+      <contrasenia>hola1</contrasenia>
       <AsignarTripulacion>true</AsignarTripulacion>
-      <BusquedaMant>true</BusquedaMant>
+      <BusquedaMant>false</BusquedaMant>
       <IngresarCargos>true</IngresarCargos>
-      <IngresarTripulantes>true</IngresarTripulantes>
+      <IngresarTripulantes>false</IngresarTripulantes>
       <IngresarEncargados>false</IngresarEncargados>
       <IngresoMantenimiento>false</IngresoMantenimiento>
       <IngresoTipoMantenimiento>false</IngresoTipoMantenimiento>
@@ -233,6 +233,7 @@
       <nombre>Bee</nombre>
       <correo>bbrezlaw2@meetup.com</correo>
       <fechaIngreso>2022-04-03T21:57:09Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Capitán</Cargo>
     </Tripulante>
     <Tripulante>
@@ -255,7 +256,6 @@
       <nombre>Nada</nombre>
       <correo>nkruse5@hexun.com</correo>
       <fechaIngreso>2022-03-07T17:33:17Z</fechaIngreso>
-      <NombreBarco>Barco 5</NombreBarco>
       <Cargo>Piloto</Cargo>
     </Tripulante>
     <Tripulante>
@@ -263,6 +263,7 @@
       <nombre>Claiborn</nombre>
       <correo>cdewes6@zimbio.com</correo>
       <fechaIngreso>2022-01-09T09:13:55Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
     <Tripulante>
@@ -285,6 +286,7 @@
       <nombre>Tabb</nombre>
       <correo>thaquin9@techcrunch.com</correo>
       <fechaIngreso>2022-08-20T18:34:34Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
     <Tripulante>
@@ -308,6 +310,7 @@
       <nombre>Cordelie</nombre>
       <correo>cbottomc@nhs.uk</correo>
       <fechaIngreso>2022-02-06T00:55:58Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Piloto</Cargo>
     </Tripulante>
     <Tripulante>
@@ -315,6 +318,7 @@
       <nombre>Valentino</nombre>
       <correo>vmeanyd@e-recht24.de</correo>
       <fechaIngreso>2022-08-03T02:15:14Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Oficial de cubierta</Cargo>
     </Tripulante>
     <Tripulante>
@@ -322,6 +326,7 @@
       <nombre>Lamar</nombre>
       <correo>lclitsomee@omniture.com</correo>
       <fechaIngreso>2022-01-07T18:35:34Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Servicios</Cargo>
     </Tripulante>
     <Tripulante>
@@ -337,6 +342,7 @@
       <nombre>Charlene</nombre>
       <correo>csivillsg@shareasale.com</correo>
       <fechaIngreso>2022-01-12T04:17:13Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Servicios</Cargo>
     </Tripulante>
     <Tripulante>
@@ -351,6 +357,7 @@
       <nombre>Inigo</nombre>
       <correo>ilippoi@irs.gov</correo>
       <fechaIngreso>2021-11-07T22:20:04Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Comisario de a bordo</Cargo>
     </Tripulante>
     <Tripulante>
@@ -372,6 +379,7 @@
       <nombre>Wilbur</nombre>
       <correo>wbrazenerl@theglobeandmail.com</correo>
       <fechaIngreso>2022-10-15T05:20:52Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
     <Tripulante>
@@ -379,6 +387,7 @@
       <nombre>Babs</nombre>
       <correo>bhiggenm@devhub.com</correo>
       <fechaIngreso>2021-11-17T01:24:07Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Servicios</Cargo>
     </Tripulante>
     <Tripulante>
@@ -393,6 +402,7 @@
       <nombre>Hashim</nombre>
       <correo>hdenoreo@buzzfeed.com</correo>
       <fechaIngreso>2022-06-08T21:43:58Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Piloto</Cargo>
     </Tripulante>
     <Tripulante>
@@ -408,6 +418,7 @@
       <nombre>Leicester</nombre>
       <correo>ltoulminq@macromedia.com</correo>
       <fechaIngreso>2022-08-29T21:16:50Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Servicios</Cargo>
     </Tripulante>
     <Tripulante>
@@ -422,6 +433,7 @@
       <nombre>Kim</nombre>
       <correo>khousbys@printfriendly.com</correo>
       <fechaIngreso>2022-04-20T04:11:09Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Oficial de cubierta</Cargo>
     </Tripulante>
     <Tripulante>
@@ -429,6 +441,7 @@
       <nombre>Maudie</nombre>
       <correo>mplaskettt@bbc.co.uk</correo>
       <fechaIngreso>2021-11-17T17:29:58Z</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Piloto</Cargo>
     </Tripulante>
     <Tripulante>
@@ -436,6 +449,7 @@
       <nombre>Carlos Gardel</nombre>
       <correo>carlitos@exe.com</correo>
       <fechaIngreso>2022-10-27T00:00:00-03:00</fechaIngreso>
+      <NombreBarco>Barco 6</NombreBarco>
       <Cargo>Jefe de maquinas</Cargo>
     </Tripulante>
     <Tripulante>
@@ -525,11 +539,35 @@
       <usuarios>Admin</usuarios>
       <fechaAcceso>2022-11-01T22:10:23.064832-03:00</fechaAcceso>
     </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>juan</usuarios>
+      <fechaAcceso>2022-11-01T22:21:25.8692138-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>pepe</usuarios>
+      <fechaAcceso>2022-11-01T22:21:38.6352536-03:00</fechaAcceso>
+    </RegistroAcceso>
+    <RegistroAcceso>
+      <usuarios>Admin</usuarios>
+      <fechaAcceso>2022-11-01T22:22:00.9016658-03:00</fechaAcceso>
+    </RegistroAcceso>
   </registrosA>
   <registrosE>
     <RegistroEgreso>
       <usuarios>Admin</usuarios>
       <fechaEgreso>2022-11-01T21:46:06.9827308-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>Admin</usuarios>
+      <fechaEgreso>2022-11-01T22:21:18.7167558-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>juan</usuarios>
+      <fechaEgreso>2022-11-01T22:21:31.545248-03:00</fechaEgreso>
+    </RegistroEgreso>
+    <RegistroEgreso>
+      <usuarios>pepe</usuarios>
+      <fechaEgreso>2022-11-01T22:21:56.0190723-03:00</fechaEgreso>
     </RegistroEgreso>
   </registrosE>
   <registrosC>
@@ -642,6 +680,146 @@
       <usuarios>Admin</usuarios>
       <fechaCambio>2022-11-01T22:04:54.9309081-03:00</fechaCambio>
       <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:06.5446093-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:17.0618353-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:19.5449899-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:22.6604183-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:24.6049726-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:25.8587837-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:28.4948471-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:30.5941545-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:32.6178575-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:34.8259139-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:36.5830296-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:38.5550624-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:40.2651904-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:41.8049393-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:18:43.0802388-03:00</fechaCambio>
+      <descripcion>Asignar tripulación</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:19:06.5620302-03:00</fechaCambio>
+      <descripcion>Borrar asignado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:20:26.0018587-03:00</fechaCambio>
+      <descripcion>Borrar usuario</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:20:48.7729102-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:21:14.562277-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:22:21.1450518-03:00</fechaCambio>
+      <descripcion>Mantenimiento terminado</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:34:07.4086921-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:34:37.9073475-03:00</fechaCambio>
+      <descripcion>Borrar usuario</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:35:12.6082821-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:36:33.3521018-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:41:05.4809988-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:43:09.2387927-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:43:52.1598488-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
+    </RegistroCambio>
+    <RegistroCambio>
+      <usuarios>Admin</usuarios>
+      <fechaCambio>2022-11-01T22:44:21.0149613-03:00</fechaCambio>
+      <descripcion>Ingreso usuarios</descripcion>
     </RegistroCambio>
   </registrosC>
   <idUsuario>Admin</idUsuario>

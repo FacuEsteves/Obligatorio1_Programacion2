@@ -59,7 +59,7 @@ namespace Obligatorio_1_prog2
 
             for (int i = 0; i < Global.transitoMaritimo.usuarios.Count; i++)
             {
-                if(Global.transitoMaritimo.usuarios[i].nombreUsuario==txtUsuario.Text && Global.transitoMaritimo.usuarios[i].contraseña == txtContraseña.Text)
+                if(Global.transitoMaritimo.usuarios[i].nombreUsuario==txtUsuario.Text && Global.transitoMaritimo.usuarios[i].contrasenia == txtContraseña.Text)
                 {
                     Global.transitoMaritimo.idUsuario = Global.transitoMaritimo.usuarios[i].nombreUsuario;
                     Persistencia.RegistroAcceso(Global.transitoMaritimo.idUsuario);
